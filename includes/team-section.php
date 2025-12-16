@@ -44,6 +44,15 @@
                     './assets/images/nirala-singh.png'); 
                     ?>
             </div>
+            <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
+            <?php teamMemberCard(
+                    'Ryan Patrick', 
+                    'Sr. Chemical Engineer', 
+                    'Chemical engineer specializing in high-temperature reaction engineering,
+molten-salt systems, and hydrogen-production process development.', 
+                    './assets/images/ryan-for-web.png'); 
+                    ?> 
+            </div>
         </div>
         <div class="mt-28">
             <h2 class="text-[36px] lg:text-5xl font-black leading-[1.1]">The UCSB Technology Team</h2>
@@ -78,15 +87,7 @@
              
             </div>
 
-            <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
-            <?php teamMemberCard(
-                    'Ryan Patrick', 
-                    'Sr. Chemical Engineer', 
-                    'Chemical engineer specializing in high-temperature reaction engineering,
-molten-salt systems, and hydrogen-production process development.', 
-                    './assets/images/ryan-for-web.png'); 
-                    ?> 
-            </div>
+          
 
         </div>
     </div>
