@@ -47,7 +47,8 @@
                      
                     ?>
             </div>
-            <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
+            
+            <div class="md:max-w-[392px] mt-8 sm:mt-16">
             <?php  teamMemberCard(
                     'Nirala Singh, PhD', 
                     'Scientific Advisor', 
