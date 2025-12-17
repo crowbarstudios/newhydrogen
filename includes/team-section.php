@@ -32,25 +32,27 @@
                     './assets/images/sundar-narayanan.png'); 
 
                     teamMemberCard(
+                        'Ryan Patrick', 
+                        'Sr. Chemical Engineer', 
+                        'Chemical engineer specializing in high-temperature reaction engineering,
+    molten-salt systems, and hydrogen-production process development.', 
+                        './assets/images/ryan-for-web.png'); 
+
+                    teamMemberCard(
                     'Ivor John, PhD', 
                     'Senior Advisor', 
                     'Environmental consultant, auditor and Ph.D. in Atmospheric Physics. Expert in air quality, climate change and the analysis of air emissions and greenhouse gasses.', 
                     './assets/images/ivor-john.png'); 
 
-                     teamMemberCard(
-                    'Nirala Singh, PhD', 
-                    'Scientific Advisor', 
-                    'Expert in Electrocatalysts Development Associate Professor of Chemical Engineering, University of Michigan, Ann Arbor.', 
-                    './assets/images/nirala-singh.png'); 
+                     
                     ?>
             </div>
             <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
-            <?php teamMemberCard(
-                    'Ryan Patrick', 
-                    'Sr. Chemical Engineer', 
-                    'Chemical engineer specializing in high-temperature reaction engineering,
-molten-salt systems, and hydrogen-production process development.', 
-                    './assets/images/ryan-for-web.png'); 
+            <?php  teamMemberCard(
+                    'Nirala Singh, PhD', 
+                    'Scientific Advisor', 
+                    'Expert in Electrocatalysts Development Associate Professor of Chemical Engineering, University of Michigan, Ann Arbor.', 
+                    './assets/images/nirala-singh.png');
                     ?> 
             </div>
         </div>
