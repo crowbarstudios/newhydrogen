@@ -46,16 +46,14 @@
 
                      
                     ?>
-            </div>
-            
-            <div class="md:max-w-[392px] mt-8 sm:mt-16">
-            <?php  teamMemberCard(
+                    <?php  teamMemberCard(
                     'Nirala Singh, PhD', 
                     'Scientific Advisor', 
                     'Expert in Electrocatalysts Development Associate Professor of Chemical Engineering, University of Michigan, Ann Arbor.', 
                     './assets/images/nirala-singh.png');
                     ?> 
             </div>
+
         </div>
         <div class="mt-28">
             <h2 class="text-[36px] lg:text-5xl font-black leading-[1.1]">The UCSB Technology Team</h2>
