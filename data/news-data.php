@@ -70,7 +70,7 @@ $news = [
             ["<p>Recently, the NewHydrogen technical team completed preliminary design and economic studies on integrating ThermoLoop with current and future power plants. The team also concluded that Small Modular Reactors (SMRs) are the perfect pairing for the Company’s technology, and are ideal sources of constant and reliable baseload heat for powering the ThermoLoop process.  </p>"],
 
             ["<p>The patent filing marks a significant milestone in NewHydrogen’s collaboration with leading researchers at UC Santa Barbara, who are at the forefront of advancing materials science for hydrogen production. </p>"],
-            
+
             [
                 "<p>To watch a short explainer video about ThermoLoop™ or to learn more about NewHydrogen’s mission to produce the world’s cheapest green hydrogen, visit <a href=\"https://newhydrogen.com/\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/</a>. </p>"
             ]
@@ -135,7 +135,7 @@ $news = [
             [
                 "<p>Please see our Special Report with more information about this massive source of heat available to power ThermoLoop at  <a href=\"https://newhydrogen.com/special-report-October-2025\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/special-report-October-2025</a>.</p>"
             ],
-            
+
             [
                 "<p>For more information about NewHydrogen, please visit <a href=\"https://newhydrogen.com/\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/</a>. </p>"
             ]
@@ -161,7 +161,7 @@ $news = [
             [
                 "<p>Please see our Special Report with more information about this massive source of heat available to power ThermoLoop at <a href=\"https://newhydrogen.com/special-report-October-2025\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/special-report-October-2025</a> after 4PM ET on October 27, 2025.</p>"
             ],
-            
+
             [
                 "<p>For more information about NewHydrogen, please visit <a href=\"https://newhydrogen.com/\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/</a>. </p>"
             ]
@@ -196,7 +196,7 @@ $news = [
             [
                 "<p>NewHydrogen is currently funding a sponsored research program at the University of California, Santa Barbara (“UCSB”), to develop its ThermoLoopTM technology, a novel low-cost thermochemical process to split water using inexpensive heat, instead of expensive electricity. Since the commencement of the Company’s research project in August 2023, the UCSB team has been methodically developing the Company’s ThermoLoopTM technology around unique materials that use heat to produce hydrogen and oxygen when reacted in a cyclic process with water vapor. </p>"
             ],
-            
+
             [
                 "<p>To learn more about NewHydrogen’s work with leading scientists at UC Santa Barbara to develop the world's cheapest green hydrogen, please visit <a href=\"https://newhydrogen.com/\" class=\"text-blue-600 text-[length:inherit]\">https://newhydrogen.com/</a>. </p>"
             ]
@@ -379,7 +379,7 @@ $news = [
             [
                 "<p>The Company believes the uplisting will expand its visibility to a broader group of U.S. and international investors and provide improved liquidity for its stock as it advances its ThermoLoop platform toward commercialization.</p>"
             ],
-           
+
             [
                 "<p>To learn more about ThermoLoop™ and NewHydrogen’s mission to produce the world’s cheapest green hydrogen, please visit <a href='NewHydrogen.com' target='_blank'>NewHydrogen.com</a>. </p>"
             ]
@@ -411,7 +411,7 @@ $news = [
             [
                 "<p>By joining the Texas Hydrogen Alliance, the company aims to engage with industry partners and policymakers to facilitate the widespread adoption of hydrogen as a key energy solution.</p>"
             ],
-           
+
             [
                 "<p>To watch a short explainer video on ThermoLoop or for more information about NewHydrogen and its mission to produce the world’s cheapest green hydrogen, please visit <a href='NewHydrogen.com' target='_blank'>NewHydrogen.com</a>. </p>"
             ]
@@ -443,7 +443,7 @@ $news = [
             [
                 "<p>The patent filing marks a significant milestone in NewHydrogen’s collaboration with leading researchers at UC Santa Barbara, who are at the forefront of advancing materials science for hydrogen production.</p>"
             ],
-           
+
             [
                 "<p>To watch a short explainer video about ThermoLoop™ or to learn more about NewHydrogen’s mission to produce the world’s cheapest green hydrogen, visit <a href='NewHydrogen.com' target='_blank'>NewHydrogen.com</a>. </p>"
             ]
