@@ -143,9 +143,9 @@
 
 
 <div id="aviation" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/aviation-modal.png" class="w-full" alt="aviation">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Aviation</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -162,9 +162,9 @@
 
 
 <div id="shipping" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/shipping-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Shipping</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -174,9 +174,9 @@
 </div>
 
 <div id="industrial" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/industrial-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Industrial</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -186,9 +186,9 @@
 </div>
 
 <div id="refinery" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/refinery-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Refinery</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -198,9 +198,9 @@
 </div>
 
 <div id="cars-and-trucks" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/cars-truck-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Cars and Trucks</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -210,9 +210,9 @@
 </div>
 
 <div id="heating" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/building-heating-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Heating</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -222,9 +222,9 @@
 </div>
 
 <div id="industrial-heating" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/industrial-heating-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Industrial Heating</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -234,9 +234,9 @@
 </div>
 
 <div id="fertilizers" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/fertilizer-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Fertilizers</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -246,9 +246,9 @@
 </div>
 
 <div id="power" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/power-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Power</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -258,9 +258,9 @@
 </div>
 
 <div id="pharmaceuticals" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/pharmacutical-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Pharmaceuticals</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -270,9 +270,9 @@
 </div>
 
 <div id="hydrogen-fuel-stations" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/hydrogen-station-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Hydrogen Fuel Stations</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
@@ -282,9 +282,9 @@
 </div>
 
 <div id="food-processing" class="mfp-hide popup-box">
-    <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
+    <!-- <div class="relative after:h-16 sm:after:h-52 after:w-full after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-custom-green-200">
         <img src="./assets/images/food-processing-modal.png" class="w-full" alt="Shipping">
-    </div>
+    </div> -->
     <div class="p-7 sm:px-20 sm:py-8 max-h-96 overflow-y-auto">
         <h4 class="text-3xl pb-3 mb-5 sm:text-[44px] text-black font-bold border-b border-custom-green-600 sm:pb-5 sm:mb-6">Food Processing</h4>
         <p class="text-base sm:text-lg font-medium text-black ">
