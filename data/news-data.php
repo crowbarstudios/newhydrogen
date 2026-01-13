@@ -3,6 +3,34 @@
 
 $news = [
     [
+        'id' => "96",
+        'title' => "Ryan Patrick Joins NewHydrogen as Senior Chemical Engineer",
+        'date' => "January 13, 2026",
+        'excerpt' => "NewHydrogen, Inc. (OTCQB:NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat rather than renewable electricity to produce the world’s cheapest clean hydrogen, today announced the appointment of Ryan Patrick as Senior Chemical Engineer",
+        'description' => [
+            [
+                "<p><strong>Accomplished chemical engineer to support design and integration of experimental results into ThermoLoop process models</strong></p>"
+            ],
+            [
+                "<p>Santa Clarita, California (January 13, 2026) – NewHydrogen, Inc. (OTCQB:NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat rather than renewable electricity to produce the world’s cheapest clean hydrogen, today announced the appointment of Ryan Patrick as Senior Chemical Engineer.</p>"
+            ],
+            [
+                "<p>Patrick's work with NewHydrogen supports the development of cost-effective, entropy-driven thermochemical water-splitting technology. His work focuses on translating laboratory-scale experimental results into pilot-scale and pre-commercial process designs, with an emphasis on thermochemical hydrogen production, high-temperature reaction systems, and materials-driven process development. </p>"
+            ],
+            ["<p>“Few engineers possess Ryan’s level of practical and technical depth in experimental design and execution,” said Steve Hill, CEO of NewHydrogen. “His experience evaluating, adapting, and commercializing novel technologies aligns perfectly with our mission to deliver the world’s cheapest green hydrogen.” </p>"],
+
+
+            ["<p>“I’m excited to join the talented team at NewHydrogen and help advance a truly game-changing technology,” said Patrick. “Scaling up ThermoLoop™ is a unique opportunity to apply my engineering knowledge to accelerate the global transition to clean, cheap hydrogen.” </p>"],
+           
+            ["<p>Patrick most recently served in systems operations at SpaceX, contributing to upgrades and infrastructure improvements for launch activities. Earlier in his career, he led experimental campaigns supporting novel energy conversion technologies at CZero Inc., integrating experimental results into process models to guide technology development and scale-up. </p>"],
+            [
+                "<p>To learn more about NewHydrogen’s work with leading scientists at UC Santa Barbara to develop the world's cheapest green hydrogen, please visit NewHydrogen.com.</p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+    [
         'id' => "95",
         'title' => "NewHydrogen Reports Significant 2025 ThermoLoop™ Progress",
         'date' => "December 16, 2025",
