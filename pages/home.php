@@ -17,7 +17,7 @@
             </div>
     </div>
 </section> -->
-<section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
+<!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
         <div class="text-5xl sm:text-6xl text-white text-center font-bold">Watch Now</div>
         <div class="text-white text-2xl sm:text-4xl text-center font-semibold my-4 leading-snug">NewHydrogen Reveals Massive
@@ -36,7 +36,7 @@
                 </button>
             </div>
     </div>
-</section>
+</section> -->
 <section class="bg-banner bg-cover bg-[18%_100%] md:bg-center relative md:pb-36 md:pt-28 py-16 ">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
         <div class="md:grid grid-cols-12 block">
