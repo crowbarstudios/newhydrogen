@@ -3,6 +3,34 @@
 
 $news = [
     [
+        'id' => "97",
+        'title' => "NewHydrogen Files Its First International Patent for Its ThermoLoop Technology",
+        'date' => "March 12, 2026",
+        'excerpt' => "NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce low-cost clean hydrogen, today announced that it has jointly filed an international patent application with the University of California, Santa Barbara (“UCSB”) for its innovative clean hydrogen production process and associated technology titled “Coupled Multi-phase Oxidation-Reducing For Production of Chemicals.”",
+        'description' => [
+            [
+                "<p><strong>Joint patent application with University of California, Santa Barbara further strengthens the IP position of the Company’s clean hydrogen technology</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, Calif. (March 12, 2026) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce low-cost clean hydrogen, today announced that it has jointly filed an international patent application with the University of California, Santa Barbara (“UCSB”) for its innovative clean hydrogen production process and associated technology titled “Coupled Multi-phase Oxidation-Reducing For Production of Chemicals.” </p>"
+            ],
+            [
+                "<p>The inventors of the patent application include Dr. Eric McFarland, the Company’s Chief Technology Officer, and Mr. Ryan Patrick, the Company’s Senior Chemical Engineer.   </p>"
+            ],
+            ["<p>NewHydrogen filed an international patent application under the Patent Cooperation Treaty (PCT) that further expands the basis for the Company’s ThermoLoop thermochemical water splitting process together with new material compositions discovered by the UCSB technology team and the new isothermal hydrogen process. </p>"],
+
+
+            ["<p>A key innovation in the filing is the use of artificial intelligence and Large Language Models (LLM) to discover and design optimal materials for these reaction networks. This allows the team to identify and optimize complex mixed-metal oxides and other regenerable materials that can operate efficiently within specific temperature ranges. For example, the technology enables hydrogen production at temperatures below 1000°C, which avoids the energy-inefficient large temperature swings required by previous methods. </p>"],
+           
+            ["<p>“This international patent filing represents a critical milestone in our mission to produce the world's most cost-effective clean hydrogen,” said Steve Hill, CEO of NewHydrogen. “By combining advanced material science with AI-driven discovery, we are creating a scalable, carbon-free path for hydrogen production that bypasses the high costs of electricity-intensive electrolysis.” </p>"],
+            [
+                "<p>The PCT application establishes a filing date in all 158 contracting countries, providing the Company with a robust foundation to protect its intellectual property as it moves toward commercialization.</p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+    [
         'id' => "96",
         'title' => "Ryan Patrick Joins NewHydrogen as Senior Chemical Engineer",
         'date' => "January 13, 2026",
