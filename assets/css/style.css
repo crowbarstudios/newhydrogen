@@ -875,6 +875,16 @@ a:hover{
   margin-bottom: 2rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .\!mt-0{
   margin-top: 0px !important;
 }
@@ -1231,6 +1241,10 @@ a:hover{
   min-height: 88px;
 }
 
+.min-h-\[466px\]{
+  min-height: 466px;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -1398,6 +1412,10 @@ a:hover{
 
 .max-w-sm{
   max-width: 24rem;
+}
+
+.max-w-\[300px\]{
+  max-width: 300px;
 }
 
 .flex-1{
@@ -1842,6 +1860,11 @@ a:hover{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-custom-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 180 180 / var(--tw-bg-opacity, 1));
 }
 
 .bg-banner{
@@ -2329,6 +2352,18 @@ a:hover{
   padding-top: 9px;
 }
 
+.pr-20{
+  padding-right: 5rem;
+}
+
+.pr-36{
+  padding-right: 9rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2555,6 +2590,14 @@ a:hover{
   line-height: 1.25;
 }
 
+.leading-\[64px\]{
+  line-height: 64px;
+}
+
+.\!leading-\[64px\]{
+  line-height: 64px !important;
+}
+
 .\!text-\[\#00bc05\]{
   --tw-text-opacity: 1 !important;
   color: rgb(0 188 5 / var(--tw-text-opacity, 1)) !important;
@@ -2659,6 +2702,11 @@ a:hover{
 
 .text-white\/80{
   color: rgb(255 255 255 / 0.8);
+}
+
+.text-custom-gray-dark-200{
+  --tw-text-opacity: 1;
+  color: rgb(56 75 94 / var(--tw-text-opacity, 1));
 }
 
 .shadow-\[inset_0_0_10px_rgba\(0\2c 0\2c 0\2c 0\.3\)\]{
@@ -3329,6 +3377,22 @@ html {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:leading-\[68px\]{
+    line-height: 68px;
+  }
+
+  .sm\:leading-\[76px\]{
+    line-height: 76px;
+  }
+
+  .sm\:leading-\[72px\]{
+    line-height: 72px;
+  }
+
+  .sm\:leading-\[64px\]{
+    line-height: 64px;
   }
 
   .sm\:shadow-none{
