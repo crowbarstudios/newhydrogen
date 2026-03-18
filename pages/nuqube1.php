@@ -29,11 +29,11 @@
             Sign up now to reserve your spot in our live event
         </p>
 
-        <form id="jotformForm" action="https://submit.jotform.com/submit/242986385047065/" method="POST" method="POST" autocomplete="off" class="max-w-[300px] mx-auto relative mt-4">
-            <input type="hidden" name="formID" value="242986385047065">
-            <input type="email" name="q3_email" id="input_3" placeholder="enter email address" class="bg-custom-white text-custom-gray-dark-200 w-full py-2.5 pl-3 pr-32 rounded-full h-12 focus-within:outline-0">
-            <button type="submit" id="submitButtonNewsletter" class="text-black bg-custom-green-200 py-2.5 px-7 h-12 rounded-full inline-flex items-center justify-center font-bold text-base absolute right-0 top-0 hover:text-white">sign up!</button>
-        </form>
+        <form id="jotformForm" action="https://submit.jotform.com/submit/250137276726055/" method="POST" method="POST" autocomplete="off" class="max-w-[400px] mx-auto relative mt-4">
+            <input type="hidden" name="formID" value="250137276726055">
+                <input type="email" name="q3_webinaremail" id="input_3" placeholder="Email" class="bg-white text-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 focus-within:outline-0">
+                <button type="submit" id="submitButtonWebinar" class="bg-custom-green-200 text-black py-2.5 px-7 h-12  rounded-full inline-flex items-center justify-center font-bold text-base absolute right-0 top-0 hover:text-black">sign up!</button>
+            </form>
         
         <!-- <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="xsT6_tSNjUs">
             <iframe id="youtube-player" src="https://www.youtube.com/embed/xsT6_tSNjUs?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
