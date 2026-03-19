@@ -31,7 +31,7 @@
 
         <form id="jotformForm" action="https://submit.jotform.com/submit/250137276726055/" method="POST" method="POST" autocomplete="off" class="max-w-[400px] mx-auto relative mt-4">
             <input type="hidden" name="formID" value="250137276726055">
-                <input type="email" name="q3_webinaremail" id="input_3" placeholder="Email" class="bg-white text-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 focus-within:outline-0">
+                <input type="email" name="q3_webinaremail" id="input_3" placeholder="Email" class="bg-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 text-black focus-within:outline-0">
                 <button type="submit" id="submitButtonWebinar" class="bg-custom-green-200 text-black py-2.5 px-7 h-12  rounded-full inline-flex items-center justify-center font-bold text-base absolute right-0 top-0 hover:text-black">sign up!</button>
             </form>
         
