@@ -1,6 +1,14 @@
 <?php
 $videos = [
     [
+        'title' => "April 6, 2026 - NewHydrogen News Commentary",
+        'videoID' => "KFlydGTz8CA",
+        'date' => "",   
+        'category' => "news-commentary",
+        'slug' => "april-6-2026-newhydrogen-news-commentary",
+        "display" => true
+    ],
+    [
         'title' => "March 30, 2026 - NewHydrogen News Commentary",
         'videoID' => "f7x1jhndXOg",
         'date' => "",   
@@ -62,14 +70,6 @@ $videos = [
         'date' => "",   
         'category' => "news-commentary",
         'slug' => "february-2-2026-newhydrogen-news-commentary",
-        "display" => true
-    ],
-    [
-        'title' => "January 26, 2026 - NewHydrogen News Commentary",
-        'videoID' => "PaerD_yFePQ",
-        'date' => "",   
-        'category' => "news-commentary",
-        'slug' => "january-26-2026-newhydrogen-news-commentary",
         "display" => true
     ]
 ];
