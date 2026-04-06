@@ -69,7 +69,7 @@
                 <h2 class="font-bold lg:text-[42px] text-4xl">The Right Technology</h2>
 
             </div>
-            <p class="lg:text-xl text-lg mb-9">We are developing ThermoLoop™, a breakthrough technology to produce the world’s
+            <p class="lg:text-xl text-lg mb-9">We are developing ThermoLoop™, a breakthrough technology to produce the world’s cheapest clean hydrogen.
             </p>
             <ul>
                 <li class="flex gap-[26px] xl:pb-7 pb-[30px] items-center"><span class="min-w-[18px]"><img src="./assets/images/h-icon-green.png" alt="h-icon-green" width="18" height="20"></span>
@@ -88,7 +88,7 @@
                     </p>
                 </li>
                 <li class="flex gap-[26px] xl:pb-7 pb-[30px] items-center"><span class="min-w-[18px]"><img src="./assets/images/h-icon-green.png" alt="h-icon-green" width="18" height="20"></span>
-                    <p class="text-lg lg:text-xl  leading-[1.3] text-black font-medium">We will take advantage of a simple low-cost design,</p>
+                    <p class="text-lg lg:text-xl  leading-[1.3] text-black font-medium">We will take advantage of a simple low-cost design.</p>
                 </li>
 
             </ul>
