@@ -15,10 +15,10 @@ $path = trim(str_replace($basePath, '', $requestUri), '/');
 $page = $path === '' ? 'home' : $path;
 
 // Handle special-report redirect before any output
-if ($page === 'special-report') {
-    header('Location: videos', true, 301);
-    exit;
-}
+// if ($page === 'special-report') {
+//     header('Location: videos', true, 301);
+//     exit;
+// }
 
 if ($page === 'report') {
     header('Location: special-report-October-2025', true, 301);
