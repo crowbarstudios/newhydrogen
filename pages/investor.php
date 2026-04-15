@@ -1,9 +1,3 @@
-<section class="mt-16 mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
-    <img class="hidden md:block" src="./assets/images/development-plan.png" alt="development-plan">
-    <div class="block md:hidden max-w-96 mx-auto">
-        <img src="./assets/images/mobile-development-plan.png" alt="development-plan">
-    </div>
-</section>
 <section class=" before:content-[''] sm:before:w-[566px] before:w-[400px] before:h-[566px] before:left-0 before:-bottom-[74px] before:bg-gardiant-top before:absolute relative before:bg-no-repeat">
     <div class="mb-[71px] xl:mt-[100px] mt-16 mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
         <div class="relative text-center ">
@@ -27,6 +21,14 @@
                     </a>
                 </div>
             </div>
+
+            <div class="mt-16">
+                <img class="hidden md:block" src="./assets/images/development-plan.png" alt="development-plan">
+                <div class="block md:hidden max-w-96 mx-auto">
+                    <img src="./assets/images/mobile-development-plan.png" alt="development-plan">
+                </div>
+            </div>
+
             <div class="lg:max-w-[995px] max-w-[830px] mx-auto">
                 <h2 class="lg:mt-12 sm:mt-8 mt-4 lg:text-[42px] sm:text-4xl text-3xl mb-2">NewHydrogen Is a Publicly Traded Company</h3>
                     <p class="text-xl font-normal sm:max-w-[80%] max-w-full m-auto">Developing a Breakthrough Technology that Uses Water and Heat Instead of Electricity to Produce the World’s Cheapest Clean Hydrogen</p>
