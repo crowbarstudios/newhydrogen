@@ -3760,6 +3760,10 @@ html {
     max-width: 1024px;
   }
 
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3770,10 +3774,6 @@ html {
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-0{
@@ -4229,6 +4229,42 @@ html {
 .\[\&\>p\]\:text-base>p{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.\[\&_a\]\:mb-4 a{
+  margin-bottom: 1rem;
+}
+
+.\[\&_a\]\:text-xl a{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.\[\&_a\]\:tracking-\[0\.78px\] a{
+  letter-spacing: 0.78px;
+}
+
+.\[\&_a\]\:underline a{
+  text-decoration-line: underline;
+}
+
+@media (min-width: 640px){
+  .sm\:\[\&_a\]\:text-base a{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.\[\&_li\]\:text-xl li{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 640px){
+  .sm\:\[\&_li\]\:text-base li{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .\[\&_p\]\:mb-4 p{

@@ -12,7 +12,7 @@ $news = [
                 "<p><strong>The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications </strong></p>"
             ],
             [
-                "<p>SANTA CLARITA, Calif. (April 21, 2026) – NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today announced that ThermoLoop has successfully completed a critical pre-pilot plant technical validation milestone. The Company will now proceed with construction of a dedicated ThermoLoop engineering test unit to determine commercial pilot plant specifications.</p>"
+                "<p>SANTA CLARITA, Calif. (April 21, 2026) – <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop™</a>, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today announced that ThermoLoop has successfully completed a critical pre-pilot plant technical validation milestone. The Company will now proceed with construction of a dedicated ThermoLoop engineering test unit to determine commercial pilot plant specifications.</p>"
             ],
             [
                 "<p>“We are thrilled to have completed the research phase of our development program and are now advancing into the engineering phase required for commercialization,” said NewHydrogen CEO Steve Hill. “To do so, ThermoLoop was required to pass ‘Stage Gate One,’ a very rigorous pre-pilot plant test. Based on our internal review and published literature, we are not aware of any other heat-based water-splitting technology that has met this combination of performance and engineering criteria.” </p>"
@@ -33,7 +33,9 @@ $news = [
                     
                 </ul>"
             ],
-            ["<p>The ThermoLoop engineering test unit will be constructed by a University of California, Santa Barbara (“UCSB”) team led by Ryan Patrick, NewHydrogen Senior Chemical Engineer. The UCSB program is directed by Dr. Eric McFarland, NewHydrogen’s Chief Technology Officer, in collaboration with UCSB lead investigator Dr. Phil Christopher. </p>"],
+            ["<p>These benchmarks are explained by Chief Technology Officer Dr. Eric McFarland in a <a href=\"https://newhydrogen.com/special-report\" target=\"_blank\">Special Report Video</a>.</p>"],
+
+            ["<p>The ThermoLoop engineering test unit will be constructed by a University of California, Santa Barbara (“UCSB”) team led by Ryan Patrick, NewHydrogen Senior Chemical Engineer. The UCSB program is directed by Dr. Eric McFarland, NewHydrogen’s Chief Technology Officer, in collaboration with UCSB lead investigator Dr. Phil Christopher.  </p>"],
        
             [
                 "<p>“Think of this next step as the transition from a scientific breakthrough to an industrial reality,” said Dr. McFarland. “Our previous lab unit demonstrated continuous flow, the fundamental requirement for a commercial plant. The objective of our engineering test unit is to validate around-the-clock performance and generate the data necessary to design our first commercial pilot plant.”</p>"
