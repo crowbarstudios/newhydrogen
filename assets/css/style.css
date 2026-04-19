@@ -2342,6 +2342,18 @@ a:hover{
   padding-top: 9px;
 }
 
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pt-\[75px\]{
+  padding-top: 75px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3293,6 +3305,10 @@ html {
     padding-top: 57rem;
   }
 
+  .sm\:pb-32{
+    padding-bottom: 8rem;
+  }
+
   .sm\:text-center{
     text-align: center;
   }
@@ -3570,6 +3586,10 @@ html {
 
   .md\:pt-\[114px\]{
     padding-top: 114px;
+  }
+
+  .md\:pt-\[75px\]{
+    padding-top: 75px;
   }
 
   .md\:text-2xl{
