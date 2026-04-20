@@ -37,6 +37,7 @@ $videos = include "./data/news-data.php";
             </div>
             <h5 class=\" md:text-2xl text-xl leading-6 text-black lg:leading-7 font-bold mb-2\">{$item['title']}</h5>
             <p class=\" line-clamp-[10] md:text-xl text-lg leading-[1.3]\">{$item['excerpt']}</p>
+            <p class=\"text-lg mt-5\">The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications.</p>
             </div>
             <div class=\"mt-[22px] text-right\">
                 <a class=\"transition ease-in-outtransition duration-300 ease-in-out  text-lg leading-6 font-semibold py-[11px] px-[30px] rounded-[58px] bg-transparent hover:bg-custom-green-200 border border-black hover:border-0\" href=\"single-news.php?id={$item['id']}\">Read More</a>

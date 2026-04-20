@@ -1115,16 +1115,16 @@ a:hover{
   margin-top: 50px;
 }
 
+.mt-\[63px\]{
+  margin-top: 63px;
+}
+
 .mt-\[86px\]{
   margin-top: 86px;
 }
 
 .mt-\[89px\]{
   margin-top: 89px;
-}
-
-.mt-\[63px\]{
-  margin-top: 63px;
 }
 
 .line-clamp-\[10\]{
@@ -1235,16 +1235,16 @@ a:hover{
   min-height: 3.5rem;
 }
 
+.min-h-\[333px\]{
+  min-height: 333px;
+}
+
 .min-h-\[466px\]{
   min-height: 466px;
 }
 
 .min-h-\[88px\]{
   min-height: 88px;
-}
-
-.min-h-\[333px\]{
-  min-height: 333px;
 }
 
 .w-16{
@@ -2294,6 +2294,10 @@ a:hover{
   padding-top: 1.75rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
 .pt-9{
   padding-top: 2.25rem;
 }
@@ -2346,20 +2350,12 @@ a:hover{
   padding-top: 70rem;
 }
 
-.pt-\[75px\]{
-  padding-top: 75px;
-}
-
 .pt-\[90px\]{
   padding-top: 90px;
 }
 
 .pt-\[9px\]{
   padding-top: 9px;
-}
-
-.pt-8{
-  padding-top: 2rem;
 }
 
 .text-left{
