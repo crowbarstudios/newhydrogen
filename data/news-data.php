@@ -6,7 +6,7 @@ $news = [
         'id' => "98",
         'title' => "NewHydrogen Completes Critical Pre-Pilot Plant Technical Validation",
         'date' => "April 21, 2026",
-        'excerpt' => "SANTA CLARITA, Calif. (April 21, 2026) – NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today announced that ThermoLoop has successfully completed a critical pre-pilot plant technical validation milestone. The Company will now proceed with construction of a dedicated ThermoLoop engineering test unit to determine commercial pilot plant specifications",
+        'excerpt' => "The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications ",
         'description' => [
             [
                 "<p><strong>The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications </strong></p>"
@@ -51,7 +51,7 @@ $news = [
         'id' => "97",
         'title' => "NewHydrogen Files Its First International Patent for Its ThermoLoop Technology",
         'date' => "March 12, 2026",
-        'excerpt' => "NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce low-cost clean hydrogen, today announced that it has jointly filed an international patent application with the University of California, Santa Barbara (“UCSB”) for its innovative clean hydrogen production process and associated technology titled “Coupled Multi-phase Oxidation-Reducing For Production of Chemicals.”",
+        'excerpt' => "Joint patent application with University of California, Santa Barbara further strengthens the IP position of the Company’s clean hydrogen technology",
         'description' => [
             [
                 "<p><strong>Joint patent application with University of California, Santa Barbara further strengthens the IP position of the Company’s clean hydrogen technology</strong></p>"
@@ -79,7 +79,7 @@ $news = [
         'id' => "96",
         'title' => "Ryan Patrick Joins NewHydrogen as Senior Chemical Engineer",
         'date' => "January 13, 2026",
-        'excerpt' => "NewHydrogen, Inc. (OTCQB:NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat rather than renewable electricity to produce the world’s cheapest clean hydrogen, today announced the appointment of Ryan Patrick as Senior Chemical Engineer",
+        'excerpt' => "Accomplished chemical engineer to support design and integration of experimental results into ThermoLoop process models",
         'description' => [
             [
                 "<p><strong>Accomplished chemical engineer to support design and integration of experimental results into ThermoLoop process models</strong></p>"
@@ -107,7 +107,7 @@ $news = [
         'id' => "95",
         'title' => "NewHydrogen Reports Significant 2025 ThermoLoop™ Progress",
         'date' => "December 16, 2025",
-        'excerpt' => "SANTA CLARITA, Calif. (Dec 16, 2025) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today provided an update outlining significant milestones reached during 2025 and the next steps for 2026",
+        'excerpt' => "The Company’s CEO highlights the milestones reached and outlines next steps for 2026",
         'description' => [
             [
                 "<p><strong>The Company’s CEO highlights the milestones reached and outlines next steps for 2026 </strong></p>"
@@ -157,7 +157,7 @@ $news = [
         'id' => "94",
         'title' => "NewHydrogen Files Second Patent to Protect Its Breakthrough Technology",
         'date' => "November 4, 2025",
-        'excerpt' => "NewHydrogen, Inc. (OTCMKTS: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest green hydrogen, announced today that it has jointly filed a second provisional patent application with the University of California, Santa Barbara (“UCSB”) for its innovative clean hydrogen production process",
+        'excerpt' => "The Company’s ThermoLoop uses inexpensive heat and water to potentially produce the world’s cheapest clean hydrogen ",
         'description' => [
             [
                 "<p><strong>The Company’s ThermoLoop uses inexpensive heat and water to potentially produce the world’s cheapest clean hydrogen  </strong></p>"
@@ -183,7 +183,7 @@ $news = [
         'id' => "93",
         'title' => "NewHydrogen and Nuclear Power — A Perfect Pairing",
         'date' => "October 29, 2025",
-        'excerpt' => "NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today described the compelling technical reasons why Small Modular Reactors (SMRs) are the perfect pairing for the Company’s technology",
+        'excerpt' => "Coupling ThermoLoop with Small Modular Reactors (SMRs) to Produce the World’s Cheapest Clean Hydrogen",
         'description' => [
             [
                 "<p><strong>Coupling ThermoLoop with Small Modular Reactors (SMRs) to Produce the World’s Cheapest Clean Hydrogen</strong></p>"
