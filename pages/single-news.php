@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
             <?php
                 foreach ($item['description'] as $paragraph) {
                     echo "
-                        <div class=\"[&>h3]:text-xl [&>h3]:font-bold [&>p]:text-base\">
+                        <div class=\"[&>h3]:text-xl [&>h3]:font-bold [&>p]:text-base [&_a]:text-xl sm:[&_a]:text-base [&_a]:mb-4 [&_a]:tracking-[0.78px] [&_a]:underline [&_li]:text-xl sm:[&_li]:text-base\">
                             {$paragraph[0]}
                         </div>";
                 } ?>
