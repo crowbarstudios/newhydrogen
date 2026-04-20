@@ -1123,6 +1123,10 @@ a:hover{
   margin-top: 89px;
 }
 
+.mt-\[63px\]{
+  margin-top: 63px;
+}
+
 .line-clamp-\[10\]{
   overflow: hidden;
   display: -webkit-box;
@@ -1237,6 +1241,10 @@ a:hover{
 
 .min-h-\[88px\]{
   min-height: 88px;
+}
+
+.min-h-\[333px\]{
+  min-height: 333px;
 }
 
 .w-16{
@@ -2246,6 +2254,10 @@ a:hover{
   padding-top: 3.5rem;
 }
 
+.pt-16{
+  padding-top: 4rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -2334,6 +2346,10 @@ a:hover{
   padding-top: 70rem;
 }
 
+.pt-\[75px\]{
+  padding-top: 75px;
+}
+
 .pt-\[90px\]{
   padding-top: 90px;
 }
@@ -2342,16 +2358,8 @@ a:hover{
   padding-top: 9px;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-\[75px\]{
-  padding-top: 75px;
 }
 
 .text-left{
@@ -3277,6 +3285,10 @@ html {
     padding-bottom: 2rem;
   }
 
+  .sm\:pb-32{
+    padding-bottom: 8rem;
+  }
+
   .sm\:pb-5{
     padding-bottom: 1.25rem;
   }
@@ -3303,10 +3315,6 @@ html {
 
   .sm\:pt-\[57rem\]{
     padding-top: 57rem;
-  }
-
-  .sm\:pb-32{
-    padding-bottom: 8rem;
   }
 
   .sm\:text-center{
@@ -3586,10 +3594,6 @@ html {
 
   .md\:pt-\[114px\]{
     padding-top: 114px;
-  }
-
-  .md\:pt-\[75px\]{
-    padding-top: 75px;
   }
 
   .md\:text-2xl{

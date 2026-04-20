@@ -20,18 +20,21 @@
 <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative pt-16 pb-12 sm:pb-32">
 <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
     <div class="grid lg:grid-cols-2">
-        <div class="px-2 sm:px-4 z-10 relative pt-[75px]">
+        <div class="px-2 sm:px-4 z-10 relative pt-8">
             <div class="text-3xl text-white text-center font-bold leading-tight">
                 NewHydrogen Completes critical
                 Pre-Pilot Plant Technical Validation
             </div>
+            <p class="text-2xl text-center text-white font-medium mt-4">
+                Tuesday April 21, 2026
+            </p>
             <p class="text-lg text-center text-white font-medium mt-4">
                 View Special Report Video Below
             </p>
 
             <!-- <div class="max-w-[830px] w-full min-h-[466px] mx-auto relative bg-custom-gray-300 mt-5"></div> -->
 
-            <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="bZ4xhMRHFtw">
+            <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-[63px]" data-video-id="bZ4xhMRHFtw">
             <iframe id="youtube-player" src="https://www.youtube.com/embed/bZ4xhMRHFtw?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
           
             <button type="button" class="absolute inset-0 flex items-center justify-center cursor-pointer z-20 youtube-custom-btn">
@@ -48,11 +51,14 @@
                
                 Strategic Partnership to Explore Nuclear-Driven Clean Hydrogen Production
             </div>
+            <p class="text-2xl text-center text-white font-medium mt-4">
+                Tuesday April 28, 2026
+            </p>
             <p class="text-lg text-center text-white font-medium mt-4">
                 View Special Report Video Below
             </p>
 
-            <div class="max-w-[830px] w-full min-h-[466px] mx-auto relative bg-custom-gray-300 mt-5"></div>
+            <div class="max-w-[830px] w-full min-h-[333px] mx-auto relative bg-custom-gray-300 mt-5"></div>
 
             <!-- <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="xsT6_tSNjUs">
             <iframe id="youtube-player" src="https://www.youtube.com/embed/xsT6_tSNjUs?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
