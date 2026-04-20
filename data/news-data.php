@@ -6,10 +6,10 @@ $news = [
         'id' => "98",
         'title' => "NewHydrogen Completes Critical Pre-Pilot Plant Technical Validation",
         'date' => "April 21, 2026",
-        'excerpt' => "The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications ",
+        'excerpt' => "The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications",
         'description' => [
             [
-                "<p><strong>The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications </strong></p>"
+                "<p><strong>The Company greenlights construction of a ThermoLoop engineering test unit to define commercial pilot plant specifications</strong></p>"
             ],
             [
                 "<p>SANTA CLARITA, Calif. (April 21, 2026) – <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop™</a>, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today announced that ThermoLoop has successfully completed a critical pre-pilot plant technical validation milestone. The Company will now proceed with construction of a dedicated ThermoLoop engineering test unit to determine commercial pilot plant specifications.</p>"
@@ -21,7 +21,7 @@ $news = [
             ["<p>Stage Gate One required ThermoLoop to meet the following engineering and performance criteria:</p>"],
             [
                 "<ul class=\"dot-list mb-3 dark-list space-y-3 list-disc pl-8\">
-                    <li>Maximum operating temperature below 1000°C</li>
+               <li>Maximum operating temperature below 1,000°C</li>
                 <li>Demonstrated operation over more than 10 cycles</li>
                 <li>Hydrogen production efficiency exceeding 75% of theoretical yield</li>
                 <li>Defined industrial heat-integration strategy</li>
@@ -35,13 +35,13 @@ $news = [
             ],
             ["<p>These benchmarks are explained by Chief Technology Officer Dr. Eric McFarland in a <a href=\"https://newhydrogen.com/special-report\" target=\"_blank\">Special Report Video</a>.</p>"],
 
-            ["<p>The ThermoLoop engineering test unit will be constructed by a University of California, Santa Barbara (“UCSB”) team led by Ryan Patrick, NewHydrogen Senior Chemical Engineer. The UCSB program is directed by Dr. Eric McFarland, NewHydrogen’s Chief Technology Officer, in collaboration with UCSB lead investigator Dr. Phil Christopher.  </p>"],
+            ["<p>The ThermoLoop engineering test unit will be constructed by a University of California, Santa Barbara (“UCSB”) team led by Ryan Patrick, NewHydrogen Senior Chemical Engineer. The UCSB program is directed by Dr. Eric McFarland, NewHydrogen’s Chief Technology Officer, in collaboration with UCSB lead investigator Dr. Phil Christopher. </p>"],
        
             [
                 "<p>“Think of this next step as the transition from a scientific breakthrough to an industrial reality,” said Dr. McFarland. “Our previous lab unit demonstrated continuous flow, the fundamental requirement for a commercial plant. The objective of our engineering test unit is to validate around-the-clock performance and generate the data necessary to design our first commercial pilot plant.”</p>"
             ],
             [
-                "<p>Mr. Hill concluded, “We not only expect that this next phase will generate the engineering data necessary to support pilot plant design but may also lead to the sale or license of our technology.”</p>"
+                "<p>Mr. Hill concluded, “We not only expect that this next phase will generate the engineering data necessary to support pilot plant design but may also lead to the sale or license of our technology”</p>"
             ]
         ],
         'category' => "pressrelease",
