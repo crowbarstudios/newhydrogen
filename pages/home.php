@@ -47,7 +47,6 @@
         <p class="text-2xl text-center text-white font-medium mt-4">
             View Special Report Video Below
         </p>
-        
         <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="bZ4xhMRHFtw">
             <iframe id="youtube-player" src="https://www.youtube.com/embed/bZ4xhMRHFtw?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
           
