@@ -2502,6 +2502,10 @@ a:hover{
   line-height: 1.75rem;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -2604,6 +2608,10 @@ a:hover{
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-9{
+  line-height: 2.25rem;
 }
 
 .\!text-\[\#00bc05\]{

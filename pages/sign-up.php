@@ -1,18 +1,18 @@
 <section class="relative py-12 sm:py-32">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
-        <div class="text-5xl sm:text-6xl text-black text-center font-bold">Coming Soon</div>
-        <div class="text-5xl sm:text-[50px] text-black text-center font-bold my-4 sm:leading-[64px]">
+        <div class="text-4xl sm:text-6xl text-black text-center font-bold">Coming Soon</div>
+        <div class="text-[30px] sm:text-[50px] text-black text-center font-bold my-4 leading-9 sm:leading-[64px]">
             NewHydrogen to make
             <br class="hidden md:inline-block" />
             a Special Announcement
         </div>
         <p class="text-2xl text-center text-black font-medium pt-3 pb-5">
-            Register now to watch this Special Report when it premieres on <br> Tuesday, April 28, 2026, at 4 PM EDT
+            Register now to watch this Special Report when it premieres on <br class="hidden md:inline-block"> Tuesday, April 28, 2026, at 4 PM EDT
         </p>
 
         <form id="jotformForm" action="https://submit.jotform.com/submit/250137276726055/" method="POST" method="POST" autocomplete="off" class="max-w-[400px] mx-auto relative mt-4">
             <input type="hidden" name="formID" value="250137276726055">
-                <input type="email" name="q3_webinaremail" id="input_3" placeholder="Email" class="bg-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 text-black outline outline-[1.6px] outline-black focus-within:outline-0">
+                <input type="email" name="q3_webinaremail" id="input_3" placeholder="Email" class="bg-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 text-black outline outline-[1.6px] outline-black">
                 <button type="submit" id="submitButtonWebinar" class="bg-custom-green-200 text-black py-2.5 px-7 h-12  rounded-full inline-flex items-center justify-center font-bold text-base absolute right-0 top-0 hover:text-black">sign up!</button>
             </form>
         
