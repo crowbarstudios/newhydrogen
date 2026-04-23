@@ -3,6 +3,44 @@
 
 $news = [
     [
+        'id' => "99",
+        'title' => "NewHydrogen Announces Strategic Collaboration with NuCube Energy to Explore Nuclear-Powered Clean Hydrogen Production",
+        'date' => "April 28, 2026",
+        'excerpt' => "Companies to evaluate integration of NuSun™ advanced solid-state nuclear technology with ThermoLoop™ for high-temperature clean hydrogen production",
+        'description' => [
+            [
+                "<p><strong>Companies to evaluate integration of NuSun™ advanced solid-state nuclear technology with ThermoLoop™ for high-temperature clean hydrogen production</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (April 28, 2026) – <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop™</a>, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, and NuCube Energy, Inc., an advanced nuclear technology company developing the NuSun™ high-temperature microreactor platform today announced a strategic collaboration to explore the integration of their respective clean energy technologies.</p>"
+            ],
+            [
+                "<p>Under the agreement, the companies will collaborate to evaluate the technical feasibility and potential synergies between NewHydrogen’s ThermoLoop thermochemical hydrogen production process and the NuSun™ compact solid-state fission reactor, a next-generation, factory-fabricated microreactor system engineered for rapid deployment and inherent safety and capable of producing high-temperature heat of up to 1,100 degrees Celsius.</p>"
+            ],
+
+            ["<p>The collaboration reflects a shared vision to advance innovative clean energy solutions, particularly in applications where the NuSun™ platform’s ability to provide consistent, carbon-free high-temperature heat could dramatically enhance thermochemical processes for low-cost hydrogen generation.</p>"],
+        
+            ["<p>“High-temperature heat is the key to unlocking the full economic potential of thermochemical hydrogen production,” said Steve Hill, CEO of NewHydrogen. “We believe NuCube Energy’s advanced reactor design could provide a compelling heat source for ThermoLoop™, and we look forward to jointly evaluating integration pathways that could accelerate the deployment of clean hydrogen at scale.”"],
+
+            ["<p>“Our NuSun platform is uniquely positioned to deliver consistent, high-temperature heat for industrial applications while maintaining an exceptional safety profile and minimal footprint,” said Dr. Cristian Rabiti, CEO of NuCube Energy. “By exploring integration with ThermoLoop™, we will demonstrate how our solid-state fission reactor technology can support efficient, large-scale clean hydrogen production, expand the role of nuclear energy as energy backbone of the industrial system, and transform both the cost and scalability of clean hydrogen.”</p>"],
+       
+            [
+                "<p>As part of the strategic collaboration, the companies intend to conduct joint validation efforts to assess performance parameters, integration considerations, and potential commercial applications. The evaluation will focus on determining how high-temperature nuclear heat could improve process efficiency and economics for thermochemical hydrogen production.</p>"
+            ],
+            [
+                "<p>ThermoLoop, developed in collaboration with the University of California, Santa Barbara, is a breakthrough thermochemical water-splitting process that uses inexpensive heat instead of electricity to produce clean hydrogen. By leveraging heat from sources such as NuCube’s next-generation nuclear systems, ThermoLoop is designed to significantly reduce the cost of clean hydrogen production compared with other hydrogen generation technologies available in the world today.</p>"
+            ],
+            [
+                "<p>Both companies believe that integrating advanced nuclear heat from the NuSun™ platform with thermochemical hydrogen processes could play a meaningful role in meeting growing global demand for scalable, low-carbon energy solutions.</p>"
+            ],
+            [
+                "<p>“Strategic collaborations like this are essential as we work toward commercializing our ThermoLoop technology,” Mr. Hill added. “We are on schedule with our development timeline and remain optimistic about its potential to help transform the economics of clean hydrogen production.”</p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+    [
         'id' => "98",
         'title' => "NewHydrogen Completes Critical Pre-Pilot Plant Technical Validation",
         'date' => "April 21, 2026",
