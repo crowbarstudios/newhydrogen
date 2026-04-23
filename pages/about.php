@@ -2,9 +2,9 @@
     <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl md:pt-[100px] pt-[50px] md:pb-[212px] pb-24">
         <img class="rounded-[32px]" src="./assets/images/about.png" alt="About NewHydrogen">
         <section class="mt-16">
-            <img class="hidden md:block" src="./assets/images/development-plan-updated.jpg" alt="development-plan">
+            <img class="hidden md:block" src="./assets/images/development-plan.png" alt="development-plan">
             <div class="block md:hidden max-w-96 mx-auto">
-                <img src="./assets/images/mobile-development-plan-updated.jpg" alt="development-plan">
+                <img src="./assets/images/mobile-development-plan.png" alt="development-plan">
             </div>
             
         </section>

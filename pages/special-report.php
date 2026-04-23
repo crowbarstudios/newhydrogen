@@ -28,11 +28,11 @@
                 <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black"></path>
             </svg>
         </button>
-        <div class="text-center mt-10">
+        <!-- <div class="text-center mt-10">
             <a href="https://newhydrogen.com/investor"
                 class="px-2.5 py-3 rounded-lg text-sm sm:text-base font-semibold break-words bg-custom-red-100 text-white hover:text-white">
                     Investors Click Here
             </a>
-        </div>
+        </div> -->
     </div>
 </div>

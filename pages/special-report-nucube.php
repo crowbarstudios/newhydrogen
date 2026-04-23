@@ -20,8 +20,9 @@
 
 <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative sm:pt-20 sm:pb-32 py-20">
         <h1 class="sm:text-5xl text-3xl text-center font-bold sm:!leading-[64px]">
+
             NewHydrogen and NuCube Energy Announce <br class="hidden md:inline-block" />
-            Collaboration to Explore Nuclear-Driven Clean Hydrogen Production
+Strategic Partnership to Explore Nuclear-Driven Clean Hydrogen Production
         </h1>
         <div class="max-w-[830px] w-full min-h-[466px] mx-auto relative bg-custom-gray-300 mt-5"></div>
         <!-- <div class="lg:max-w-[995px] max-w-[830px] mx-auto relative youtube-video-wrapper sm:mt-14 mt-8" data-video-id="bZ4xhMRHFtw">
