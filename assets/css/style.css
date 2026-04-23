@@ -1881,6 +1881,10 @@ a:hover{
   background-image: url("../images/coming-soon-bg-new.png");
 }
 
+.bg-coming-soon-new-updated{
+  background-image: url("../images/coming-soon-bg-new-updated.png");
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1968,6 +1972,11 @@ a:hover{
   padding-right: 0.5rem;
 }
 
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2046,6 +2055,11 @@ a:hover{
 .py-28{
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-32{
@@ -2128,6 +2142,10 @@ a:hover{
 
 .pb-32{
   padding-bottom: 8rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pb-\[114px\]{
@@ -2484,6 +2502,10 @@ a:hover{
   line-height: 1.75rem;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -2586,6 +2608,10 @@ a:hover{
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-9{
+  line-height: 2.25rem;
 }
 
 .\!text-\[\#00bc05\]{
@@ -2704,6 +2730,18 @@ a:hover{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline{
+  outline-style: solid;
+}
+
+.outline-\[1\.6px\]{
+  outline-width: 1.6px;
+}
+
+.outline-black{
+  outline-color: #000;
 }
 
 .transition{
@@ -3368,8 +3406,16 @@ html {
     line-height: 1.75rem;
   }
 
+  .sm\:text-\[54px\]{
+    font-size: 54px;
+  }
+
   .sm\:leading-\[76px\]{
     line-height: 76px;
+  }
+
+  .sm\:leading-\[64px\]{
+    line-height: 64px;
   }
 
   .sm\:shadow-none{
