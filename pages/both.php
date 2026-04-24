@@ -49,7 +49,7 @@
             <div class="text-3xl text-white text-center font-bold leading-tight">
                 NewHydrogen and NuCube Energy Announce
                
-                Strategic Partnership to Explore Nuclear-Driven Clean Hydrogen Production
+                Collaboration to Explore Nuclear-Driven Clean Hydrogen Production
             </div>
             <p class="text-2xl text-center text-white font-medium mt-4">
                 Tuesday April 28, 2026

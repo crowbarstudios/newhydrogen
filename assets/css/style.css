@@ -1300,6 +1300,10 @@ a:hover{
   min-width: 18px;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .max-w-44{
   max-width: 11rem;
 }
@@ -3319,11 +3323,6 @@ html {
     padding-bottom: 2rem;
   }
 
-  .sm\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .sm\:pb-32{
     padding-bottom: 8rem;
   }
@@ -3354,10 +3353,6 @@ html {
 
   .sm\:pt-\[57rem\]{
     padding-top: 57rem;
-  }
-
-  .sm\:pb-40{
-    padding-bottom: 10rem;
   }
 
   .sm\:text-center{
