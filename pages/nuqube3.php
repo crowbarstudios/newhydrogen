@@ -17,14 +17,15 @@
             </div>
     </div>
 </section> -->
-<section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12">
+<section class="bg-coming-soon-new-updated bg-cover bg-center bg-no-repeat bg-black relative py-12">
     <div class="px-2 sm:px-4 z-10 relative">
-        <div class="text-5xl text-white text-center font-bold !leading-[64px]">
-            NewHydrogen and NuCube Energy Announce
+    <div class="text-5xl text-black text-center font-bold !leading-[64px]">
+        NewHydrogen and NuCube Energy Announce
+
             <br class="hidden md:inline-block" />
-            Strategic Partnership to Explore Nuclear-Driven Clean Hydrogen Production
+            Collaboration to Explore Nuclear-Driven <br class="hidden md:inline-block" /> Clean Hydrogen Production
         </div>
-        <p class="text-2xl text-center text-white font-medium mt-4">
+        <p class="text-2xl text-center text-black font-medium mt-4">
             View Special Report Video Below
         </p>
 
@@ -101,15 +102,24 @@
                                 </svg>
             </div>
             </a> -->
-            <a href="https://www.youtube.com/watch?v=xsT6_tSNjUs" class="popup-youtube bg-custom-gray-100 rounded-[20px] relative sm:h-56 h-52 w-full overflow-hidden border-[14px] border-custom-green-500 block">
+                        <!-- <a href="https://www.youtube.com/watch?v=xsT6_tSNjUs" class="popup-youtube bg-custom-gray-100 rounded-[20px] relative sm:h-56 h-52 w-full overflow-hidden border-[14px] border-custom-green-500 block">
                             <img src="//img.youtube.com/vi/xsT6_tSNjUs/maxresdefault.jpg" class="w-full h-full" alt="thumbnail">
                             <div  class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                                     <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="0.8" />
                                     <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black" />
                                 </svg>
-            </div>
-            </a>
+                            </div>
+                        </a> -->
+                        <a href="https://www.youtube.com/watch?v=bZ4xhMRHFtw" class="popup-youtube bg-custom-gray-100 rounded-[20px] relative sm:h-56 h-52 w-full overflow-hidden border-[14px] border-custom-green-500 block">
+                            <img src="//img.youtube.com/vi/bZ4xhMRHFtw/maxresdefault.jpg" class="w-full h-full" alt="thumbnail">
+                            <div  class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                    <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="0.8" />
+                                    <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,43 +1,30 @@
 <?php $videos = include "./data/carousel-videos.php"; ?>
-<!-- <section class="bg-coming-soon bg-cover bg-center bg-no-repeat bg-black relative py-8">
-    <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
-        <div class="text-white text-4xl text-center font-semibold mb-4 leading-snug">NewHydrogen Announces Its <br class="hidden md:inline-block" />
-        First Production of Clean Hydrogen
+<section class="bg-coming-soon-new-updated bg-cover bg-center bg-no-repeat bg-black relative py-12">
+    <div class="px-2 sm:px-4 z-10 relative">
+        <div class="sm:text-5xl text-3xl text-black text-center font-bold sm:!leading-[64px]">
+        NewHydrogen and NuCube Energy Announce
+
+            <br class="hidden md:inline-block" />
+            Collaboration to Explore Nuclear-Driven <br class="hidden md:inline-block" /> Clean Hydrogen Production
         </div>
-        <p class="text-2xl text-center text-white font-medium">Watch Now
+        <p class="text-2xl text-center text-black font-medium mt-4">
+            View Special Report Video Below
         </p>
-        <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="xFwYZ2bPkU8">
-            <iframe id="youtube-player" src="https://www.youtube.com/embed/xFwYZ2bPkU8?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
-            <button type="button" class="absolute inset-0 flex items-center justify-center cursor-pointer z-20 youtube-custom-btn">
-                    <svg class="sm:w-[100px] sm:h-[100px] w-16 h-16" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 56 56" fill="none">
-                        <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="1"></circle>
-                        <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black"></path>
-                    </svg>
-                </button>
-            </div>
-    </div>
-</section> -->
-<!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
-    <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
-        <div class="text-5xl sm:text-6xl text-white text-center font-bold">Watch Now</div>
-        <div class="text-white text-2xl sm:text-4xl text-center font-semibold my-4 leading-snug">NewHydrogen Reveals Massive
-         <br class="hidden md:inline-block" />
-         Source of Heat for ThermoLoop™
-        </div>
+
         
-        <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="xsT6_tSNjUs">
-            <iframe id="youtube-player" src="https://www.youtube.com/embed/xsT6_tSNjUs?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
+        <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="okieIiBmC8s">
+            <iframe id="youtube-player" src="https://www.youtube.com/embed/okieIiBmC8s?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
           
             <button type="button" class="absolute inset-0 flex items-center justify-center cursor-pointer z-20 youtube-custom-btn">
-                    <svg class="sm:w-[100px] sm:h-[100px] w-16 h-16" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 56 56" fill="none">
-                        <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="1"></circle>
-                        <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black"></path>
-                    </svg>
-                </button>
-            </div>
+                <svg class="sm:w-[100px] sm:h-[100px] w-16 h-16" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 56 56" fill="none">
+                    <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="1"></circle>
+                    <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black"></path>
+                </svg>
+            </button>
+        </div>
     </div>
-</section> -->
-<section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
+</section>
+<!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
     <div class="px-2 sm:px-4 z-10 relative">
         <div class="text-5xl sm:text-6xl text-white text-center font-bold sm:leading-[76px]">
             NewHydrogen Completes critical 
@@ -58,7 +45,7 @@
             </button>
         </div>
     </div>
-</section>
+</section> -->
 <section class="bg-banner bg-cover bg-[18%_100%] md:bg-center relative md:pb-36 md:pt-28 py-16 ">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
         <div class="md:grid grid-cols-12 block">
@@ -118,8 +105,8 @@
                                 </svg>
             </div>
             </a> -->
-            <a href="https://www.youtube.com/watch?v=xsT6_tSNjUs" class="popup-youtube bg-custom-gray-100 rounded-[20px] relative sm:h-56 h-52 w-full overflow-hidden border-[14px] border-custom-green-500 block">
-                            <img src="//img.youtube.com/vi/xsT6_tSNjUs/maxresdefault.jpg" class="w-full h-full" alt="thumbnail">
+            <a href="https://www.youtube.com/watch?v=bZ4xhMRHFtw" class="popup-youtube bg-custom-gray-100 rounded-[20px] relative sm:h-56 h-52 w-full overflow-hidden border-[14px] border-custom-green-500 block">
+                            <img src="//img.youtube.com/vi/bZ4xhMRHFtw/maxresdefault.jpg" class="w-full h-full" alt="thumbnail">
                             <div  class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                                     <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="0.8" />

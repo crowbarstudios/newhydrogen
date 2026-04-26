@@ -1300,6 +1300,10 @@ a:hover{
   min-width: 18px;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .max-w-44{
   max-width: 11rem;
 }
@@ -2442,6 +2446,10 @@ a:hover{
   font-size: 28px;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .text-\[32px\]{
   font-size: 32px;
 }
@@ -2502,10 +2510,6 @@ a:hover{
   line-height: 1.75rem;
 }
 
-.text-\[30px\]{
-  font-size: 30px;
-}
-
 .font-black{
   font-weight: 900;
 }
@@ -2562,6 +2566,10 @@ a:hover{
   line-height: 2rem;
 }
 
+.leading-9{
+  line-height: 2.25rem;
+}
+
 .leading-\[1\.1\]{
   line-height: 1.1;
 }
@@ -2608,10 +2616,6 @@ a:hover{
 
 .leading-tight{
   line-height: 1.25;
-}
-
-.leading-9{
-  line-height: 2.25rem;
 }
 
 .\!text-\[\#00bc05\]{
@@ -3406,16 +3410,16 @@ html {
     line-height: 1.75rem;
   }
 
-  .sm\:text-\[54px\]{
-    font-size: 54px;
-  }
-
-  .sm\:leading-\[76px\]{
-    line-height: 76px;
+  .sm\:\!leading-\[64px\]{
+    line-height: 64px !important;
   }
 
   .sm\:leading-\[64px\]{
     line-height: 64px;
+  }
+
+  .sm\:leading-\[76px\]{
+    line-height: 76px;
   }
 
   .sm\:shadow-none{

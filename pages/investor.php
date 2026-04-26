@@ -23,14 +23,14 @@
             </div>
 
             <div class="mt-16">
-                <img class="hidden md:block" src="./assets/images/development-plan-updated.jpg" alt="development-plan">
+                <img class="hidden md:block w-full" src="./assets/images/development-plan-updated.jpg" alt="development-plan">
                 <div class="block md:hidden max-w-96 mx-auto">
-                    <img src="./assets/images/mobile-development-plan-updated.jpg" alt="development-plan">
+                    <img class="w-full" src="./assets/images/mobile-development-plan-updated.jpg" alt="development-plan">
                 </div>
             </div>
 
             <div class="lg:max-w-[995px] max-w-[830px] mx-auto">
-                <h2 class="lg:mt-12 sm:mt-8 mt-4 lg:text-[42px] sm:text-4xl text-3xl mb-2">NewHydrogen Is a Publicly Traded Company</h3>
+                <h2 class="lg:mt-12 sm:mt-8 mt-4 lg:text-[42px] sm:text-4xl text-3xl mb-2">NewHydrogen Is a Publicly Traded Company</h2>
                     <p class="text-xl font-normal sm:max-w-[80%] max-w-full m-auto">Developing a Breakthrough Technology that Uses Water and Heat Instead of Electricity to Produce the World’s Cheapest Clean Hydrogen</p>
                     <a class="py-5 px-10 rounded-[58px] text-xl block w-fit mx-auto mt-8 font-bold bg-custom-green-200" href="">Stock Symbol: NEWH</a>
             </div>
