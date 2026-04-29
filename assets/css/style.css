@@ -1732,6 +1732,10 @@ a:hover{
   border-width: 14px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -2114,6 +2118,11 @@ a:hover{
 .py-\[90px\]{
   padding-top: 90px;
   padding-bottom: 90px;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-10{

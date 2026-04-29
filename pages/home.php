@@ -1,13 +1,13 @@
 <?php $videos = include "./data/carousel-videos.php"; ?>
 <section class="bg-coming-soon-new-updated bg-cover bg-center bg-no-repeat bg-black relative py-12">
-    <div class="px-2 sm:px-4 z-10 relative">
+    <div class="px-2 sm:px-4 z-10 relative text-center">
         <div class="sm:text-5xl text-3xl text-black text-center font-bold sm:!leading-[64px]">
         NewHydrogen and NuCube Energy Announce
 
             <br class="hidden md:inline-block" />
             Collaboration to Explore Nuclear-Driven <br class="hidden md:inline-block" /> Clean Hydrogen Production
         </div>
-        <p class="text-2xl text-center text-black font-medium mt-4">
+        <p class="text-2xl text-center bg-custom-red-100 text-white hover:text-white font-medium mt-4 inline-block border-2 border-black px-3 py-1">
             View Special Report Video Below
         </p>
 
