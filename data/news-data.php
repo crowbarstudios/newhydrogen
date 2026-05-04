@@ -42,27 +42,27 @@ $news = [
         'category' => "pressrelease",
         'biosolar' => false
     ],
-    [
-        'id' => "99",
-        'title' => "NewHydrogen to Release a Special Report on April 28, 2026",
-        'date' => "April 24, 2026",
-        'excerpt' => "The Company will reveal a strategic collaboration for nuclear-powered clean hydrogen production",
-        'description' => [
-            [
-                "<p><strong>The Company will reveal a strategic collaboration for nuclear-powered clean hydrogen production</strong></p>"
-            ],
-            [
-                "<p>SANTA CLARITA, CA, (April 24, 2026) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, announced it will release a Special Report on Tuesday, April 28, 2026.</p>"
-            ],
-            [
-                "<p>The Special Report will reveal the Company’s strategic collaboration with an advanced nuclear technology company to explore the integration of their respective clean energy technologies. This collaboration focuses on evaluating the technical feasibility and potential synergies between NewHydrogen’s ThermoLoop™ process and a next-generation, factory-fabricated microreactor system. </p>"
-            ],
+    // [
+    //     'id' => "99",
+    //     'title' => "NewHydrogen to Release a Special Report on April 28, 2026",
+    //     'date' => "April 24, 2026",
+    //     'excerpt' => "The Company will reveal a strategic collaboration for nuclear-powered clean hydrogen production",
+    //     'description' => [
+    //         [
+    //             "<p><strong>The Company will reveal a strategic collaboration for nuclear-powered clean hydrogen production</strong></p>"
+    //         ],
+    //         [
+    //             "<p>SANTA CLARITA, CA, (April 24, 2026) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop™, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, announced it will release a Special Report on Tuesday, April 28, 2026.</p>"
+    //         ],
+    //         [
+    //             "<p>The Special Report will reveal the Company’s strategic collaboration with an advanced nuclear technology company to explore the integration of their respective clean energy technologies. This collaboration focuses on evaluating the technical feasibility and potential synergies between NewHydrogen’s ThermoLoop™ process and a next-generation, factory-fabricated microreactor system. </p>"
+    //         ],
 
-            ["<p>Register now to watch this Special Report when it premieres on Tuesday, April 28, 2026, at 4 PM EDT: <a href=\"/signup-042826\" target=\"_blank\">https://newhydrogen.com/signup-042826</a> </p>"]
-        ],
-        'category' => "pressrelease",
-        'biosolar' => false
-    ],
+    //         ["<p>Register now to watch this Special Report when it premieres on Tuesday, April 28, 2026, at 4 PM EDT: <a href=\"/signup-042826\" target=\"_blank\">https://newhydrogen.com/signup-042826</a> </p>"]
+    //     ],
+    //     'category' => "pressrelease",
+    //     'biosolar' => false
+    // ],
     [
         'id' => "98",
         'title' => "NewHydrogen Completes Critical Pre-Pilot Plant Technical Validation",
