@@ -2,6 +2,55 @@
 
 
 $news = [
+    [
+        'id' => "101",
+        'title' => "NewHydrogen Drives Toward Commercial Success",
+        'date' => "May 5, 2026",
+        'excerpt' => "Successful technical validation and strategic NuCube Energy collaboration mark transition to engineering phase",
+        'description' => [
+            [
+                "<p><strong>Successful technical validation and strategic NuCube Energy collaboration mark transition to engineering phase</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (May 5, 2026) – <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop™</a>, a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen, today reported about its commercialization progress.</p>"
+            ],
+            [
+                "<p>The Company’s recent announcements regarding pre-pilot plant technical validation and its collaboration with NuCube Energy to explore nuclear-powered hydrogen production represent important milestones along the commercialization pathway. NewHydrogen has completed the research phase of its development program and is now entering the engineering phase required for commercialization. </p>"
+            ],
+
+            ["<p>This transition followed the successful passage of <a href=\"https://newhydrogen.com/special-report\" target=\"_blank\">Stage Gate One</a>, a rigorous pre-pilot plant test. Based on NewHydrogen’s internal review and published literature, the Company is not aware of any other heat-based water-splitting technology that has met this combination of performance and engineering criteria.</p>"],
+        
+            ["<p>Stage Gate One required ThermoLoop to meet the following thresholds:</p>"],
+          
+            [
+                "<ul class=\"dot-list mb-3 dark-list space-y-3 list-disc pl-8\">
+                 <li>Demonstrated operation over more than 10 cycles</li>
+                <li>Hydrogen production efficiency exceeding 75% of theoretical yield</li>
+                <li>Defined industrial heat-integration strategy</li>
+                <li>Formal process control and management-of-change framework in place</li>
+                <li>All non-core balance-of-plant equipment utilizes commercially proven technologies</li>
+                <li>Manageable separations</li>
+                <li>Acceptable safety and toxicity profile</li>
+                <li>No identified economic barriers to pilot-scale development</li>
+                </ul>"
+            ],
+       
+            [
+                "<p>In addition to these technical achievements, NewHydrogen and NuCube Energy, Inc., recently initiated a <a href=\"https://newhydrogen.com\" target=\"_blank\">strategic collaboration</a>. NuCube is developing the NuSun™ compact solid-state fission reactor, a next-generation, factory-fabricated microreactor system engineered for rapid deployment and inherent safety and capable of producing high-temperature heat of up to 1,100 degrees Celsius. Underscoring the significance of this technology, NuCube was recently selected for the U.S. Department of Energy Launch Pad USA Program.</p>"
+            ],
+            [
+                "<p>Under the memorandum of understanding, the companies will collaborate to explore the integration of their respective clean energy technologies.</p>"
+            ],
+            [
+                "<p>“High-temperature heat is a vital component for unlocking the full economic potential of thermochemical hydrogen production,” said Steve Hill, CEO of NewHydrogen. “We believe NuCube Energy’s advanced reactor design could provide a compelling heat source for ThermoLoop™, and we look forward to jointly evaluating integration pathways that could accelerate the deployment of nuclear-driven clean hydrogen at scale.”</p>"
+            ],
+            [
+                "<p>Mr. Hill concluded, “The world needs cheap clean hydrogen as soon as possible, which is our stated goal. In recent months we have dramatically picked up our pace along the commercialization pathway. Our engineering team is highly focused on building a dedicated ThermoLoop engineering test unit. This will allow us to determine commercial pilot plant specifications. With this unit in place and the ability to collect the required data, we will be ready to engage a major industry player to build a pilot plant.”</p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
         [
         'id' => "100",
         'title' => "NewHydrogen Announces Strategic Collaboration with NuCube Energy to Explore Nuclear-Powered Clean Hydrogen Production",
