@@ -57,22 +57,28 @@
         </div>
         <div class="mt-28">
             <h2 class="text-[36px] lg:text-5xl font-black leading-[1.1]">The UCSB Technology Team</h2>
-            <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
+            <!-- <div class="md:max-w-[392px] mx-auto mt-8 sm:mt-16">
             <?php teamMemberCard(
                     'Phillip Christopher, PhD', 
                     'Principal Investigator', 
                     'Professor of Chemical Engineering, University of California, Santa Barbara', 
                     './assets/images/philip-christopher.png'); 
                     ?> 
-            </div>
+            </div> -->
           
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-x-8 sm:gap-y-24 mt-8 sm:mt-16 sm:pt-6">
             <?php teamMemberCard(
+                    'Phillip Christopher, PhD', 
+                    'Principal Investigator', 
+                    'Professor of Chemical Engineering, University of California, Santa Barbara', 
+                    './assets/images/philip-christopher.png'); 
+                    ?> 
+            <!-- <?php teamMemberCard(
                     'Justin Marlowe, PhD', 
                     'Research Scientist', 
                     'Ph.D. in Chemical Engineering University of California, Santa Barbara. Expert in multiple materials characterization techniques and reaction engineering.', 
                     './assets/images/team-member3.png'); 
-                    ?> 
+                    ?>  -->
                       <?php teamMemberCard(
                     'Yikyeom Kim, PhD', 
                     'Research Scientist', 
