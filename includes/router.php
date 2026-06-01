@@ -1,16 +1,7 @@
-
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-$host = $_SERVER['HTTP_HOST'];
-
-if ($host === 'localhost') {
-    $basePath = '/newhydrogen'; 
-} else {
-    $basePath = '';
-}
+// Always use no basePath — site is served at root
+$basePath = '';
 
 // Get the requested URI and clean it
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -26,7 +17,6 @@ $validPages = ['home', 'about', 'technology', 'application', 'team', 'market', '
 // Dynamic video categories
 $videoCategories = ['news-commentary', 'ceo-podcast', 'short-videos'];
 
-
 if (strpos($requestUri, 'single-news.php') !== false && isset($_GET['id'])) {
     include __DIR__ . '/../pages/single-news.php';
     exit;
@@ -35,19 +25,19 @@ if (strpos($requestUri, 'single-news.php') !== false && isset($_GET['id'])) {
 // Handle homepage request
 if ($page === '') {
     include __DIR__ . '/../pages/home.php';
-} 
+}
 
 // Handle dynamic video category pages (e.g., /videos/news-commentary/slug)
 elseif ($page === 'videos' && isset($pathParts[1]) && in_array($pathParts[1], $videoCategories) && isset($pathParts[2])) {
     $category = $pathParts[1];
     $_GET['slug'] = $pathParts[2];
     include __DIR__ . '/../pages/videos/' . $category . '/index.php';
-} 
+}
 
 // Serve static pages
 elseif (in_array($page, $validPages)) {
     include __DIR__ . '/../pages/' . $page . '.php';
-} 
+}
 
 // Serve 404 page for invalid routes
 else {
