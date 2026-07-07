@@ -3,6 +3,47 @@
 
 $news = [
     [
+        'id' => "102",
+        'title' => "NewHydrogen Reveals Plan to Automate Its Engineering Test Unit",
+        'date' => "July 7, 2026",
+        'excerpt' => "Introducing automated controls will shift focus from managing the test setup to analyzing the data and expediting time to market for the Company's first commercial pilot plant",
+        'description' => [
+            [
+                "<p><strong>Introducing automated controls will shift focus from managing the test setup to analyzing the data and expediting time to market for the Company's first commercial pilot plant</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (July 7, 2026) &mdash; <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop&trade;</a>, a breakthrough technology that uses water and heat instead of electricity to produce the world's cheapest clean hydrogen, today announced plans to automate its ThermoLoop&trade; engineering test unit (ETU), a move designed to accelerate the Company's path toward its first commercial pilot plant.</p>"
+            ],
+            [
+                "<p>Using results from an ETU is the standard, industry-accepted pathway for designing a commercial pilot plant. The Company's ETU will serve as the bridge between its bench-scale laboratory experiments and the pilot plant, specifically built to prove the fundamental physics, chemistry, and kinetics of ThermoLoop.</p>"
+            ],
+            [
+                "<p>The plan builds on the Company's recent announcement that it successfully passed Stage Gate One and transitioned from the research phase into the engineering phase of its development program, as well as its strategic collaboration with NuCube Energy to explore nuclear-powered hydrogen production.</p>"
+            ],
+            [
+                "<p>NewHydrogen is now focused on building a dedicated ThermoLoop&trade; ETU, and automating its controls is intended to give the Company's engineering team continuous, around-the-clock testing capability with greater precision and repeatability from run to run. By reducing the time engineers spend manually managing the test setup, automation is expected to let the team focus more on analyzing results, shortening the time required to generate the data needed to determine commercial pilot plant specifications.</p>"
+            ],
+            [
+                "<p>&ldquo;Manual testing demands constant attention from our engineers just to keep a run on track. Automating that work frees them to spend more of their time interpreting the data and refining the engineering decisions that get us to a pilot plant,&rdquo; said Steve Hill, CEO of NewHydrogen.</p>"
+            ],
+            [
+                "<p>For more information about NewHydrogen, please visit <a href=\"https://www.newhydrogen.com\" target=\"_blank\">www.newhydrogen.com</a>.</p>"
+            ],
+            [
+                "<p><strong>About NewHydrogen, Inc.</strong></p><p>NewHydrogen is developing ThermoLoop&trade; &ndash; a breakthrough technology that uses water and heat rather than electricity to produce the world's lowest cost clean hydrogen. Hydrogen is the cleanest and most abundant element in the universe, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from natural gas, a process that annually releases pollution equivalent to the emissions of 300 million cars. We urgently need cheap, clean hydrogen, which is what NewHydrogen is working to provide.</p>"
+            ],
+            [
+                "<p><strong>Safe Harbor Statement</strong></p><p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words \"anticipate,\" \"believe,\" \"estimate,\" \"may,\" \"intend,\" \"expect\" and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of management and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting our operations, markets, product, and distributor performance, the impact on the national and local economies resulting from terrorist actions, and U.S. actions subsequently; and other factors detailed in reports filed by the company.</p><p>Any forward-looking statement made by us in this press release is based only on information currently available to us and speaks only as of the date on which it is made. We undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong> NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+
+    [
         'id' => "101",
         'title' => "NewHydrogen Drives Toward Commercial Success",
         'date' => "May 5, 2026",
