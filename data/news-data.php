@@ -3,6 +3,57 @@
 
 $news = [
     [
+        'id' => "103",
+        'title' => "NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet  Trillion Annual Global Energy Market Demand",
+        'date' => "July 29, 2026",
+        'excerpt' => "The Company is focused on pairing its ThermoLoop&trade; technology with heat from small modular reactors to bypass costly power grid buildouts and deliver zero-emission energy at industrial scale",
+        'description' => [
+            [
+                "<p><strong>The Company is focused on pairing its ThermoLoop&trade; technology with heat from small modular reactors to bypass costly power grid buildouts and deliver zero-emission energy at industrial scale</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (July 29, 2026) &mdash; <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc</a>. (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop&trade;</a>, a breakthrough technology that uses water and heat instead of electricity to produce clean hydrogen, today revealed its plan to use heat from small modular reactors (SMRs) to produce clean hydrogen at industrial scale (1 Gigawatt or greater).</p>"
+            ],
+            [
+                "<p>Pairing ThermoLoop with high-temperature nuclear heat can power thermochemical water splitting, bypassing the grid constraints and high costs associated with other proposed industrial scale clean hydrogen solutions, such as electrolyzers.</p>"
+            ],
+            [
+                "<p>According to the World Energy Investment 2025 report by the International Energy Agency (IEA), total annual investment in global energy supply and infrastructure has surpassed  Trillion. Furthermore, IEA projects annual spending may surge toward  trillion by 2030 under accelerated net-zero scenarios.</p>"
+            ],
+            [
+                "<p>Future global energy demand is entering a transformative structural phase that energy analysts call the &ldquo;Age of Electricity&rdquo;. While overall primary energy demand continues to grow, the type of energy consumed is shifting rapidly toward power grids, driven by structural electrification, digital infrastructure, and climate impacts.</p>"
+            ],
+            [
+                "<p>The fastest-growing sub-segment of the global energy market is the energy transition market (renewables, grid storage, electric power infrastructure, clean hydrogen, and carbon management).</p>"
+            ],
+            [
+                "<p>NewHydrogen&rsquo;s development of ThermoLoop converges with a global surge of interest in compact, modular solid-state fission reactors (SMRs). These next-generation units feature passive safety systems, can be manufactured in blocks, and are easily transported to industrial sites. By pairing ThermoLoop&trade; with compact nuclear heat, NewHydrogen aims to leverage a continuous, carbon-free energy source capable of delivering the ultra-high temperatures required for highly efficient thermochemical hydrogen production.</p>"
+            ],
+            [
+                "<p>&ldquo;Reaching true industrial scale for clean hydrogen forced us to look beyond power-grid dependence,&rdquo; said Steve Hill, CEO of NewHydrogen. &ldquo;Using SMRs represents a profound shift, offering safe, continuous, ultra-high-temperature heat. By using this heat to power ThermoLoop, we skip the efficiency losses of electricity conversion needed by electrolyzers. We can produce energy that can be stored, shipped, and used directly in heavy industries like steelmaking, chemicals, and refining that were never built to run on electricity in the first place.&rdquo;</p>"
+            ],
+            [
+                "<p>Our strategic pairing of ThermoLoop with SMRs also directly addresses escalating global energy security concerns. Roughly three-quarters of the world&rsquo;s population lives in countries that are net importers of fossil fuels, spending a combined $1.7 trillion in 2024 alone to buy energy from external sources. By leveraging localized, modular nuclear heat to produce clean hydrogen, energy-importing nations can insulate themselves from volatile global fuel prices while establishing national energy independence.</p>"
+            ],
+            [
+                "<p>For more information about NewHydrogen, please visit <a href=\"https://www.newhydrogen.com\" target=\"_blank\">www.newhydrogen.com</a>.</p>"
+            ],
+            [
+                "<p><strong>About NewHydrogen, Inc.</strong></p><p>NewHydrogen is developing ThermoLoop&trade; &ndash; a breakthrough technology that uses water and heat rather than electricity to produce the world&rsquo;s lowest cost clean hydrogen. Hydrogen is the cleanest and most abundant element in the universe, and we can&rsquo;t live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an infinite and renewable worldwide resource. Currently, the most common method of making clean hydrogen is to split water into oxygen and hydrogen with an electrolyzer using green electricity produced from solar or wind. However, green electricity is and always will be very expensive. It currently accounts for 73% of the cost of clean hydrogen. By using heat directly, we can skip the expensive process of making electricity and fundamentally lower the cost of clean hydrogen. Inexpensive heat can be obtained from concentrated solar, geothermal, nuclear reactors and industrial waste heat for use in our novel low-cost thermochemical water splitting process. Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.</p>"
+            ],
+            [
+                "<p><strong>Safe Harbor Statement</strong></p><p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words &ldquo;anticipate,&rdquo; &ldquo;believe,&rdquo; &ldquo;estimate,&rdquo; &ldquo;may,&rdquo; &ldquo;intend,&rdquo; &ldquo;expect&rdquo; and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of the Company and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting the Company and its operations, markets, the impact on the national and local economies resulting from terrorist actions, the impact of public health epidemics on the global economy and other factors detailed in reports filed by the Company with the United States Securities and Exchange Commission.</p><p>Any forward-looking statement made by us in this press release is based only on information currently available to us and speaks only as of the date on which it is made. We undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong> NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+
+
+    [
         'id' => "102",
         'title' => "NewHydrogen Reveals Plan to Automate Its Engineering Test Unit",
         'date' => "July 7, 2026",
@@ -2420,7 +2471,7 @@ Distinguished Professor Emeritus, Dean Emeritus, College of Natural Resources an
                 "<p>“The UC Santa Barbara technology team, led by Dr. Philip Christopher, plans to exploit the features of molten liquids to directly split water continuously in a single redox chemical loop, to produce hydrogen and oxygen in separate chambers,” Mr. Hill disclosed. “We are developing a novel Molten Catalytic Liquid that can be reduced in one chamber, oxidized in another chamber, and is continuously recycled and reused. The only inputs are heat and water. We call this technology, NewHydrogen ThermoLoop™, and it will be a novel, first of its kind, high efficiency thermochemical water-splitter that uses low-cost common materials and common industrial temperatures of less than 1,000°C, to potentially produce the world’s cheapest green hydrogen.”</p>"
             ],
             [
-                "<p>Green hydrogen is crucial in meeting the greenhouse gas emission goals described in the United Nations Paris Agreement. Solar, wind and batteries alone simply cannot be relied upon to decarbonize industries, such as aviation, maritime, steel, cement, fertilizers, oil refining and pharmaceuticals. The expected global drive towards “net-zero emission” by 2050 will create tremendous demand for green hydrogen for decades to come. Goldman Sachs estimates a future market value of $12 trillion.
+                "<p>Green hydrogen is crucial in meeting the greenhouse gas emission goals described in the United Nations Paris Agreement. Solar, wind and batteries alone simply cannot be relied upon to decarbonize industries, such as aviation, maritime, steel, cement, fertilizers, oil refining and pharmaceuticals. The expected global drive towards “net-zero emission” by 2050 will create tremendous demand for green hydrogen for decades to come. Goldman Sachs estimates a future market value of  trillion.
                 </p>"
             ],
             [
