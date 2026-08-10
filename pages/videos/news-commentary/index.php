@@ -23,7 +23,8 @@ if ($slug) {
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
-                    </div> 
+                    </div>
+                    ' . (isset($video['transcript']) ? '<div class="mt-12 max-w-[800px] mx-auto text-[#091113] space-y-5 text-lg leading-relaxed">' . $video['transcript'] . '</div>' : '') . '
                 </div>
             </section>';
         }
