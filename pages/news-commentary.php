@@ -24,7 +24,7 @@ $videos = include "./data/podcast-data.php";
         </div> -->
 
 
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[25px] ">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[25px] items-start">
 
             <?php
             $filteredCommentaryNews = array_filter($videos, function ($item) {
@@ -36,20 +36,20 @@ $videos = include "./data/podcast-data.php";
                 $thumbnailUrl = "//img.youtube.com/vi/{$video['videoID']}/maxresdefault.jpg";
                 $videoLink = "videos/news-commentary/{$video['slug']}";
 
-                echo "<div class=\"mb-[13px] m-auto\">
+                echo "<div class=\"mb-[13px]\">
             <a href=\"$videoLink\">
-                <div class=\"relative\">
-                    <img src=\"$thumbnailUrl\" alt=\"news-commentary\">
-                    <button class=\"absolute left-1/2 sm:top-[41%] top-[42%] -translate-x-1/2 -translate-y-1/2\">
+                <div class=\"relative aspect-video overflow-hidden\">
+                    <img src=\"$thumbnailUrl\" alt=\"news-commentary\" class=\"w-full h-full object-cover\">
+                    <button class=\"absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2\">
                         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\">
                             <circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#4fe653\"></circle>
                             <path d=\"M38 32.5L27 39L27 26L38 32.5Z\" fill=\"black\"></path>
                         </svg>
                         <a href=\"$videoLink\" class='absolute top-0 right-0 left-0 h-full w-full'></a>
                     </button>
-                    <h6 class=\"sm:text-xl font-bold leading-[1.3] text-lg pt-5\">$title</h6>
                 </div>
             </a>
+            <h6 class=\"sm:text-xl font-bold leading-[1.3] text-lg pt-5\">$title</h6>
         </div>";
             }
             ?>
