@@ -1,29 +1,5 @@
 <?php $videos = include "./data/carousel-videos.php"; ?>
-<section class="bg-coming-soon-new-updated bg-cover bg-center bg-no-repeat bg-black relative py-12">
-    <div class="px-2 sm:px-4 z-10 relative text-center">
-        <div class="sm:text-5xl text-3xl text-black text-center font-bold sm:!leading-[64px]">
-        NewHydrogen and NuCube Energy Announce
 
-            <br class="hidden md:inline-block" />
-            Collaboration to Explore Nuclear-Driven <br class="hidden md:inline-block" /> Clean Hydrogen Production
-        </div>
-        <p class="text-2xl text-center bg-custom-red-100 text-white hover:text-white font-medium mt-4 inline-block border-2 border-black px-3 py-1">
-            View Special Report Video Below
-        </p>
-
-        
-        <div class="max-w-[830px] mx-auto relative youtube-video-wrapper mt-5" data-video-id="okieIiBmC8s">
-            <iframe id="youtube-player" src="https://www.youtube.com/embed/okieIiBmC8s?enablejsapi=1&controls=0&playsinline=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video relative z-10"></iframe>
-          
-            <button type="button" class="absolute inset-0 flex items-center justify-center cursor-pointer z-20 youtube-custom-btn">
-                <svg class="sm:w-[100px] sm:h-[100px] w-16 h-16" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 56 56" fill="none">
-                    <circle cx="27.8926" cy="28.1125" r="27.5" fill="white" fill-opacity="1"></circle>
-                    <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="black"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
-</section>
 <!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
     <div class="px-2 sm:px-4 z-10 relative">
         <div class="text-5xl sm:text-6xl text-white text-center font-bold sm:leading-[76px]">
