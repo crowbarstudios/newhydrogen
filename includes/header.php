@@ -104,7 +104,7 @@
                     <div class="flex flex-1 items-center justify-start md:items-stretch md:justify-between">
                         <div class="flex shrink-0 items-center">
                             <a href="/">
-                                <img class="w-auto inline-flex" src="<?php echo  $full_url; ?>/assets/images/logo-dark.svg" alt="Newhydrogen">
+                                <img class="w-auto inline-flex" src="<?php echo  $full_url; ?>/assets/images/<?php echo ($page === 'bigh-aug-27-a') ? 'logo-dark-bigh-aug-27-a.svg' : 'logo-dark.svg'; ?>" alt="Newhydrogen">
                             </a>
 
                         </div>
@@ -133,12 +133,25 @@
                         $baseUrl = (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) ? "/newhydrogen" : "";
                         ?>
                         <div
-                            class="hidden sm:ml-6 min-[900px]:flex flex-col">
-                            <div class="flex justify-end">
+                            class="hidden sm:ml-6 min-[900px]:flex flex-col <?php echo ($page === 'bigh-aug-27-a') ? 'bigh-desktop-nav-links' : ''; ?>">
+                            <div class="flex items-center justify-end">
                                 <a href="<?= $baseUrl ?>/about" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">About</a>
                                 <a href="<?= $baseUrl ?>/investor" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Investors</a>
                                 <a href="<?= $baseUrl ?>/videos" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Videos</a>
                                 <a href="<?= $baseUrl ?>/contact" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Contact</a>
+                                <?php if ($page === 'bigh-aug-27-a'): ?>
+                                    <div class="bigh-inline-social" aria-label="Social media links">
+                                        <a href="https://www.facebook.com/NewHydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/newhydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/@NewHydrogenEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                            <div class="lg:space-x-2 xl:space-x-3 lg:gap-0 gap-2.5 [&>a]:inline-flex [&>a]:items-center [&>a]:border [&>a]:border-transparent [&>a]:text-lg [&>a]:font-bold [&>a]:leading-none [&>a]:text-black [&>a]:min-[900px]:px-2 [&>a]:xl:px-4 [&>a]:py-2 [&>a]:rounded-full">
                            <?php foreach ($desktoplinks as $slug => $name): ?>
