@@ -21,8 +21,8 @@
             font-family: "Manrope", sans-serif;
         }
 
-        .header-top #mobile-menu > div > div {
-            align-items: flex-end !important;
+        .header-top #mobile-menu a {
+            text-align: center;
         }
 
         @media (min-width: 900px) {
