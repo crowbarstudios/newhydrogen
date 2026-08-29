@@ -434,7 +434,7 @@ $recentNewsDates = array_column($news, "date", "id");
                 <a href="/single-news.php?id=103">NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet Trillion Annual Global Energy Market Demand</a>
             </li>
             <li data-date="<?= htmlspecialchars($recentNewsDates["102"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=102">NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet Trillion Annual Global Energy Market Demand</a>
+                <a href="/single-news.php?id=102">NewHydrogen Reveals Plan to Automate Its Engineering Test Unit</a>
             </li>
             <li data-date="<?= htmlspecialchars($recentNewsDates["101"], ENT_QUOTES, "UTF-8") ?>">
                 <a href="/single-news.php?id=101">NewHydrogen Drives Toward Commercial Success</a>

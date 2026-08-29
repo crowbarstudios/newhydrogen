@@ -13,6 +13,49 @@
     <link href="<?php echo  $full_url; ?>/assets/css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
     <script src="https://player.vimeo.com/api/player.js"></script>
     <title>Newhydrogen</title>
+    <style>
+        .header-top nav,
+        .header-top nav a,
+        .header-top #mobile-menu,
+        .header-top #mobile-menu a {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .header-top #mobile-menu > div > div {
+            align-items: flex-end !important;
+        }
+
+        @media (min-width: 900px) {
+            .header-top .bigh-desktop-nav-links {
+                transform: translateX(14px);
+            }
+        }
+
+        .bigh-inline-social {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            margin-left: 6px;
+            margin-right: 14px;
+        }
+
+        .bigh-inline-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            font-size: 19px;
+            line-height: 1;
+            text-decoration: none;
+        }
+
+        @media (max-width: 899px) {
+            html,
+            body {
+                overflow-x: clip;
+            }
+        }
+    </style>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -45,41 +88,6 @@
 <body class="<?php echo ($page === 'home') ? 'home' : ''; ?>">
 
     <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top">
-        <div class="bg-black sm:px-5">
-            <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
-                <div class="relative py-2 flex justify-between items-center gap-1.5 sm:block sm:h-[60px]">
-                    <!-- <div class="sm:absolute left-0 top-1/2 sm:-translate-y-1/2">
-                        <a href="https://www.youtube.com/watch?v=-pkox2gPbiQ" target="_blank"
-                            class="p-2.5 rounded-lg text-sm sm:text-base text-center font-semibold break-words bg-custom-green-500 text-black hover:text-black inline-block">
-                            Watch <br class="md:hidden" /> the webinar
-                        </a>
-                    </div> -->
-                    <div class="flex items-center justify-center gap-3 h-full">
-                        <div class="flex items-center justify-between md:justify-center gap-3 w-full">
-
-                            <p class="text-sm [max-380px]:text-base sm:text-lg md:text-lg lg:text-xl xl:text-3xl font-normal break-words text-white">Now Publicly Available <br class="md:hidden" /> - Stock Symbol: NEWH</p>
-                            <?php if ($page !== 'investor'): ?>
-                            <a href="/investor"
-                                class="p-2.5 rounded-lg text-sm  sm:text-base font-semibold break-words bg-custom-red-100 text-white hover:text-white">
-                                    Investors Click Here
-                                </a>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 gap-4 hidden lg:flex">
-                        <a href="https://www.facebook.com/NewHydrogen/" target="_blank"
-                            class="text-white text-xl">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/newhydrogen/" target="_blank"
-                            class="text-white text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@NewHydrogenEnergy" target="_blank"
-                            class="text-white text-xl"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <?php if ($page !== 'explainer'): ?>    
         <nav class="sm:py-4 bg-white ">
             <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
                 <div class="relative flex h-16 justify-between">
@@ -104,7 +112,7 @@
                     <div class="flex flex-1 items-center justify-start md:items-stretch md:justify-between">
                         <div class="flex shrink-0 items-center">
                             <a href="/">
-                                <img class="w-auto inline-flex" src="<?php echo  $full_url; ?>/assets/images/<?php echo ($page === 'bigh-aug-27-a') ? 'logo-dark-bigh-aug-27-a.svg' : 'logo-dark.svg'; ?>" alt="Newhydrogen">
+                                <img class="w-auto inline-flex" src="<?php echo  $full_url; ?>/assets/images/logo-dark-bigh-aug-27-a.svg" alt="Newhydrogen">
                             </a>
 
                         </div>
@@ -133,25 +141,23 @@
                         $baseUrl = (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) ? "/newhydrogen" : "";
                         ?>
                         <div
-                            class="hidden sm:ml-6 min-[900px]:flex flex-col <?php echo ($page === 'bigh-aug-27-a') ? 'bigh-desktop-nav-links' : ''; ?>">
+                            class="hidden sm:ml-6 min-[900px]:flex flex-col bigh-desktop-nav-links">
                             <div class="flex items-center justify-end">
                                 <a href="<?= $baseUrl ?>/about" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">About</a>
                                 <a href="<?= $baseUrl ?>/investor" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Investors</a>
                                 <a href="<?= $baseUrl ?>/videos" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Videos</a>
                                 <a href="<?= $baseUrl ?>/contact" class="text-sm font-normal leading-none text-black min-[900px]:px-2 xl:px-4 py-2 rounded-full">Contact</a>
-                                <?php if ($page === 'bigh-aug-27-a'): ?>
-                                    <div class="bigh-inline-social" aria-label="Social media links">
-                                        <a href="https://www.facebook.com/NewHydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/newhydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="https://www.youtube.com/@NewHydrogenEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
+                                <div class="bigh-inline-social" aria-label="Social media links">
+                                    <a href="https://www.facebook.com/NewHydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/newhydrogen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/@NewHydrogenEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </div>
                            <div class="lg:space-x-2 xl:space-x-3 lg:gap-0 gap-2.5 [&>a]:inline-flex [&>a]:items-center [&>a]:border [&>a]:border-transparent [&>a]:text-lg [&>a]:font-bold [&>a]:leading-none [&>a]:text-black [&>a]:min-[900px]:px-2 [&>a]:xl:px-4 [&>a]:py-2 [&>a]:rounded-full">
                            <?php foreach ($desktoplinks as $slug => $name): ?>
@@ -186,5 +192,4 @@
                 </div>
             </div>
         </nav>
-    <?php endif; ?>
     </div>
