@@ -7,7 +7,7 @@ header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
 $basePath = '';
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $path = trim(str_replace($basePath, '', $requestUri), '/');
-$page = $path === '' ? 'home' : $path;
+$page = $path === '' ? 'bigh-aug-27-a' : $path;
 
 if ($page === 'report') {
     header('Location: /special-report-October-2025', true, 301);
