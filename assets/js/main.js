@@ -97,16 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
     'button[aria-controls="mobile-menu"]'
   );
   const mobileMenu = document.getElementById("mobile-menu");
-  const openIcon = menuButton.querySelector("svg.block");
-  const closeIcon = menuButton.querySelector("svg.hidden");
-
   menuButton.addEventListener("click", () => {
-    // Toggle the menu visibility
-    mobileMenu.classList.toggle("show");
-
-    // Toggle the icons
-    closeIcon.classList.toggle("show");
-    openIcon.classList.toggle("show");
+    const isOpen = mobileMenu.classList.toggle("show");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
   });
 });
 

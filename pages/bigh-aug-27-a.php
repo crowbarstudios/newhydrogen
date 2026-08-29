@@ -48,9 +48,6 @@
         font-family: "Manrope", sans-serif;
     }
 
-    body .header-top #mobile-menu > div > div {
-        align-items: flex-end !important;
-    }
 
     @media (min-width: 900px) {
         body .header-top .bigh-desktop-nav-links {
