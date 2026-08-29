@@ -1,13 +1,32 @@
+<style>
+    body .newsletter-captcha-field {
+        text-align: center;
+    }
+
+    body .newsletter-captcha-field label {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    body .newsletter-captcha-field .form-input-wide,
+    body .newsletter-captcha-field section,
+    body .newsletter-captcha-field .h-captcha {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <footer class="bg-custom-gray-dark-100 <?php echo ($page === 'fasttrack') ? 'pt-10' : 'pt-20'; ?> pb-14">
     <div class="mx-auto max-w-screen-xl px-2 sm:px-4">
         <?php if ($page !== 'fasttrack') { ?>
         <div class="space-y-6">
             <p class="text-center text-white text-2xl">Be the first to know when we reach new milestones in our tech development</p>
-            <form id="jotformForm" action="https://submit.jotform.com/submit/242986385047065/" method="POST" method="POST" autocomplete="off" class="max-w-[475px] mx-auto relative">
+            <form id="jotformForm" action="https://submit.jotform.com/submit/242986385047065/" method="POST" method="POST" autocomplete="off" class="<?php echo ($page === 'bigh-aug-27-a') ? 'bigh-newsletter-form ' : ''; ?>max-w-[475px] mx-auto relative">
             <input type="hidden" name="formID" value="242986385047065">
                 <input type="email" name="q3_email" id="input_3" placeholder="Email" class="bg-custom-gray-dark-200 text-white w-full py-2.5 pl-7 pr-40 rounded-full h-12 focus-within:outline-0">
 
-                <div class="form-line captcha-field jf-required mt-3" data-type="control_captcha" id="id_4"><label class="form-label form-label-top form-label-auto text-white mb-1" id="label_4" for="input_5" aria-hidden="false"> Please verify that you are human<span class="form-required">*</span> </label>
+                <div class="newsletter-captcha-field form-line captcha-field jf-required mt-3" data-type="control_captcha" id="id_4"><label class="form-label form-label-top form-label-auto text-white mb-1" id="label_4" for="input_5" aria-hidden="false"> Please verify that you are human<span class="form-required">*</span> </label>
                         <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
                             <section data-wrapper-react="true">
                                 <div id="hcaptcha_input_5" class="h-captcha" data-siteKey="772f4a50-7161-425e-8cd5-4d7e361ab765" data-callback="hcaptchaCallbackinput_5" data-expired-callback="hcaptchaExpiredCallbackinput_5"></div><input type="hidden" id="input_5" class="hidden validate[required]" name="hcaptcha_visible" required="" />
@@ -41,10 +60,10 @@
         </div>
         <div class="flex sm:flex-row flex-col justify-between items-center">
             <a href="#">
-                <img class="w-auto" src="<?php echo  $full_url; ?>/assets/images/logo-footer.svg" alt="Newhydrogen">
+                <img class="w-auto" src="<?php echo  $full_url; ?>/assets/images/<?php echo ($page === 'bigh-aug-27-a') ? 'logo-footer-bigh-aug-27-a.svg' : 'logo-footer.svg'; ?>" alt="Newhydrogen">
             </a>
             <p class="text-white text-lg">
-            © 2025 NewHydrogen. Inc.</p>
+            © <?php echo ($page === 'bigh-aug-27-a') ? '2026' : '2025'; ?> NewHydrogen. Inc.</p>
         </div>
     </div>
 </footer>

@@ -41,17 +41,6 @@
         border: 1px solid #ffffff !important;
     }
 
-    body .bigh-newsletter-captcha-field {
-        text-align: center;
-    }
-
-    body .bigh-newsletter-captcha-field .form-input-wide,
-    body .bigh-newsletter-captcha-field section,
-    body .bigh-newsletter-captcha-field .h-captcha {
-        display: flex;
-        justify-content: center;
-    }
-
     .header-top nav,
     .header-top nav a,
     .header-top #mobile-menu,
