@@ -416,6 +416,9 @@ $recentNewsDates = array_column($news, "date", "id");
     <div class="bigh-news-panel">
         <h2>Recent News</h2>
         <ul>
+            <li data-date="<?= htmlspecialchars($recentNewsDates["104"], ENT_QUOTES, "UTF-8") ?>">
+                <a href="/single-news.php?id=104">NewHydrogen Files Third Patent to Protect Its Breakthrough Technology</a>
+            </li>
             <li data-date="<?= htmlspecialchars($recentNewsDates["103"], ENT_QUOTES, "UTF-8") ?>">
                 <a href="/single-news.php?id=103">NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet Trillion Annual Global Energy Market Demand</a>
             </li>
@@ -424,9 +427,6 @@ $recentNewsDates = array_column($news, "date", "id");
             </li>
             <li data-date="<?= htmlspecialchars($recentNewsDates["101"], ENT_QUOTES, "UTF-8") ?>">
                 <a href="/single-news.php?id=101">NewHydrogen Drives Toward Commercial Success</a>
-            </li>
-            <li data-date="<?= htmlspecialchars($recentNewsDates["100"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=100">NewHydrogen Announces Strategic Collaboration with <u>NuCube</u> Energy to Explore Nuclear-Powered Clean Hydrogen Production</a>
             </li>
         </ul>
     </div>

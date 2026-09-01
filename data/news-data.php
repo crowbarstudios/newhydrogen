@@ -3,6 +3,46 @@
 
 $news = [
     [
+        'id' => "104",
+        'title' => "NewHydrogen Files Third Patent to Protect Its Breakthrough Technology",
+        'date' => "September 1, 2026",
+        'excerpt' => "The Company’s ThermoLoop&reg; technology uses inexpensive heat and water to potentially produce the world’s cheapest clean hydrogen at industrial scale",
+        'description' => [
+            [
+                "<p><strong>The Company’s ThermoLoop&reg; technology uses inexpensive heat and water to potentially produce the world’s cheapest clean hydrogen at industrial scale</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, Calif. (September 1, 2026) &ndash; <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc.</a> (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop&reg;</a> &ndash; a breakthrough thermochemical technology that uses heat to split water to produce massive amounts of the world's cheapest clean hydrogen, announced today that it has jointly filed a third provisional patent application with the University of California, Santa Barbara (&ldquo;UCSB&rdquo;) for its novel clean hydrogen production technology.</p>"
+            ],
+            [
+                "<p>The patent, titled &ldquo;Hydrogen Production in Isothermal Chemical Looping Cycle,&rdquo; is a provisional patent application that builds on two previously filed patents and describes the most recent improvements to the Company&rsquo;s ThermoLoop thermochemical water splitting process together with new material compositions discovered by the UCSB technology team. The Company&rsquo;s proprietary process utilizes advanced solid-state materials and machine learning-driven material discovery to optimize efficiency and cost-effectiveness.</p>"
+            ],
+            [
+                "<p>The NewHydrogen technical team is currently building its ThermoLoop engineering test unit (ETU), an achievement that will shift the Company&rsquo;s focus from technology development to generating the data needed to design its first commercial pilot plant. The ETU is an automated demonstration test system that enables 24/7, hands-free, highly iterative operation, producing the critical, high-resolution data needed to design a scaled hydrogen plant.</p>"
+            ],
+            [
+                "<p>&ldquo;The ETU is the foundation for everything that comes next. It moves us from proving the underlying science to engineering the data set that defines our first pilot plant, and from there, to the kind of scale this market is already being built around,&rdquo; said Steve Hill, CEO of NewHydrogen.</p>"
+            ],
+            [
+                "<p>The patent filing marks a significant milestone in NewHydrogen&rsquo;s collaboration with leading researchers at UC Santa Barbara, who are at the forefront of advancing materials science for hydrogen production.</p>"
+            ],
+            [
+                "<p>To watch a short explainer video about ThermoLoop or to learn more about NewHydrogen&rsquo;s mission to produce the world&rsquo;s cheapest clean hydrogen, visit <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen.com</a>.</p>"
+            ],
+            [
+                "<p><strong>About NewHydrogen, Inc.</strong></p><p>NewHydrogen is developing ThermoLoop&reg; &ndash; a breakthrough thermochemical technology that uses heat to split water to produce massive amounts of the world's cheapest clean hydrogen. Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an infinite and renewable worldwide resource. Currently, the most common way of making clean hydrogen is to split water into oxygen and hydrogen with electricity using an electrolyzer, a very expensive process. By using heat directly, we can dramatically reduce the use of expensive electricity. A massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.</p>"
+            ],
+            [
+                "<p><strong>Safe Harbor Statement</strong></p><p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words &ldquo;anticipate,&rdquo; &ldquo;believe,&rdquo; &ldquo;estimate,&rdquo; &ldquo;may,&rdquo; &ldquo;intend,&rdquo; &ldquo;expect&rdquo; and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of the Company and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting the Company and its operations, markets, the impact on the national and local economies resulting from terrorist actions, the impact of public health epidemics on the global economy and other factors detailed in reports filed by the Company with the United States Securities and Exchange Commission.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong> NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+    [
         'id' => "103",
         'title' => "NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet  Trillion Annual Global Energy Market Demand",
         'date' => "July 29, 2026",
