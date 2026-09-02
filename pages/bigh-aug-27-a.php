@@ -48,7 +48,6 @@
         font-family: "Manrope", sans-serif;
     }
 
-
     @media (min-width: 900px) {
         body .header-top .bigh-desktop-nav-links {
             transform: translateX(14px);
@@ -308,6 +307,17 @@
         height: 100%;
     }
 
+    <?php if (empty($isSep2HomeBullets)) : ?>
+        .bigh-information-section--with-bullets ul {
+            list-style: disc;
+        }
+
+        .bigh-information-section--with-bullets li::marker {
+            color: #ffffff;
+            font-size: 1.21em;
+        }
+    <?php endif; ?>
+
     @media (max-width: 767px) {
         .bigh-information-section {
             padding: 28px 12px;
@@ -381,11 +391,175 @@
             height: auto;
         }
     }
+
+    <?php if (!empty($isSep2HomeBullets)) : ?>
+        .bigh-information-section--with-video {
+            display: grid;
+            grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+            align-items: center;
+            gap: 32px;
+        }
+
+        .bigh-information-section--with-video ul {
+            width: auto;
+            margin: 0;
+            padding: 0 0 0 52px;
+            list-style: disc;
+        }
+
+        .bigh-information-section--with-video li {
+            font-size: 23.1px;
+        }
+
+        .bigh-information-section--with-video li::marker {
+            color: #ffffff;
+            font-size: 1.21em;
+        }
+
+        .bigh-information-section--with-video .bigh-video-column {
+            padding: 0 10px 0 0;
+        }
+
+        .bigh-information-section--with-video .bigh-video-label {
+            color: #ffffff;
+        }
+
+        .bigh-information-section--with-video .bigh-explainer-video {
+            width: 100%;
+            max-width: 560px;
+        }
+
+        @media (max-width: 767px) {
+            .bigh-information-section--with-video {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .bigh-information-section--with-video ul {
+                padding: 0 24px 0 52px;
+            }
+
+            .bigh-information-section--with-video li {
+                font-size: 18.7px;
+            }
+
+            .bigh-information-section--with-video .bigh-video-column {
+                padding: 0;
+            }
+        }
+
+        .bigh-news-section--centered {
+            grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+            align-items: center;
+            gap: 32px;
+        }
+
+        .bigh-news-section--centered .bigh-news-panel {
+            width: 100%;
+            max-width: none;
+        }
+
+        .bigh-breaking-news-promo {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 560px;
+            min-height: 420px;
+            padding: 36px 38px 42px;
+            justify-self: center;
+            background: #e9e9e9;
+            border-radius: 20px;
+            color: #000000;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .bigh-breaking-news-promo:hover {
+            color: #000000;
+        }
+
+        .bigh-breaking-news-promo-badge {
+            display: inline-block;
+            margin-bottom: 34px;
+            padding: 17px 35px;
+            background: #f51f2a;
+            border-radius: 999px;
+            box-shadow: 0 16px 22px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            font-size: 23px;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .bigh-breaking-news-promo-date {
+            margin: 0 0 12px;
+            font-size: 21px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .bigh-breaking-news-promo-title {
+            margin: 0;
+            font-size: 28px;
+            line-height: 1.16;
+            font-weight: 800;
+        }
+
+        .bigh-breaking-news-promo-cta {
+            display: block;
+            margin-top: 18px;
+            color: #f51f2a;
+            font-size: 23px;
+            line-height: 1.15;
+            font-weight: 800;
+        }
+
+        @media (max-width: 767px) {
+            .bigh-news-section--centered {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .bigh-news-section--centered .bigh-news-panel {
+                width: 100%;
+            }
+
+            .bigh-breaking-news-promo {
+                min-height: 320px;
+                max-width: 100%;
+                padding: 28px 20px 32px;
+            }
+
+            .bigh-breaking-news-promo-badge {
+                margin-bottom: 25px;
+                padding: 13px 24px;
+                font-size: 16px;
+            }
+
+            .bigh-breaking-news-promo-date {
+                margin-bottom: 10px;
+                font-size: 17px;
+            }
+
+            .bigh-breaking-news-promo-title {
+                font-size: 22px;
+            }
+
+            .bigh-breaking-news-promo-cta {
+                margin-top: 14px;
+                font-size: 18px;
+            }
+        }
+    <?php endif; ?>
 </style>
 
 <?php
 $news = include "./data/news-data.php";
-$recentNewsDates = array_column($news, "date", "id");
+$recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
 ?>
 
 <section class="bigh-replacement-banner bg-black flex items-center justify-center px-5 sm:px-8">
@@ -398,7 +572,7 @@ $recentNewsDates = array_column($news, "date", "id");
     </h1>
 </section>
 
-<section class="bigh-information-section">
+<section class="bigh-information-section<?= !empty($isSep2HomeBullets) ? ' bigh-information-section--with-video' : ' bigh-information-section--with-bullets' ?>">
     <ul>
         <li>
             NewHydrogen is developing <strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> - a breakthrough thermochemical technology that uses heat to split water into the world&apos;s cheapest <span class="bigh-brand-green">clean hydrogen</span> at industrial scale.
@@ -410,27 +584,42 @@ $recentNewsDates = array_column($news, "date", "id");
             ThermoLoop is designed to produce continuous <span class="bigh-brand-green">clean hydrogen</span> at a scale matching the largest of the world&apos;s existing hydrogen plants.
         </li>
     </ul>
+    <?php if (!empty($isSep2HomeBullets)) : ?>
+        <div class="bigh-video-column">
+            <h3 class="bigh-video-label">Short Explainer Video</h3>
+            <a
+                class="bigh-explainer-video popup-youtube"
+                href="https://www.youtube.com/watch?v=734Ia_BN2ww"
+                aria-label="Play Short Explainer Video">
+                <span class="bigh-explainer-thumbnail">
+                    <img src="<?php echo $full_url; ?>/assets/images/logo-dark-bigh-aug-27-a.svg" alt="NewHydrogen">
+                </span>
+                <span class="bigh-explainer-play" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 56 56" fill="none">
+                        <circle cx="27.8926" cy="28.1125" r="27.5" fill="#12B34F" />
+                        <path d="M39.1753 28.1126L21.5537 38.2864L21.5537 17.9387L39.1753 28.1126Z" fill="white" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+    <?php endif; ?>
 </section>
 
-<section class="bigh-news-section">
+<section class="bigh-news-section<?= !empty($isSep2HomeBullets) ? ' bigh-news-section--centered' : '' ?>">
     <div class="bigh-news-panel">
         <h2>Recent News</h2>
         <ul>
-            <li data-date="<?= htmlspecialchars($recentNewsDates["104"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=104">NewHydrogen Files Third Patent to Protect Its Breakthrough Technology</a>
-            </li>
-            <li data-date="<?= htmlspecialchars($recentNewsDates["103"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=103">NewHydrogen Reveals Plan for Its Nuclear-Powered Clean Hydrogen Solution to Help Meet Trillion Annual Global Energy Market Demand</a>
-            </li>
-            <li data-date="<?= htmlspecialchars($recentNewsDates["102"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=102">NewHydrogen Reveals Plan to Automate Its Engineering Test Unit</a>
-            </li>
-            <li data-date="<?= htmlspecialchars($recentNewsDates["101"], ENT_QUOTES, "UTF-8") ?>">
-                <a href="/single-news.php?id=101">NewHydrogen Drives Toward Commercial Success</a>
-            </li>
+            <?php foreach ($recentNewsItems as $recentNewsItem) : ?>
+                <li data-date="<?= htmlspecialchars($recentNewsItem["date"], ENT_QUOTES, "UTF-8") ?>">
+                    <a href="/single-news.php?id=<?= urlencode($recentNewsItem["id"]) ?>">
+                        <?= htmlspecialchars($recentNewsItem["title"], ENT_QUOTES, "UTF-8") ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
 
+    <?php if (empty($isSep2HomeBullets)) : ?>
     <div class="bigh-video-column">
         <h3 class="bigh-video-label">Short Explainer Video</h3>
         <a
@@ -448,6 +637,18 @@ $recentNewsDates = array_column($news, "date", "id");
             </span>
         </a>
     </div>
+    <?php endif; ?>
+
+    <?php if (!empty($isSep2HomeBullets)) : ?>
+    <a
+        class="bigh-breaking-news-promo"
+        href="/single-news.php?id=104"
+        aria-label="Read the NewHydrogen patent news">
+        <span class="bigh-breaking-news-promo-badge">BREAKING NEWS</span>
+        <span class="bigh-breaking-news-promo-title">NewHydrogen Files Third Patent to Protect Its Breakthrough Technology</span>
+        <span class="bigh-breaking-news-promo-cta">CLICK HERE TO READ MORE</span>
+    </a>
+    <?php endif; ?>
 </section>
 
 <!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
