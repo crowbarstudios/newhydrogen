@@ -1,6 +1,6 @@
 <section class="mb-[115px] xl:mt-[100px] mt-16">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
-        <img class="mx-auto xl:max-w-[420px] max-w-[370px]" src="./assets/images/thermoloop-logo.png" width="420" alt="thermoloop-logo">
+        <img class="mx-auto xl:max-w-[420px] max-w-[370px]" src="./assets/images/thermoloop-logo-registered.png" width="420" alt="thermoloop-logo">
         <h1 class="font-normal pt-[13px] xl:text-[64px] text-5xl text-center">The Electrolyzer Killer</h1>
     </div>
     <div class="bg-custom-gray-200 py-10 mt-14">
@@ -76,7 +76,7 @@
     <div class="md:max-w-[558px] max-w-full ">
         <h2 class="font-bold xl:text-[64px] lg:text-5xl text-4xl xl:mb-[45px] mb-5">The Solution</h2>
         <div class="lg:pt-[26px] lg:pb-[21px] lg:pr-[41px] lg:pl-[44px]  p-5 mt-5 lg:mb-[52px] mb-7 bg-custom-gray-200 lg:max-w-[374px] max-w-[348px] rounded-[79px]">
-            <img src="./assets/images/thermoloop-logo.png" width="288" alt="technology">
+            <img src="./assets/images/thermoloop-logo-registered.png" width="288" alt="technology">
         </div>
 
         <!-- Mobile Image -->
@@ -155,7 +155,7 @@
 <section class="bg-custom-gray-200 lg:py-[121px] py-20 text-center ">
 
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
-        <h2 class="xl:text-[64px] lg:text-5xl text-4xl font-bold md:flex block justify-center gap-1.5"><img class="lg:max-w-[422px] md:m-0 m-auto max-w-[360px]" src="./assets/images/thermoloop-logo.png" alt="thermoloop-logo">is the Electrolyzer Killer</h2>
+        <h2 class="xl:text-[64px] lg:text-5xl text-4xl font-bold md:flex block justify-center gap-1.5"><img class="lg:max-w-[422px] md:m-0 m-auto max-w-[360px]" src="./assets/images/thermoloop-logo-registered.png" alt="thermoloop-logo">is the Electrolyzer Killer</h2>
         <p class="lg:text-[26px] text-xl font-normal lg:mb-8 mb-4 lg:mt-[47px] mt-4 text-black	leading-[1.3]">The thermodynamics of heat systems are more efficient and scalable than electrical systems, such as electrolyzers. We believe we can convert electricity into heat and still outperform electrolyzers. </p>
         <p class="lg:text-[26px] text-xl font-normal   mt-4 text-black mb-[77px]	leading-[1.3]">This makes ThermoLoop a “drop-in replacement” for electrolyzers in applications that have electricity but not heat. With ThermoLoop, there’s no more need for electrolyzers. </p>
 
@@ -201,9 +201,9 @@
 
 <section class="bg-custom-gray-200 pb-20">
     <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
-        <img class="hidden md:block" src="./assets/images/development-plan.png" alt="development-plan">
+        <img class="hidden md:block" src="./assets/images/go-to-market-plan-2026.png" alt="development-plan">
         <div class="block md:hidden max-w-96 mx-auto">
-            <img src="./assets/images/mobile-development-plan.png" alt="development-plan">
+            <img src="./assets/images/go-to-market-plan-2026-mobile.png" alt="development-plan">
         </div>
     </div>
 

@@ -63,7 +63,7 @@
                 <img class="w-auto" src="<?php echo  $full_url; ?>/assets/images/<?php echo ($page === 'bigh-aug-27-a') ? 'logo-footer-bigh-aug-27-a.svg' : 'logo-footer.svg'; ?>" alt="Newhydrogen">
             </a>
             <p class="text-white text-lg">
-            © <?php echo ($page === 'bigh-aug-27-a') ? '2026' : '2025'; ?> NewHydrogen. Inc.</p>
+            © 2026 NewHydrogen. Inc.</p>
         </div>
     </div>
 </footer>
