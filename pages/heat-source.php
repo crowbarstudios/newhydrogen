@@ -39,7 +39,7 @@
         </div>
         <p class="text-xl font-normal mb-4 text-black leading-[1.3] lg:mt-6 mt-4">If heat was used directly, near 100% of the input energy is available to produce hydrogen with ThermoLoop.  ThermoLoop is more energy efficient.</p>
         <div class="my-10">
-            <img src="./assets/images/thermaloop-adv-clear.png" class="w-full" alt="Heat Before Electricity">
+            <img src="./assets/images/thermaloop-adv-clear-registered.png" class="w-full" alt="Heat Before Electricity">
         </div>
         <div class="[&_p]:text-xl [&_p]:font-normal sm:mb-4 [&_p]:lg:mt-6 [&_p]:mt-4 [&_p]:text-black [&_p]:leading-[1.3]">
 
@@ -138,11 +138,11 @@
         </div>
         <div class="mt-10">
             <h2 class="font-semibold pt-[13px] text-3xl">Cogeneration Today</h2>
-            <img src="./assets/images/darker-greenArtboard-6.png" class="mt-8" alt="Cogeneration Today">
+            <img src="./assets/images/darker-greenArtboard-6-registered.png" class="mt-8" alt="Cogeneration Today">
         </div>
         <div class="mt-10">
             <h2 class="font-semibold pt-[13px] text-3xl">Dedicated Production Tomorrow</h2>
-            <img src="./assets/images/darker-greenArtboard-7.png" class="mt-8" alt="Dedicated Production Tomorrow">
+            <img src="./assets/images/darker-greenArtboard-7-registered.png" class="mt-8" alt="Dedicated Production Tomorrow">
         </div>
     </div>
 </section>
