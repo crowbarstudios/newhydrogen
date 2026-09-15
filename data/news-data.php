@@ -3,6 +3,52 @@
 
 $news = [
     [
+        'id' => "105",
+        'title' => "NewHydrogen Announces Strategic Collaboration with Utah San Rafael Energy Lab",
+        'date' => "September 15, 2026",
+        'excerpt' => "The initial site assessment will evaluate USREL's Orangeville, Utah facility as a potential host for future ThermoLoop&reg; deployment",
+        'description' => [
+            [
+                "<p><strong>The initial site assessment will evaluate USREL's Orangeville, Utah facility as a potential host for future ThermoLoop&reg; deployment</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, Calif. &amp; ORANGEVILLE, Utah (September 15, 2026) &ndash; <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen, Inc.</a> (OTCQB: NEWH), the developer of <a href=\"https://newhydrogen.com/technology\" target=\"_blank\">ThermoLoop&reg;</a> &ndash; a breakthrough thermochemical technology that uses heat to split water to produce massive amounts of the world's cheapest clean hydrogen, and the Utah San Rafael Energy Lab (&ldquo;USREL&rdquo;), a unit within the Utah Office of Energy Development, announced today a strategic collaboration to conduct an initial site assessment evaluating USREL's Orangeville, Utah facility as a potential host site for a future ThermoLoop deployment.</p>"
+            ],
+            [
+                "<p>USREL, operated by the Utah Office of Energy Development, is a multidisciplinary research facility supporting applied research and technology development across nuclear, fossil and renewable energy systems. Under the non-binding collaboration, NewHydrogen and USREL will evaluate site infrastructure, utility capacity and permitting considerations relevant to hosting a ThermoLoop system, with findings expected to inform a future siting decision as the Company advances toward its first pilot plant deployment.</p>"
+            ],
+            [
+                "<p>The pilot plant will be a small-scale system built to test and validate our ThermoLoop technology before committing to full-scale commercial production. It will act as a bridge between NewHydrogen's Engineering Test Unit and gigawatt-scale clean hydrogen production.</p>"
+            ],
+            [
+                "<p>&ldquo;Site selection is a critical step as we move from validating ThermoLoop in the lab to deploying it in the field,&rdquo; said Steve Hill, CEO of NewHydrogen. &ldquo;USREL's infrastructure and energy sector expertise make it a compelling location to evaluate as we plan our next phase of development.&rdquo;</p>"
+            ],
+            [
+                "<p>To learn more about NewHydrogen's mission to produce the world's cheapest clean hydrogen, visit <a href=\"https://newhydrogen.com/\" target=\"_blank\">NewHydrogen.com</a>.</p>"
+            ],
+            [
+                "<p><strong>About NewHydrogen, Inc.</strong></p><p>NewHydrogen is developing ThermoLoop&reg; &ndash; a breakthrough thermochemical technology that uses heat to split water to produce massive amounts of the world's cheapest clean hydrogen. Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an infinite and renewable worldwide resource. Currently, the most common way of making clean hydrogen is to split water into oxygen and hydrogen with electricity using an electrolyzer, a very expensive process. By using heat directly, we can dramatically reduce the use of expensive electricity. A massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.</p>"
+            ],
+            [
+                "<p><strong>About the Utah San Rafael Energy Lab</strong></p><p>In 2023, management of the San Rafael State Energy Lab was transferred to the Utah Office of Energy Development (H.B. 410). The lab fosters innovation and supports technological developments in the energy sector through community engagement and collaboration with industry leaders, researchers, entrepreneurs, investors and other stakeholders.</p>"
+            ],
+            [
+                "<p><strong>About Utah Office of Energy Development</strong></p><p>The Utah Office of Energy Development is the state's primary office for advancing energy and mineral development. The office is charged with fostering innovation, expanding educational and workforce opportunities and providing evidence-based energy policy analysis.</p>"
+            ],
+            [
+                "<p><strong>Safe Harbor Statement</strong></p><p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words &ldquo;anticipate,&rdquo; &ldquo;believe,&rdquo; &ldquo;estimate,&rdquo; &ldquo;may,&rdquo; &ldquo;intend,&rdquo; &ldquo;expect&rdquo; and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of the Company and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting the Company and its operations, markets, the impact on the national and local economies resulting from terrorist actions, the impact of public health epidemics on the global economy and other factors detailed in reports filed by the Company with the United States Securities and Exchange Commission.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong></p><p>NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ],
+            [
+                "<p><strong>Utah Office of Energy Development Contact:</strong></p><p>Heather McShane, PIO <a href=\"mailto:hmcshane@utah.gov\">hmcshane@utah.gov</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false
+    ],
+    [
         'id' => "104",
         'title' => "NewHydrogen Files Third Patent to Protect Its Breakthrough Technology",
         'date' => "September 1, 2026",
