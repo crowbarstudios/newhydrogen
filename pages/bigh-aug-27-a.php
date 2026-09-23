@@ -223,6 +223,52 @@
         border-bottom: 1px solid rgba(23, 51, 64, 0.28);
     }
 
+    .bigh-news-panel--copy {
+        padding-right: 30px;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy {
+        list-style: none;
+        margin: 0;
+        padding-left: 28px;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li {
+        display: grid;
+        grid-template-columns: 16px minmax(0, 1fr);
+        column-gap: 12px;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li::before {
+        align-self: start;
+        color: #12B34F;
+        content: "•";
+        font-size: 28px;
+        line-height: 0.85;
+        transform: translateY(-3px);
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li::marker {
+        display: none;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li > * {
+        grid-column: 2;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li {
+        min-height: 0;
+        padding: 0 0 24px;
+        border: 0;
+        font-size: 19px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    .bigh-news-panel--copy .bigh-home-copy li:last-child {
+        padding-bottom: 0;
+    }
+
     .bigh-news-panel a {
         display: block;
         color: inherit;
@@ -305,6 +351,90 @@
     .bigh-explainer-play svg {
         width: 100%;
         height: 100%;
+    }
+
+    .bigh-sep19-features {
+        background: #ffffff;
+        color: #091113;
+        padding: 104px 24px 116px;
+    }
+
+    .bigh-sep19-features-inner {
+        width: min(100%, 1180px);
+        margin: 0 auto;
+    }
+
+    .bigh-sep19-eyebrow {
+        margin: 0 0 14px;
+        color: #12B34F;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .bigh-sep19-features h2 {
+        max-width: 720px;
+        margin: 0 0 46px;
+        color: #091113;
+        font-size: clamp(2.25rem, 4vw, 4rem);
+        font-weight: 300;
+        letter-spacing: -0.04em;
+        line-height: 1.02;
+    }
+
+    .bigh-sep19-feature-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .bigh-sep19-feature-card {
+        position: relative;
+        min-height: 270px;
+        padding: 32px 32px 34px;
+        overflow: hidden;
+        border: 1px solid #dfe7e3;
+        border-radius: 22px;
+        background: linear-gradient(145deg, #ffffff 0%, #f5faf7 100%);
+        box-shadow: 0 14px 30px rgba(9, 17, 19, 0.06);
+    }
+
+    .bigh-sep19-feature-card::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #12B34F;
+        content: "";
+    }
+
+    .bigh-sep19-feature-number {
+        display: block;
+        margin-bottom: 30px;
+        color: #12B34F;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        line-height: 1;
+    }
+
+    .bigh-sep19-feature-card h3 {
+        margin: 0 0 14px;
+        color: #091113;
+        font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        line-height: 1.05;
+    }
+
+    .bigh-sep19-feature-card p {
+        margin: 0;
+        color: #364246;
+        font-size: 18px;
+        line-height: 1.5;
     }
 
     <?php if (empty($isSep2HomeBullets)) : ?>
@@ -390,7 +520,74 @@
             width: 80%;
             height: auto;
         }
+
+        .bigh-sep19-features {
+            padding: 68px 18px 76px;
+        }
+
+        .bigh-sep19-features h2 {
+            margin-bottom: 30px;
+            font-size: 2.35rem;
+        }
+
+        .bigh-sep19-feature-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .bigh-sep19-feature-card {
+            min-height: 0;
+            padding: 26px 22px 28px;
+        }
+
+        .bigh-sep19-feature-number {
+            margin-bottom: 22px;
+        }
+
+        .bigh-sep19-feature-card p {
+            font-size: 16px;
+            line-height: 1.48;
+        }
     }
+
+    <?php if (!empty($isSep19Home)) : ?>
+        @media (max-width: 767px) {
+            .bigh-news-section {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .bigh-news-panel,
+            .bigh-news-panel--copy {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .bigh-news-panel--copy .bigh-home-copy {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .bigh-news-panel--copy .bigh-home-copy li {
+                grid-template-columns: 14px minmax(0, 1fr);
+                column-gap: 10px;
+            }
+
+            .bigh-explainer-video {
+                width: 100%;
+            }
+
+            .bigh-mission-section {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .bigh-mission-section > .mx-auto {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    <?php endif; ?>
 
     <?php if (!empty($isSep2HomeBullets)) : ?>
         .bigh-information-section--with-video {
@@ -572,6 +769,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
     </h1>
 </section>
 
+<?php if (empty($hideBighInformationSection)) : ?>
 <section class="bigh-information-section<?= !empty($isSep2HomeBullets) ? ' bigh-information-section--with-video' : ' bigh-information-section--with-bullets' ?>">
     <ul>
         <li>
@@ -604,19 +802,34 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
         </div>
     <?php endif; ?>
 </section>
+<?php endif; ?>
 
 <section class="bigh-news-section<?= !empty($isSep2HomeBullets) ? ' bigh-news-section--centered' : '' ?>">
-    <div class="bigh-news-panel">
-        <h2>Recent News</h2>
-        <ul>
-            <?php foreach ($recentNewsItems as $recentNewsItem) : ?>
-                <li data-date="<?= htmlspecialchars($recentNewsItem["date"], ENT_QUOTES, "UTF-8") ?>">
-                    <a href="/single-news.php?id=<?= urlencode($recentNewsItem["id"]) ?>">
-                        <?= htmlspecialchars($recentNewsItem["title"], ENT_QUOTES, "UTF-8") ?>
-                    </a>
+    <div class="bigh-news-panel<?= !empty($isSep19Home) ? ' bigh-news-panel--copy' : '' ?>">
+        <?php if (!empty($isSep19Home)) : ?>
+            <ul class="bigh-home-copy">
+                <li>
+                    <span>NewHydrogen is developing <strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> - a breakthrough thermochemical technology that uses heat to split water into the world's cheapest <span class="bigh-brand-green">clean hydrogen</span> at industrial scale.</span>
                 </li>
-            <?php endforeach; ?>
-        </ul>
+                <li>
+                    <span>Over 98% of the world's dedicated hydrogen is produced using dirty fossil fuel feedstocks. These large-scale hydrogen plants are critical infrastructure designed to meet massive industrial demand across refining, chemical manufacturing, and power generation.</span>
+                </li>
+                <li>
+                    <span><strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> is designed to produce continuous <span class="bigh-brand-green">clean hydrogen</span> at a scale matching the largest of the world's existing hydrogen plants.</span>
+                </li>
+            </ul>
+        <?php else : ?>
+            <h2>Recent News</h2>
+            <ul>
+                <?php foreach ($recentNewsItems as $recentNewsItem) : ?>
+                    <li data-date="<?= htmlspecialchars($recentNewsItem["date"], ENT_QUOTES, "UTF-8") ?>">
+                        <a href="/single-news.php?id=<?= urlencode($recentNewsItem["id"]) ?>">
+                            <?= htmlspecialchars($recentNewsItem["title"], ENT_QUOTES, "UTF-8") ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
     </div>
 
     <?php if (empty($isSep2HomeBullets)) : ?>
@@ -651,6 +864,31 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
     <?php endif; ?>
 </section>
 
+<?php if (!empty($isSep19Home)) : ?>
+<section class="bigh-sep19-features">
+    <div class="bigh-sep19-features-inner">
+        <div class="bigh-sep19-feature-grid">
+            <article class="bigh-sep19-feature-card">
+                <h3>The Real Hydrogen Crisis: Supply, Not Demand</h3>
+                <p>Critical industries like agriculture, refining, and steelmaking demand vast amounts of hydrogen every day, with total demand projected to jump 50% by 2030. Demand is not the problem. The real hydrogen crisis is supply: over 98% of today&apos;s hydrogen is still produced using fossil fuels.</p>
+            </article>
+            <article class="bigh-sep19-feature-card">
+                <h3>Heat + Water = Industrial Scale Production</h3>
+                <p>ThermoLoop<sup class="bigh-trademark">®</sup> converts water directly into hydrogen using heat. Covering 71% of the planet, water provides a vast, reliable feedstock alternative to scarce natural gas in Europe, Asia and many of other parts of the world. Using abundantly available local water eliminates costly fuel imports and secures energy independence.</p>
+            </article>
+            <article class="bigh-sep19-feature-card">
+                <h3>Future-Proof Heat Source</h3>
+                <p>ThermoLoop<sup class="bigh-trademark">®</sup> is engineered to couple with high-temperature nuclear microreactors and advanced nuclear technology, unlocking continuous, cheap, clean hydrogen production off-grid, while preserving flexibility for other high-temperature sources.</p>
+            </article>
+            <article class="bigh-sep19-feature-card">
+                <h3>The Scale Electrolyzers Can&apos;t Reach</h3>
+                <p>Global hydrogen demand requires true industrial scale, a threshold traditional electrolyzers have never reached. ThermoLoop<sup class="bigh-trademark">®</sup> heat-driven water splitting technology delivers the clearest path to massive amounts of the world&rsquo;s cheapest clean hydrogen production.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
 <!-- <section class="bg-coming-soon-new bg-cover bg-center bg-no-repeat bg-black relative py-12 sm:py-32">
     <div class="px-2 sm:px-4 z-10 relative">
         <div class="text-5xl sm:text-6xl text-white text-center font-bold sm:leading-[76px]">
@@ -673,7 +911,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
         </div>
     </div>
 </section> -->
-<section class="bg-white py-20 sm:py-40 relative">
+<section class="bigh-mission-section bg-white py-20 sm:py-40 relative">
     <div class="mx-auto max-w-screen-xl px-2 sm:px-4">
         <div class="max-w-[910px] mx-auto relative z-10">
             <h3 class="text-left md:text-[42px] text-4xl">Our mission is to help produce unlimited <br class="hidden md:inline-block" /> amounts of the world’s cheapest <span class="bigh-brand-green">clean <br class="hidden md:inline-block" /> hydrogen</span>, and usher in the <span class="bigh-brand-green">clean hydrogen</span> <br class="hidden md:inline-block" /> economy that Goldman Sachs estimated to be <br class="hidden md:inline-block" /> worth <span class="text-black">$12 trillion</span> in the near future.</h3>

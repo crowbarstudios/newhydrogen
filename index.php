@@ -47,7 +47,7 @@ ob_start('addThermoLoopRegisteredMark');
 $basePath = '';
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $path = trim(str_replace($basePath, '', $requestUri), '/');
-$page = $path === '' ? 'bigh-aug-27-a' : $path;
+$page = $path === '' ? 'home' : $path;
 
 if ($page === 'report') {
     header('Location: /special-report-October-2025', true, 301);
