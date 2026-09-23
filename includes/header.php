@@ -85,7 +85,7 @@
 
 </head>
 
-<body class="<?php echo ($page === 'home') ? 'home' : ''; ?>">
+<body class="">
 
     <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top">
         <nav class="sm:py-4 bg-white ">
