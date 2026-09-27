@@ -87,7 +87,7 @@
 
 <body class="">
 
-    <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top">
+    <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top<?= in_array($page, ['coming-soon-red-steve', 'coming-soon-red-steve-over'], true) ? ' bigh-steve-header' : '' ?>">
         <nav class="sm:py-4 bg-white ">
             <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
                 <div class="relative flex h-16 justify-between">

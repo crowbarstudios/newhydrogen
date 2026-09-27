@@ -4389,3 +4389,7 @@ html {
     font-size: 26px;
   }
 }
+
+@media (min-width: 1024px){
+  .lg\:gap-12{gap: 3rem;}
+}

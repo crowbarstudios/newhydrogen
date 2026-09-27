@@ -89,9 +89,317 @@
         line-height: 1.04;
     }
 
+    .bigh-coming-soon-red-content {
+        transform: translateY(8px);
+    }
+
+    .bigh-coming-soon-red-banner {
+        padding: 48px 32px;
+    }
+
+    .bigh-coming-soon-red-banner:not(.bigh-coming-soon-texture-banner) .bigh-coming-soon-red-content h1 {
+        font-size: clamp(1.62rem, 3.48vw, 3.65rem);
+    }
+
+    .bigh-coming-soon-red-banner:not(.bigh-coming-soon-texture-banner) {
+        padding: 34.56px 32px;
+    }
+
+    .bigh-coming-soon-red-date-banner .bigh-coming-soon-red-date {
+        margin: 16px 0 0;
+        color: #ffffff;
+        font-size: clamp(1.75rem, 3vw, 3rem);
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+    .bigh-coming-soon-red-date-banner .bigh-coming-soon-red-content > p:not(.bigh-coming-soon-red-date) {
+        margin-top: 12px;
+    }
+
+    .bigh-completes-etu-banner .bigh-coming-soon-red-content h1 {
+        font-size: clamp(1.7rem, 3.655vw, 3.825rem);
+        font-weight: 600 !important;
+        line-height: 1.2;
+    }
+
+    .bigh-completes-etu-video-heading {
+        position: relative;
+        width: fit-content;
+        max-width: 100%;
+        margin: 28px auto 16px;
+        padding-bottom: 9px;
+        color: #09251c;
+        font-size: clamp(1.05rem, 2.5vw, 1.55rem);
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 1.15;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .bigh-completes-etu-video-heading::after {
+        position: absolute;
+        right: 35%;
+        bottom: 0;
+        left: 35%;
+        height: 3px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #16a34a, #74f0a3);
+        content: "";
+    }
+
+    .bigh-completes-etu-video-placeholder {
+        position: relative;
+        isolation: isolate;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: min(100%, 760px);
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: clamp(18px, 4vw, 30px);
+        border: 1px solid rgba(155, 255, 196, 0.34);
+        border-radius: 20px;
+        background:
+            radial-gradient(circle at 15% 82%, rgba(0, 188, 87, 0.24), transparent 34%),
+            radial-gradient(circle at 82% 18%, rgba(80, 255, 170, 0.16), transparent 29%),
+            linear-gradient(135deg, #071613 0%, #102a25 52%, #06110f 100%);
+        box-shadow:
+            0 24px 64px rgba(3, 22, 17, 0.34),
+            inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        color: #f4fff8;
+        font-family: "Manrope", sans-serif;
+    }
+
+    .bigh-completes-etu-video-placeholder::before {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(184, 255, 216, 0.055) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(184, 255, 216, 0.055) 1px, transparent 1px);
+        background-size: 38px 38px;
+        content: "";
+        mask-image: linear-gradient(115deg, rgba(0, 0, 0, 0.72), transparent 78%);
+        pointer-events: none;
+    }
+
+    .bigh-completes-etu-video-placeholder::after {
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        right: -5%;
+        width: 55%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(104, 255, 168, 0.5), transparent);
+        content: "";
+        transform: rotate(-24deg);
+        pointer-events: none;
+    }
+
+    .bigh-completes-etu-video-center {
+        position: relative;
+        z-index: 1;
+    }
+
+    .bigh-completes-etu-video-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bigh-completes-etu-video-play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(48px, 8vw, 66px);
+        height: clamp(48px, 8vw, 66px);
+        margin-bottom: clamp(9px, 1.7vw, 14px);
+        border: 1px solid rgba(129, 255, 179, 0.8);
+        border-radius: 50%;
+        background: linear-gradient(145deg, rgba(39, 205, 108, 0.96), rgba(9, 121, 65, 0.96));
+        box-shadow:
+            0 0 0 8px rgba(35, 210, 112, 0.11),
+            0 0 34px rgba(34, 230, 122, 0.42);
+        animation: bigh-etu-play-pulse 3s ease-in-out infinite;
+    }
+
+    .bigh-completes-etu-video-play svg {
+        width: 23px;
+        height: 23px;
+        margin-left: 3px;
+        fill: #ffffff;
+    }
+
+    .bigh-completes-etu-video-center h2 {
+        margin: 0;
+        color: #ffffff;
+        font-size: clamp(1.15rem, 2.8vw, 1.8rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1.08;
+        text-shadow: 0 2px 22px rgba(83, 255, 157, 0.22);
+    }
+
+    @keyframes bigh-etu-play-pulse {
+        0%, 100% {
+            box-shadow:
+                0 0 0 8px rgba(35, 210, 112, 0.11),
+                0 0 34px rgba(34, 230, 122, 0.36);
+        }
+        50% {
+            box-shadow:
+                0 0 0 12px rgba(35, 210, 112, 0.05),
+                0 0 44px rgba(34, 230, 122, 0.56);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .bigh-completes-etu-video-heading {
+            margin-bottom: 12px;
+            font-size: clamp(1rem, 4vw, 1.2rem);
+        }
+
+        .bigh-completes-etu-video-placeholder {
+            border-radius: 14px;
+            padding: 14px;
+        }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .bigh-completes-etu-video-play {
+            animation: none;
+        }
+    }
+
+    .bigh-coming-soon-texture-banner {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-content h1,
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-content > p {
+        color: #000000 !important;
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-form-row {
+        border-color: rgba(0, 0, 0, 0.78);
+        background: rgba(255, 255, 255, 0.48);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-form input[type="email"] {
+        color: #000000;
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-form input[type="email"]::placeholder {
+        color: rgba(0, 0, 0, 0.68);
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-form button {
+        border-left-color: rgba(0, 0, 0, 0.78);
+        color: #000000;
+    }
+
+    .bigh-coming-soon-texture-banner .bigh-coming-soon-red-form button:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .bigh-coming-soon-red-title {
+        font-weight: 700 !important;
+    }
+
+    .bigh-coming-soon-red-form {
+        width: min(100%, 680px);
+        margin: 30px auto 0;
+        transform: scale(0.7);
+        transform-origin: top center;
+    }
+
+    .bigh-coming-soon-red-banner:not(.bigh-coming-soon-texture-banner) .bigh-coming-soon-red-form {
+        transform: scale(0.595);
+    }
+
+    .bigh-coming-soon-red-form-row {
+        display: flex;
+        align-items: stretch;
+        min-height: 64px;
+        overflow: hidden;
+        border: 2px solid rgba(255, 255, 255, 0.92);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 28px rgba(86, 0, 0, 0.18);
+    }
+
+    .bigh-coming-soon-red-form input[type="email"] {
+        min-width: 0;
+        flex: 1 1 auto;
+        padding: 0 28px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: #ffffff;
+        font: inherit;
+        font-size: 18px;
+    }
+
+    .bigh-coming-soon-red-form input[type="email"]::placeholder {
+        color: rgba(255, 255, 255, 0.82);
+    }
+
+    .bigh-coming-soon-red-form button {
+        min-width: 190px;
+        padding: 0 30px;
+        border: 0;
+        border-left: 2px solid rgba(255, 255, 255, 0.92);
+        background: #ffffff;
+        color: #b50f17;
+        cursor: pointer;
+        font: inherit;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .bigh-coming-soon-red-form button:disabled {
+        cursor: not-allowed;
+        opacity: 0.72;
+    }
+
+    @media (max-width: 767px) {
+        .bigh-coming-soon-red-form {
+            margin-top: 24px;
+        }
+
+        .bigh-coming-soon-red-form-row {
+            min-height: 56px;
+        }
+
+        .bigh-coming-soon-red-form input[type="email"] {
+            padding: 0 18px;
+            font-size: 16px;
+        }
+
+        .bigh-coming-soon-red-form button {
+            min-width: 126px;
+            padding: 0 14px;
+            font-size: 21px;
+        }
+    }
+
     @media (min-width: 768px) {
         .bigh-replacement-banner {
             padding: 180px 32px;
+        }
+
+        .bigh-coming-soon-red-banner {
+            padding: 54px 32px;
         }
 
         .bigh-headline-second-line {
@@ -107,6 +415,27 @@
         .bigh-replacement-banner h1 {
             font-size: clamp(1.8rem, 7.2vw, 2.4rem);
             line-height: 1.02;
+        }
+
+        .bigh-completes-etu-banner .bigh-coming-soon-red-content h1 {
+            font-size: clamp(1.53rem, 6.12vw, 2.04rem);
+        }
+
+        .bigh-coming-soon-red-content {
+            transform: translateY(8px);
+        }
+
+        .bigh-coming-soon-red-content h1 {
+            line-height: 0.96;
+        }
+
+        .bigh-coming-soon-red-content > p {
+            margin-top: 18px !important;
+            line-height: 1.3;
+        }
+
+        .bigh-coming-soon-red-banner {
+            padding: 26px 20px;
         }
     }
 
@@ -752,6 +1081,466 @@
             }
         }
     <?php endif; ?>
+
+    <?php if (!empty($isComingSoonRedSteve)) : ?>
+    .bigh-steve-announcement-stage {
+        position: sticky;
+        z-index: 31;
+        top: 64px;
+        height: 50px;
+        margin-top: -50px;
+        background: #ffffff;
+    }
+
+    .header-top.bigh-steve-header {
+        padding-bottom: 50px;
+        background: #ffffff;
+    }
+
+    .header-top.bigh-steve-header > nav {
+        position: relative;
+        z-index: 1;
+        background: #ffffff;
+    }
+
+    .header-top.bigh-steve-header.scrolled {
+        box-shadow: none;
+    }
+
+    .header-top.bigh-steve-header.scrolled > nav {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .bigh-steve-announcement-card {
+        position: absolute;
+        z-index: 31;
+        top: 7px;
+        left: 50%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 68px minmax(0, 1fr) minmax(270px, 300px);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "date copy form"
+            "date description form";
+        align-content: center;
+        column-gap: 16px;
+        row-gap: 3px;
+        width: min(84%, 1280px);
+        min-height: 86px;
+        margin: 0;
+        padding: 8px 18px;
+        transform: translateX(-50%);
+        border-radius: 18px;
+        background: #d71920;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+        color: #ffffff;
+    }
+
+    .bigh-steve-announcement-date {
+        grid-area: date;
+        grid-row: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #11191d;
+        font-variant-numeric: tabular-nums;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .bigh-steve-announcement-date-month {
+        color: #d71920;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        line-height: 1;
+    }
+
+    .bigh-steve-announcement-date-day {
+        margin-top: 2px;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 0.98;
+    }
+
+    .bigh-steve-announcement-date-year {
+        margin-top: 3px;
+        color: #4b5563;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .bigh-steve-announcement-copy {
+        grid-area: copy;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        min-width: 0;
+    }
+
+    .bigh-steve-announcement-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: #f4f7f8;
+        color: #172126;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        line-height: 1.15;
+        text-transform: uppercase;
+    }
+
+    .bigh-steve-announcement-badge-dot {
+        width: 8px;
+        height: 8px;
+        flex: 0 0 8px;
+        border-radius: 50%;
+        background: #11b865;
+        box-shadow: 0 0 0 3px rgba(17, 184, 101, 0.14);
+    }
+
+    .bigh-steve-announcement-title {
+        margin: 0;
+        color: #ffffff;
+        font-size: clamp(17px, 1.75vw, 21px);
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+
+    .bigh-steve-announcement-description {
+        grid-area: description;
+        align-self: start;
+        margin: 0;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .bigh-steve-announcement-form {
+        grid-area: form;
+        grid-row: 1 / 3;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        height: 42px;
+        overflow: hidden;
+        padding: 3px;
+        border-radius: 999px;
+        background: #ffffff;
+    }
+
+    .bigh-steve-announcement-form input[type="email"] {
+        box-sizing: border-box;
+        min-width: 0;
+        height: 100%;
+        flex: 1 1 auto;
+        padding: 0 14px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: #172126;
+        font: inherit;
+        font-size: 11px;
+    }
+
+    .bigh-steve-announcement-form input[type="email"]::placeholder {
+        color: #7a8388;
+        opacity: 1;
+    }
+
+    .bigh-steve-announcement-form button {
+        box-sizing: border-box;
+        min-width: 106px;
+        height: 100%;
+        flex: 0 0 106px;
+        padding: 0 10px;
+        border: 0;
+        border-radius: 999px;
+        background: #071013;
+        color: #ffffff;
+        cursor: pointer;
+        font: inherit;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .bigh-steve-announcement-form button:hover {
+        background: #1b292e;
+    }
+
+    .bigh-replacement-banner.bigh-steve-black-hero {
+        padding: 84px 20px 120px;
+        background: #000000;
+    }
+
+    <?php if (!empty($isComingSoonRedSteveUnder)) : ?>
+    .bigh-steve-black-hero--under {
+        flex-direction: column;
+    }
+
+    .bigh-replacement-banner.bigh-steve-black-hero.bigh-steve-black-hero--under {
+        --under-hero-spacing: 56px;
+        gap: var(--under-hero-spacing);
+        padding-top: var(--under-hero-spacing);
+    }
+
+    .bigh-steve-black-hero--under .bigh-steve-announcement-stage--under {
+        position: static;
+        z-index: auto;
+        top: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background: transparent;
+    }
+
+    .bigh-steve-black-hero--under .bigh-steve-announcement-stage--under .bigh-steve-announcement-card {
+        position: relative;
+        z-index: auto;
+        top: auto;
+        left: auto;
+        width: min(84vw, 1280px);
+        margin: 0 auto;
+        transform: none;
+    }
+
+    @media (max-width: 767px) {
+        .bigh-replacement-banner.bigh-steve-black-hero.bigh-steve-black-hero--under {
+            --under-hero-spacing: clamp(32px, 8.25vw, 56px);
+        }
+
+        .bigh-steve-black-hero--under .bigh-steve-announcement-stage--under .bigh-steve-announcement-card {
+            width: 100%;
+        }
+    }
+    <?php endif; ?>
+
+    @media (min-width: 768px) {
+        .header-top.bigh-steve-header > nav {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    @media (min-width: 640px) and (max-width: 767px) {
+        .bigh-steve-announcement-stage {
+            top: 96px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .header-top.bigh-steve-header {
+            padding-bottom: clamp(240px, 41.7vw, 267px);
+        }
+
+        .bigh-steve-announcement-stage {
+            height: clamp(240px, 41.7vw, 267px);
+            margin-top: calc(0px - clamp(240px, 41.7vw, 267px));
+        }
+
+        .bigh-steve-announcement-card {
+            top: 19px;
+            grid-template-columns: clamp(68px, 11.25vw, 72px) minmax(0, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "date copy"
+                "description description"
+                "form form";
+            align-content: start;
+            column-gap: clamp(16px, 3.4vw, 22px);
+            row-gap: 0;
+            width: calc(100% - clamp(32px, 8.125vw, 52px));
+            min-height: clamp(190px, 35vw, 230px);
+            padding: clamp(14px, 2.5vw, 18px);
+            border-radius: 18px;
+        }
+
+        .bigh-steve-announcement-date {
+            grid-row: 1;
+            width: clamp(68px, 11.25vw, 72px);
+            height: clamp(68px, 11.25vw, 72px);
+            border-radius: 12px;
+        }
+
+        .bigh-steve-announcement-date-month {
+            font-size: 11px;
+        }
+
+        .bigh-steve-announcement-date-day {
+            font-size: clamp(27px, 5vw, 32px);
+        }
+
+        .bigh-steve-announcement-date-year {
+            margin-top: 3px;
+            font-size: 10px;
+        }
+
+        .bigh-steve-announcement-copy {
+            align-self: start;
+            gap: 6px;
+        }
+
+        .bigh-steve-announcement-badge {
+            gap: 6px;
+            padding: 4px 8px;
+            font-size: clamp(9px, 1.8vw, 11px);
+        }
+
+        .bigh-steve-announcement-badge-dot {
+            width: 8px;
+            height: 8px;
+            flex-basis: 8px;
+        }
+
+        .bigh-steve-announcement-title {
+            font-size: clamp(17px, 3vw, 20px);
+            line-height: 1.2;
+        }
+
+        .bigh-steve-announcement-description {
+            grid-row: 2;
+            margin-top: clamp(10px, 2vw, 14px);
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.35;
+        }
+
+        .bigh-steve-announcement-form {
+            grid-area: auto;
+            grid-row: 3;
+            grid-column: 1 / -1;
+            display: flex;
+            gap: 0;
+            height: 44px;
+            margin-top: clamp(8px, 1.5vw, 10px);
+            overflow: hidden;
+            padding: 3px;
+            border-radius: 999px;
+            background: #ffffff;
+        }
+
+        .bigh-steve-announcement-form input[type="email"] {
+            width: auto;
+            height: 100%;
+            flex: 1 1 auto;
+            padding: 0 12px;
+            font-size: clamp(13px, 2.2vw, 14px);
+        }
+
+        .bigh-steve-announcement-form button {
+            width: auto;
+            min-width: 96px;
+            min-height: 0;
+            flex: 0 0 106px;
+            padding: 0 8px;
+            font-size: clamp(10px, 1.8vw, 11px);
+        }
+
+        .bigh-replacement-banner.bigh-steve-black-hero {
+            padding: clamp(48px, 10vw, 72px) 20px 84px;
+        }
+
+        .bigh-replacement-banner.bigh-steve-black-hero h1 {
+            font-size: clamp(2.05rem, 7.5vw, 3rem);
+            line-height: 1.05;
+        }
+    }
+
+    @media (min-width: 520px) and (max-width: 767px) {
+        .bigh-steve-announcement-time-note {
+            display: block;
+        }
+    }
+
+    <?php if (!empty($isComingSoonRedSteveOver)) : ?>
+    .bigh-steve-announcement-date-month {
+        font-size: 11px;
+    }
+
+    .bigh-steve-announcement-date-day {
+        font-size: 36px;
+    }
+
+    .bigh-steve-announcement-date-year {
+        font-size: 11px;
+    }
+
+    .bigh-steve-announcement-badge {
+        font-size: 12px;
+    }
+
+    .bigh-steve-announcement-title {
+        font-size: clamp(20px, 2vw, 24px);
+    }
+
+    .bigh-steve-announcement-description {
+        font-size: 15px;
+    }
+
+    .bigh-steve-announcement-form input[type="email"] {
+        font-size: 13px;
+    }
+
+    .bigh-steve-announcement-form button {
+        padding-right: 4px;
+        padding-left: 4px;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 767px) {
+        .bigh-steve-announcement-date-month {
+            font-size: 12px;
+        }
+
+        .bigh-steve-announcement-date-day {
+            font-size: 32px;
+        }
+
+        .bigh-steve-announcement-date-year {
+            font-size: 11px;
+        }
+
+        .bigh-steve-announcement-badge {
+            font-size: 11px;
+        }
+
+        .bigh-steve-announcement-title {
+            font-size: 20px;
+        }
+
+        .bigh-steve-announcement-description {
+            font-size: 16px;
+        }
+
+        .bigh-steve-announcement-form input[type="email"] {
+            font-size: 15px;
+        }
+
+        .bigh-steve-announcement-form button {
+            font-size: 13px;
+        }
+    }
+    <?php endif; ?>
+    <?php endif; ?>
 </style>
 
 <?php
@@ -759,7 +1548,100 @@ $news = include "./data/news-data.php";
 $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
 ?>
 
-<section class="bigh-replacement-banner bg-black flex items-center justify-center px-5 sm:px-8">
+<?php if (!empty($isComingSoonRedSteve) && empty($isComingSoonRedSteveUnder)) : ?>
+<div class="bigh-steve-announcement-stage">
+    <section class="bigh-steve-announcement-card" aria-label="Special report announcement">
+        <time class="bigh-steve-announcement-date" datetime="2026-10-20">
+            <span class="bigh-steve-announcement-date-month">OCT</span>
+            <span class="bigh-steve-announcement-date-day">20</span>
+            <span class="bigh-steve-announcement-date-year">2026</span>
+        </time>
+        <div class="bigh-steve-announcement-copy">
+            <span class="bigh-steve-announcement-badge">
+                <span class="bigh-steve-announcement-badge-dot" aria-hidden="true"></span>
+                Special Report
+            </span>
+            <h2 class="bigh-steve-announcement-title">Major Milestone Announcement</h2>
+        </div>
+        <p class="bigh-steve-announcement-description">Join our broadcast October 20, 2026 at (time <span class="bigh-steve-announcement-time-note">TBD)</span></p>
+        <form id="jotformComingSoonRedSteve" action="https://submit.jotform.com/submit/242986385047065/" method="POST" autocomplete="off" class="bigh-steve-announcement-form">
+            <input type="hidden" name="formID" value="242986385047065">
+            <input type="email" name="q3_email" id="comingSoonRedSteveEmail" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
+            <button type="submit" id="submitButtonComingSoonRedSteve">Get the Link</button>
+        </form>
+    </section>
+</div>
+<?php elseif (!empty($isComingSoonRed) && empty($isComingSoonRedSteveUnder)) : ?>
+<section class="bigh-replacement-banner bigh-coming-soon-red-banner<?= !empty($isComingSoonTexture) ? ' bigh-coming-soon-texture-banner' : '' ?><?= !empty($isComingSoonRedWithDate) ? ' bigh-coming-soon-red-date-banner' : '' ?><?= !empty($isCompletesEtu) ? ' bigh-completes-etu-banner' : '' ?> flex items-center justify-center" <?php if (!empty($isComingSoonWhite)) : ?>style="background-color: #ffffff;"<?php elseif (!empty($isCompletesEtu)) : ?>style="background-image: url('<?php echo $full_url; ?>/assets/images/completes-etu-background.png');"<?php elseif (!empty($isComingSoonTexture)) : ?>style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('<?php echo $full_url; ?>/assets/images/coming-soon-texture-light.png');"<?php else : ?>style="background-color: #d71920;"<?php endif; ?>>
+    <div class="bigh-coming-soon-red-content w-full text-center">
+        <h1 class="max-w-[1120px] mx-auto text-center text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
+            <?php if (!empty($isCompletesEtu)) : ?>
+                NewHydrogen Completes Construction of Its ThermoLoop® Engineering Test Unit
+            <?php else : ?>
+                <span class="bigh-coming-soon-red-title">Coming Soon</span>
+                <br>
+                NewHydrogen to Make
+                <br>
+                a Special Announcement
+            <?php endif; ?>
+        </h1>
+        <?php if (!empty($isComingSoonRedWithDate)) : ?>
+            <p class="bigh-coming-soon-red-date">Date: WWWWWWWW</p>
+        <?php endif; ?>
+        <?php if (!empty($isCompletesEtu)) : ?>
+            <h2 class="bigh-completes-etu-video-heading">Watch Special Report Webinar Now!</h2>
+            <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
+                <div class="bigh-completes-etu-video-center" aria-hidden="true">
+                    <div class="bigh-completes-etu-video-play">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M8 5.8c0-.75.82-1.2 1.45-.8l10.1 6.2a.94.94 0 0 1 0 1.6l-10.1 6.2A.94.94 0 0 1 8 18.2V5.8Z" />
+                        </svg>
+                    </div>
+                    <h2>Video Coming Soon</h2>
+                </div>
+            </div>
+        <?php else : ?>
+            <p class="max-w-[760px] mx-auto mt-8 px-4 text-center text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed text-white">
+                Sign up now to reserve your spot in our live event
+            </p>
+            <form id="jotformComingSoonRed" action="https://submit.jotform.com/submit/242986385047065/" method="POST" autocomplete="off" class="bigh-coming-soon-red-form">
+                <input type="hidden" name="formID" value="242986385047065">
+                <div class="bigh-coming-soon-red-form-row">
+                    <input type="email" name="q3_email" id="comingSoonRedEmail" placeholder="Email" aria-label="Email" required>
+                    <button type="submit" id="submitButtonComingSoonRed">Sign Up</button>
+                </div>
+            </form>
+        <?php endif; ?>
+    </div>
+</section>
+<?php endif; ?>
+
+<?php if (empty($isNewhEtu)) : ?>
+<section class="bigh-replacement-banner bg-black flex items-center justify-center px-5 sm:px-8<?= !empty($isComingSoonRedSteve) ? ' bigh-steve-black-hero' : '' ?><?= !empty($isComingSoonRedSteveUnder) ? ' bigh-steve-black-hero--under' : '' ?>">
+    <?php if (!empty($isComingSoonRedSteveUnder)) : ?>
+    <div class="bigh-steve-announcement-stage bigh-steve-announcement-stage--under">
+        <section class="bigh-steve-announcement-card" aria-label="Special report announcement">
+            <time class="bigh-steve-announcement-date" datetime="2026-10-20">
+                <span class="bigh-steve-announcement-date-month">OCT</span>
+                <span class="bigh-steve-announcement-date-day">20</span>
+                <span class="bigh-steve-announcement-date-year">2026</span>
+            </time>
+            <div class="bigh-steve-announcement-copy">
+                <span class="bigh-steve-announcement-badge">
+                    <span class="bigh-steve-announcement-badge-dot" aria-hidden="true"></span>
+                    Special Report
+                </span>
+                <h2 class="bigh-steve-announcement-title">Major Milestone Announcement</h2>
+            </div>
+            <p class="bigh-steve-announcement-description">Join our broadcast October 20, 2026 at (time <span class="bigh-steve-announcement-time-note">TBD)</span></p>
+            <form id="jotformComingSoonRedSteve" action="https://submit.jotform.com/submit/242986385047065/" method="POST" autocomplete="off" class="bigh-steve-announcement-form">
+                <input type="hidden" name="formID" value="242986385047065">
+                <input type="email" name="q3_email" id="comingSoonRedSteveEmail" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
+                <button type="submit" id="submitButtonComingSoonRedSteve">Get the Link</button>
+            </form>
+        </section>
+    </div>
+    <?php endif; ?>
     <h1 class="max-w-[1120px] text-center text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
         Using Heat and Water to Produce
         <br class="hidden sm:block">
@@ -921,3 +1803,4 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
         <img src="./assets/images/h-icon.png" alt="hydrogen">
     </div>
 </section>
+<?php endif; ?>

@@ -17,7 +17,7 @@ if ($requestedPage !== '') {
 }
 
 // Define valid static pages
-$validPages = ['home', 'home-orange-1', 'home-orange-2', 'home-lava', 'lava', 'dark', 'bigh-aug-27-a', 'sep-2-home-bullets', 'about', 'technology', 'application', 'team', 'market', 'news-archive', 'newsroom', 'news-commentary', 'investor', 'contact', 'short-videos', 'videos', 'thermoloop-video', 'ceo-podcast', 'webinar', 'thank-you', 'explainer', '3reasons', 'electrolyzer-tech', 'why-thermoloop', 'fasttrack', 'home1', 'home2', 'home3', 'special-report', 'special-report-nucube', 'special-report-October-2025', 'sign-up', 'signup-042826', 'heat-source', 'nuqube1', 'nuqube2', 'nuqube3', 'stagegateone1', 'stagegateone2', 'stagegateone3', 'both'];
+$validPages = ['home', 'coming-soon-red', 'coming-soon-red-steve', 'coming-soon-red-steve-over', 'coming-soon-red-steve-under', 'coming-soon-red-with-date', 'coming-soon-texture', 'coming-soon-white', 'completes-etu', 'newh-etu', 'home-orange-1', 'home-orange-2', 'home-lava', 'lava', 'dark', 'bigh-aug-27-a', 'sep-2-home-bullets', 'sep-19-a', 'about', 'technology', 'technology-sep-24', 'application', 'team', 'market', 'news-archive', 'newsroom', 'news-commentary', 'investor', 'contact', 'short-videos', 'videos', 'thermoloop-video', 'ceo-podcast', 'webinar', 'thank-you', 'explainer', '3reasons', 'electrolyzer-tech', 'why-thermoloop', 'fasttrack', 'home1', 'home2', 'home3', 'special-report', 'special-report-nucube', 'special-report-October-2025', 'sign-up', 'signup-042826', 'heat-source', 'nuqube1', 'nuqube2', 'nuqube3', 'stagegateone1', 'stagegateone2', 'stagegateone3', 'both'];
 
 // Dynamic video categories
 $videoCategories = ['news-commentary', 'ceo-podcast', 'short-videos'];

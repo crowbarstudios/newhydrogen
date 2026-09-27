@@ -31,6 +31,7 @@ if (isset($_GET['id'])) {
                         </div>";
                 } ?>
 
+            <?php if (empty($item['hasCompletePressRelease'])) : ?>
             <?php if ($item['biosolar']) : ?>
             <div class="news-about space-y-4 mt-6">
                 <h4 class="text-lg font-bold">About BioSolar, Inc.</h4>
@@ -96,6 +97,7 @@ if (isset($_GET['id'])) {
                 <span class="text-base">NewHydrogen, Inc.</span>
                 <a href="mailto:ir@newhydrogen.com" class="text-blue-600 text-[length:inherit]">ir@newhydrogen.com</a>
             </div>
+            <?php endif; ?>
         </div>
         <?php endif; ?>
     </div>
