@@ -1492,7 +1492,7 @@
     }
 
     .bigh-steve-announcement-description {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .bigh-steve-announcement-form input[type="email"] {
@@ -1504,6 +1504,12 @@
         padding-left: 4px;
         font-size: 13px;
         letter-spacing: 0.04em;
+    }
+
+    @media (min-width: 1024px) {
+        .bigh-steve-announcement-date {
+            align-self: center;
+        }
     }
 
     @media (max-width: 767px) {
