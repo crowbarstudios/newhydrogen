@@ -96,6 +96,8 @@
 
 
 
+<?php include __DIR__ . '/../includes/asia-market-section.php'; ?>
+
 <section class="relative py-[186px]  overflow-hidden">
     <div class="mx-auto max-w-screen-xl px-2 sm:px-4 z-[1] relative">
         <h3 class="text-center max-w-[888px] m-auto text-black">To Meet This Demand
