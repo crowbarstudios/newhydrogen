@@ -4833,3 +4833,28 @@ html {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+.csp-photo{
+  margin: 0;
+}
+
+#concentrated-solar-heading{
+  scroll-margin-top: 112px;
+}
+
+.csp-photo img{
+  display: block;
+  width: 100%;
+}
+
+.csp-photo figcaption{
+  margin-top: 8px;
+  color: #737b86;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.csp-photo figcaption a{
+  color: #167b3c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

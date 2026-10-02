@@ -87,6 +87,48 @@
     </div>
 </section>
 
+<section class="sm:my-24 my-12" aria-labelledby="concentrated-solar-heading">
+    <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
+        <h2 id="concentrated-solar-heading" class="font-normal lg:text-5xl text-4xl xl:mb-[45px] mb-5">Concentrated Solar Heat</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div class="space-y-5">
+                <p class="text-xl font-normal text-black leading-[1.3]">
+                    Concentrated solar power (CSP) uses fields of mirrors to focus sunlight onto a central receiver, producing <strong>heat directly instead of electricity</strong>.
+                </p>
+                <p class="text-xl font-normal text-black leading-[1.3]">
+                    Next-generation receivers now in development are targeting the <strong>high temperatures ThermoLoop<sup>®</sup> requires</strong>.
+                </p>
+                <p class="text-xl font-normal text-black leading-[1.3]">
+                    Paired with thermal storage, we believe CSP could complement nuclear heat as a zero-emission source for producing <strong>massive quantities of clean hydrogen</strong> in sun-rich regions.
+                </p>
+            </div>
+            <figure class="csp-photo">
+                <img
+                    src="./assets/images/crescent-dunes-solar.jpg"
+                    alt="Aerial view of the Crescent Dunes concentrated solar power tower surrounded by its heliostat mirror field"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Photo:
+                    <a href="https://commons.wikimedia.org/wiki/File:Crescent_Dunes_Solar_December_2014.JPG" target="_blank" rel="noopener noreferrer">“Crescent Dunes Solar, December 2014”</a>
+                    by
+                    <a href="https://commons.wikimedia.org/wiki/User:Amble" target="_blank" rel="noopener noreferrer">Amble</a>
+                    via Wikimedia Commons, licensed under
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+                </figcaption>
+            </figure>
+        </div>
+
+        <h3 class="font-semibold text-2xl lg:text-3xl mt-10 mb-5">Concentrated Solar + ThermoLoop<sup>®</sup></h3>
+        <img
+            src="./assets/images/concentrated-solar-thermoloop.svg"
+            class="block w-full h-auto"
+            alt="Process diagram: concentrated solar heat flows directly to ThermoLoop to produce clean hydrogen"
+            loading="lazy"
+        >
+    </div>
+</section>
+
 <section class="sm:my-24 my-12">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
     <h3 class="font-normal lg:text-5xl text-4xl xl:mb-[45px] mb-5">Massive Scale</h3>

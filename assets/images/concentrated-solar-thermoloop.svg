@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="683" viewBox="0 0 2048 683">
+<defs><linearGradient id="b"><stop stop-color="#23a7ef"/><stop offset="1" stop-color="#29b2df"/></linearGradient><linearGradient id="g"><stop stop-color="#00ac00"/><stop offset="1" stop-color="#008f32"/></linearGradient></defs>
+<rect width="2048" height="683" fill="white"/><rect x="12" y="120" width="2024" height="446" rx="56" fill="#f4f7fa" stroke="black" stroke-width="2.5"/>
+<rect x="126" y="238" width="442" height="207" rx="30" fill="url(#b)" stroke="#0756ff" stroke-width="5"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle"><text x="347" y="312" font-size="46" font-weight="bold">Concentrated</text><text x="347" y="364" font-size="46" font-weight="bold">Solar</text><text x="347" y="408" font-size="30">Heliostat field + receiver</text><text x="713" y="322" font-size="36">Direct Heat</text></g>
+<path d="M580 343H843" stroke="black" stroke-width="5"/><path d="M843 328L867 343L843 358Z"/>
+<rect x="877" y="245" width="452" height="188" rx="33" fill="#f4f7fa" stroke="#51b780" stroke-width="7"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="bold"><text x="900" y="357" font-size="61" textLength="267" lengthAdjust="spacingAndGlyphs">ThermoL</text><text x="1246" y="357" font-size="61">p</text><text x="1287" y="331" font-size="20" font-weight="normal">®</text></g>
+<path d="M1207 340C1197 327 1189 322 1181 326C1167 333 1176 353 1187 352C1195 352 1203 343 1210 335C1219 325 1229 321 1236 328C1246 339 1235 357 1225 352C1218 349 1213 343 1207 336" fill="none" stroke="#00e61e" stroke-width="7" stroke-linecap="round"/>
+<path d="M1341 343H1496" stroke="black" stroke-width="5"/><path d="M1496 328L1520 343L1496 358Z"/>
+<rect x="1534" y="237" width="399" height="205" rx="31" fill="url(#g)" stroke="#228000" stroke-width="3"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="white" font-size="55" font-weight="bold"><text x="1733" y="326">Clean</text><text x="1733" y="387">Hydrogen</text></g></svg>
