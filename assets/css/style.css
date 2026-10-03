@@ -4389,3 +4389,468 @@ html {
     font-size: 26px;
   }
 }
+
+/* Asia market section */
+.asia-market-section{
+  background: #f1f4f9;
+  color: #202833;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  padding: 72px 20px 64px;
+  scroll-margin-top: 105px;
+}
+
+.asia-market-wrap{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.asia-market-intro,
+.asia-players-intro{
+  margin: 0 auto 28px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.asia-market-title{
+  color: #101820;
+  font-size: clamp(28px, 3.3vw, 42px);
+  font-weight: 400;
+  line-height: 1.16;
+  margin: 0 0 12px;
+}
+
+.asia-market-title strong{
+  font-weight: 800;
+}
+
+.asia-market-intro > p{
+  color: #52606d;
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.asia-country-table-wrap{
+  border-radius: 17px;
+  box-shadow: 0 8px 24px rgb(29 44 62 / 5%);
+  overflow: hidden;
+}
+
+.asia-country-table{
+  background: #fff;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.asia-country-table thead{
+  background: #344253;
+  color: #fff;
+  text-align: left;
+}
+
+.asia-country-table thead th{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  padding: 14px 20px;
+  text-transform: uppercase;
+}
+
+.asia-country-table thead th:first-child{
+  width: 20%;
+}
+
+.asia-country-table tbody tr + tr{
+  border-top: 1px solid #e7ebf0;
+}
+
+.asia-country-table tbody th,
+.asia-country-table tbody td{
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.asia-country-table tbody td{
+  color: #37414c;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.asia-country-table tbody td p{
+  margin: 0;
+}
+
+.asia-country-cell{
+  font-weight: 400;
+}
+
+.asia-country-name,
+.asia-country-type,
+.asia-country-volume,
+.asia-country-unit{
+  display: block;
+}
+
+.asia-country-name{
+  color: #17212c;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.asia-country-type{
+  color: #168044;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.asia-country-volume{
+  color: #21934e;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: 1.05;
+}
+
+.asia-country-unit{
+  color: #687482;
+  font-size: 13.5px;
+  line-height: 1.45;
+  margin-top: 4px;
+}
+
+.asia-market-section sup{
+  font-size: .9em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.asia-market-section sup a{
+  color: #168044;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.asia-players{
+  margin-top: 35px;
+  scroll-margin-top: 105px;
+}
+
+.asia-players-intro{
+  margin-bottom: 18px;
+  max-width: 850px;
+}
+
+.asia-players-intro h2{
+  color: #18222c;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.asia-players-intro p{
+  color: #6b7580;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.asia-player-grid{
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.asia-player-card{
+  align-self: start;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 7px 20px rgb(29 44 62 / 4%);
+  min-width: 0;
+  padding: 17px 19px 18px;
+}
+
+.asia-player-card > h3{
+  border-bottom: 1px solid #e8edf0;
+  color: #19232e;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 12px;
+  padding-bottom: 9px;
+}
+
+.asia-player-columns{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.asia-player-columns h4{
+  color: #168044;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  margin: 0 0 7px;
+  text-transform: uppercase;
+}
+
+.asia-player-columns ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.asia-player-columns li{
+  color: #53606c;
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.asia-player-columns li strong{
+  color: #27333e;
+  font-weight: 700;
+}
+
+.asia-common-problem{
+  background: #344253;
+  border-radius: 16px;
+  color: #fff;
+  margin-top: 26px;
+  padding: 22px 30px 25px;
+  scroll-margin-top: 105px;
+}
+
+.asia-common-label{
+  color: #cbd2dc;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin: 0 0 7px;
+  text-transform: uppercase;
+}
+
+.asia-common-problem h2{
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 1050px;
+}
+
+.asia-common-problem h2 span{
+  color: #0AE02D;
+  font-weight: 800;
+}
+
+.asia-sources{
+  color: #6e7884;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+.asia-sources ol{
+  column-count: 2;
+  column-gap: 32px;
+  margin: 0;
+  padding-left: 19px;
+}
+
+.asia-sources li{
+  break-inside: avoid;
+  margin: 0 0 8px;
+  padding-left: 2px;
+  scroll-margin-top: 105px;
+}
+
+@media (max-width: 760px){
+  .asia-market-section{
+    padding: 48px 15px 42px;
+    scroll-margin-top: 72px;
+  }
+
+  .asia-market-section sup{
+    display: inline-block;
+    font-size: .75em;
+    margin: 0 .12em;
+    white-space: nowrap;
+  }
+
+  .asia-market-title{
+    font-size: 30px;
+  }
+
+  .asia-market-intro{
+    margin-bottom: 22px;
+  }
+
+  .asia-market-intro > p{
+    font-size: 15.5px;
+  }
+
+  .asia-country-table thead{
+    display: none;
+  }
+
+  .asia-country-table,
+  .asia-country-table tbody,
+  .asia-country-table tbody tr{
+    display: block;
+    width: 100%;
+  }
+
+  .asia-country-table tbody tr{
+    padding: 13px 16px;
+  }
+
+  .asia-country-table tbody tr + tr{
+    border-top: 1px solid #e7ebf0;
+  }
+
+  .asia-country-table tbody th,
+  .asia-country-table tbody td{
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .asia-country-table tbody td{
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .asia-country-table tbody td::before{
+    color: #344253;
+    content: attr(data-label);
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .07em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  .asia-country-cell{
+    border-bottom: 1px solid #edf0f3;
+    margin-bottom: 3px;
+    padding-bottom: 10px !important;
+  }
+
+  .asia-country-name{
+    font-size: 20px;
+  }
+
+  .asia-country-type{
+    font-size: 13.5px;
+  }
+
+  .asia-country-volume{
+    font-size: 32px;
+  }
+
+  .asia-country-unit{
+    font-size: 13px;
+  }
+
+  .asia-players{
+    margin-top: 28px;
+  }
+
+  .asia-players-intro h2{
+    font-size: 26px;
+  }
+
+  .asia-players-intro p{
+    font-size: 13.5px;
+  }
+
+  .asia-player-grid{
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .asia-player-card{
+    padding: 16px;
+  }
+
+  .asia-player-columns{
+    gap: 15px;
+  }
+
+  .asia-player-columns h4{
+    font-size: 14px;
+  }
+
+  .asia-player-columns li{
+    font-size: 15px;
+  }
+
+  .asia-common-problem{
+    margin-top: 21px;
+    padding: 19px 20px 21px;
+  }
+
+  .asia-common-problem h2{
+    font-size: 19px;
+  }
+
+  .asia-sources{
+    font-size: 14px;
+  }
+
+  .asia-sources ol{
+    column-count: 1;
+  }
+
+  .asia-players,
+  .asia-common-problem,
+  .asia-sources li{
+    scroll-margin-top: 72px;
+  }
+}
+
+@media (max-width: 460px){
+  .asia-market-title{
+    font-size: 30px;
+  }
+
+  .asia-player-columns{
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.csp-photo{
+  margin: 0;
+}
+
+#concentrated-solar-heading{
+  scroll-margin-top: 112px;
+}
+
+.csp-photo img{
+  display: block;
+  width: 100%;
+}
+
+.csp-photo figcaption{
+  margin-top: 8px;
+  color: #737b86;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.csp-photo figcaption a{
+  color: #167b3c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
