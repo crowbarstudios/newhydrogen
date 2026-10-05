@@ -1,6 +1,27 @@
 <?php
 $videos = [
     [
+        'title' => "October 5, 2026 - NewHydrogen News Commentary",
+        'videoID' => "bPZsxfyLEKk",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "october-5-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>Toyota’s toughest truck just picked a fight with diesel. Hi, I’m Steve Hill, CEO of NewHydrogen, with this week’s top hydrogen news. At NewHydrogen, our mission is simple: to produce the world’s cheapest clean hydrogen. If you’d like to follow our progress, please visit us at newhydrogen.com.</p>
+<p>First up, Spain’s Moeve just partnered with Abu Dhabi’s Masdar on a $1.22 billion clean hydrogen plant, the largest of its kind in southern Europe. It’ll run at 300 megawatts, producing an estimated 45,000 tons of hydrogen per year. Against total global hydrogen demand, that’s about a twentieth of 1%—basically a rounding error. Closing that gap takes technology built to scale well beyond what electrolyzer plants can deliver. Still, this shows real intent. Even with high costs, real investors are backing clean hydrogen to meet growing demand.</p>
+<p>Next up, the Port of Tilbury in the United Kingdom just started running the country’s first hydrogen-powered reach stacker, a machine that stacks and moves shipping containers. The two-year trial is expected to cut over 100,000 kilograms of CO₂ per year. Ports are a great match for hydrogen. The equipment runs constantly within a small footprint at a fixed location, making ports one of the most realistic markets for hydrogen, with the economics penciling out even before they may make sense elsewhere.</p>
+<p>Now to our headline story. The Hilux is exactly the kind of truck people don’t want messed with. So why is Toyota building a hydrogen version alongside the diesel and electric ones it already sells? To answer that question, here’s how Toyota’s own R&amp;D chief for Europe, Sinichi Yasuri, put it:</p>
+<p>“Hydrogen can play an important role in sustainable energy where energy resilience and demanding operational needs are critical. Toyota is not only developing fuel cell technology in vehicles; we’re also committed to supporting the infrastructure needed to fuel them. By advancing our fuel cell technology and working with partners across the value chain, Toyota aims to build the ecosystem needed to bring hydrogen mobility closer to wider deployment.”</p>
+<p>Now, let me translate. Toyota’s real target is the $2 trillion heavy-duty logistics sector, where hydrogen outpaces batteries in range and fast refueling. They’re using a familiar, trusted pickup platform to claim as much of this booming market as possible.</p>
+<p>Most hydrogen today is made with natural gas. It’s less expensive than clean hydrogen, but it comes with the emissions we’re trying to escape in the first place. Natural gas also isn’t nearly as abundant worldwide as it is in the United States. Clean hydrogen solves the emissions problem, but today that means production by electrolysis, which costs more than dirty hydrogen and isn’t designed for production at a massive scale.</p>
+<p>So we’re left choosing between cheap and dirty—if your nation even has the natural gas for it—or clean and expensive. Today’s technology can’t solve both issues. Meanwhile, hydrogen demand keeps climbing, with some projecting it to surge by up to 50% by 2030.</p>
+<p>That’s exactly why NewHydrogen is developing ThermoLoop. Electrolyzers can’t produce at the cost and scale the world demands. ThermoLoop takes a different approach, with the potential to scale clean hydrogen production cheaply using heat from high-temperature power sources like nuclear, which happens to be having a renaissance at the moment.</p>
+<p>To learn more about how NewHydrogen’s ThermoLoop is different from other hydrogen production technologies on the market and why that matters, head over to newhydrogen.com. There, you can watch our short explainer video and sign up for our newsletter.</p>
+<p>NewHydrogen is a publicly traded company. We trade under the symbol NEWH. Thanks for watching, and we’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "September 28, 2026 - NewHydrogen News Commentary",
         'videoID' => "xnd5yYKIUwI",
         'date' => "",
