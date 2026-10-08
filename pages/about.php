@@ -1,13 +1,6 @@
 <section class="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-gardiant-top before:bg-no-repeat sm:before:w-[566px] before:w-[400px] sm:before:h-[566px] before:h-[400px]">
     <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl md:pt-[100px] pt-[50px] md:pb-[212px] pb-24">
         <img class="rounded-[32px]" src="./assets/images/about.png" alt="About NewHydrogen">
-        <section class="mt-16">
-            <img class="hidden md:block" src="./assets/images/go-to-market-plan-2026.png" alt="development-plan">
-            <div class="block md:hidden max-w-96 mx-auto">
-                <img src="./assets/images/go-to-market-plan-2026-mobile.png" alt="development-plan">
-            </div>
-            
-        </section>
         <div class="md:grid grid-cols-2 block md:pt-[114px] pt-12 gap-6">
             <div class="md:max-w-[600px] mr-auto">
                 <h1 class="text-[36px] lg:text-5xl xl:text-[64px] font-extralight leading-snug lg:leading-[1.1] mb-4 xl:mb-20">

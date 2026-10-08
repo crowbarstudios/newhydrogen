@@ -11,4 +11,5 @@ $bighHydrogenDemandDescriptor = 'High volume';
 $bighAnyHeatSourceCopy = true;
 $bighMissionIndustrialScalePhrase = true;
 $bighMissionHelpUsherCopy = true;
+$bighMissionUseHeatAndWaterCopy = in_array($page ?? 'home', ['home', 'coming-soon-red-steve-over', 'completes-etu'], true);
 include __DIR__ . '/bigh-aug-27-a.php';
