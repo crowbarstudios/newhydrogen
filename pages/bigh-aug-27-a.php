@@ -763,9 +763,14 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
     <h1 class="max-w-[1120px] text-center text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
         Using Heat and Water to Produce
         <br class="hidden sm:block">
+        <?php if (!empty($bighHeadlineCompact)) : ?>
+            <?= htmlspecialchars($bighHeadlineScaleWord ?? 'Massive', ENT_QUOTES, 'UTF-8') ?>
+            <span class="bigh-headline-green" style="white-space: nowrap;">Clean Hydrogen</span>
+        <?php else : ?>
         Massive Amounts
         <br class="hidden sm:block">
         <span class="bigh-headline-second-line">of the World’s Cheapest <span class="bigh-headline-green" style="white-space: nowrap;">Clean Hydrogen</span></span>
+        <?php endif; ?>
     </h1>
 </section>
 
@@ -878,11 +883,15 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             </article>
             <article class="bigh-sep19-feature-card">
                 <h3>Future-Proof Heat Source</h3>
+                <?php if (!empty($bighAnyHeatSourceCopy)) : ?>
+                <p>ThermoLoop<sup class="bigh-trademark">®</sup> is engineered to couple with any source of heat, including nuclear microreactors and advanced nuclear technology, unlocking continuous, cheap, clean hydrogen production off-grid.</p>
+                <?php else : ?>
                 <p>ThermoLoop<sup class="bigh-trademark">®</sup> is engineered to couple with high-temperature nuclear microreactors and advanced nuclear technology, unlocking continuous, cheap, clean hydrogen production off-grid, while preserving flexibility for other high-temperature sources.</p>
+                <?php endif; ?>
             </article>
             <article class="bigh-sep19-feature-card">
-                <h3>The Scale Electrolyzers Can&apos;t Reach</h3>
-                <p>Global hydrogen demand requires true industrial scale, a threshold traditional electrolyzers have never reached. ThermoLoop<sup class="bigh-trademark">®</sup> heat-driven water splitting technology delivers the clearest path to massive amounts of the world&rsquo;s cheapest clean hydrogen production.</p>
+                <h3>The Scale Electrolyzers Can&apos;t <?= htmlspecialchars($bighHeadlineReachVerb ?? 'Reach', ENT_QUOTES, 'UTF-8') ?></h3>
+                <p><?= htmlspecialchars($bighHydrogenDemandDescriptor ?? 'Global', ENT_QUOTES, 'UTF-8') ?> hydrogen demand requires true industrial scale, a threshold traditional electrolyzers have never <?= htmlspecialchars($bighParagraphReachVerb ?? 'reached', ENT_QUOTES, 'UTF-8') ?>. ThermoLoop<sup class="bigh-trademark">®</sup> heat-driven water splitting technology delivers the clearest path to massive amounts of the world&rsquo;s cheapest clean hydrogen production.</p>
             </article>
         </div>
     </div>
@@ -914,7 +923,13 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
 <section class="bigh-mission-section bg-white py-20 sm:py-40 relative">
     <div class="mx-auto max-w-screen-xl px-2 sm:px-4">
         <div class="max-w-[910px] mx-auto relative z-10">
+            <?php if (!empty($bighMissionIndustrialScalePhrase)) : ?>
+                <h3 class="text-center md:text-[42px] text-4xl" style="text-wrap: balance;">
+                    Our mission is to help produce <span style="white-space: nowrap;">industrial-scale</span> <span class="bigh-brand-green">clean hydrogen</span>, and <?php if (!empty($bighMissionHelpUsherCopy)) : ?>help <?php endif; ?>usher in the <span class="text-black">clean hydrogen</span> economy that Goldman Sachs estimated to be worth <span class="text-black">$12 trillion</span>.
+                </h3>
+            <?php else : ?>
             <h3 class="text-left md:text-[42px] text-4xl">Our mission is to help produce unlimited <br class="hidden md:inline-block" /> amounts of the world’s cheapest <span class="bigh-brand-green">clean <br class="hidden md:inline-block" /> hydrogen</span>, and usher in the <span class="bigh-brand-green">clean hydrogen</span> <br class="hidden md:inline-block" /> economy that Goldman Sachs estimated to be <br class="hidden md:inline-block" /> worth <span class="text-black">$12 trillion</span> in the near future.</h3>
+            <?php endif; ?>
         </div>
     </div>
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
