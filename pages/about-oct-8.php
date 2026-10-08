@@ -1,0 +1,180 @@
+<section class="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-gardiant-top before:bg-no-repeat sm:before:w-[566px] before:w-[400px] sm:before:h-[566px] before:h-[400px]">
+    <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl md:pt-[100px] pt-[50px] md:pb-[212px] pb-24">
+        <img class="rounded-[32px]" src="./assets/images/about.png" alt="About NewHydrogen">
+        <section class="mt-16">
+            <img class="hidden md:block" src="./assets/images/go-to-market-plan-2026.png" alt="development-plan">
+            <div class="block md:hidden max-w-96 mx-auto">
+                <img src="./assets/images/go-to-market-plan-2026-mobile.png" alt="development-plan">
+            </div>
+            
+        </section>
+        <div class="md:grid grid-cols-2 block md:pt-[114px] pt-12 gap-6">
+            <div class="md:max-w-[600px] mr-auto">
+                <h1 class="text-[36px] lg:text-5xl xl:text-[64px] font-extralight leading-snug lg:leading-[1.1] mb-4 xl:mb-20">
+                Breakthrough Technology to Produce
+                    <span class="font-semibold">the World’s Cheapest Clean Hydrogen
+                    </span>
+                </h1>
+                <p class="text-xl lg:text-[26px] font-normal">
+                    <span class="font-bold">NewHydrogen is developing ThermoLoop<sup>TM</sup></span> -- a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen.
+                </p>
+            </div>
+            <div class="md:max-w-[600px] md:ml-auto mt-6 md:mt-0">
+                <p class="text-lg lg:text-xl mb-5">
+                Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more.
+                </p>
+                <p class="text-lg lg:text-xl mb-5">
+                Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an infinite and renewable worldwide resource. 
+                </p>
+                <p class="text-lg lg:text-xl mb-5">
+                Currently, the most common way of making clean hydrogen is to split water into oxygen and hydrogen with electricity using an electrolyzer, a very expensive process. 
+                </p>
+                <p class="text-lg lg:text-xl mb-5">
+                By using heat directly, we can dramatically reduce the use of expensive electricity. A massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. 
+                </p>
+                <p class="text-lg lg:text-xl mb-5">
+                Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <?php include './includes/team-section.php'; ?>
+
+
+    <!-- <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl py-20">
+        <div>
+            <h2 class="text-[36px] lg:text-5xl font-black leading-[1.1]">Our Company Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-[120px] gap-y-10 mt-16">
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20 ">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>David Lee, PhD</h6>
+                            <p class="text-sm mt-1.5">Chairman of the Board & President</p>
+                        </div>
+                        <p class="text-sm">35 years of experience in sustainable energy, software development, electronics, engineering, marketing, sales, and corporate management.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/team-member5.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Steve Hill, MBA</h6>
+                            <p class="text-sm mt-1.5">Chief Executive Officer</p>
+                        </div>
+                        <p class=" text-sm">Over 20 years of experience in biopharmaceutical and tech business development, sustainable energy, product launches, and market strategy.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/team-member6.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 h-full pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Eric McFarland, PhD</h6>
+                            <p class="text-sm mt-1.5">Chief Technology Officer</p>
+                        </div>
+                        <p class=" text-sm">UCSB professor, inventor, and energy technology expert with deep experience in catalysis, hydrogen production, and industry-academic collaboration. Former founder and CEO of multiple startups, with over 190 publications and 25 patents.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/team-member2.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Sundar Narayanan</h6>
+                            <p class="text-sm mt-1.5">Director of Process Engineering</p>
+                        </div>
+                        <p class=" text-sm">Chemical process engineering and scale-up expert with over 35 years of experience in process development, technology integration, and commercialization. former ExxonMobil senior technologist with a track record in energy efficiency, process automation, and advanced systems.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/sundar-narayanan.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Ivor John, PhD</h6>
+                            <p class="text-sm mt-1.5">Senior Advisor</p>
+                        </div>
+                        <p class=" text-sm">Environmental consultant, auditor and Ph.D. in Atmospheric Physics. Expert in air quality, climate change and the analysis of air emissions and greenhouse gasses.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/ivor-john.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                    <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Nirala Singh, PhD</h6>
+                            <p class="text-sm mt-1.5">Scientific Advisor</p>
+                        </div>
+                        <p class=" text-sm">Expert in Electrocatalysts Development Associate Professor of Chemical Engineering, University of Michigan, Ann Arbor.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/nirala-singh.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-28">
+            <h2 class="text-[36px] lg:text-5xl font-black leading-[1.1]">The UCSB Technology Team</h2>
+            <div class=" bg-white rounded-[30px] p-6 h-auto relative max-w-full md:max-w-[360px] mx-auto mt-16">
+                <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                    <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                        <h6>Phillip Christopher, PhD</h6>
+                        <p class="text-sm mt-1.5">Principal Investigator</p>
+                    </div>
+                    <p class=" text-sm">Professor of Chemical Engineering, University of California, Santa Barbara</p>
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                    <img src="./assets/images/philip-christopher.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-[120px] gap-y-10 mt-16">
+                <div class="bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Justin Marlowe, PhD </h6>
+                            <p class="text-sm mt-1.5">Research Scientist</p>
+                        </div>
+                        <p class=" text-sm">Ph.D. in Chemical Engineering University of California, Santa Barbara. Expert in multiple materials characterization techniques and reaction engineering.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/team-member3.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                <div class=" bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Yikyeom Kim, PhD </h6>
+                            <p class="text-sm mt-1.5">Research Scientist</p>
+                        </div>
+                        <p class=" text-sm">Ph.D. in Chemical Engineering from the Korea Advanced Institute of Science and Technology (KAIST). Expert in the fabrication of tailored redox catalysts and system analysis of solid-gas reactions.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/team-member4.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+                    <div class=" bg-white rounded-[30px] p-6 h-auto relative max-w-full">
+                    <div class="flex flex-col gap-6 pr-32 md:pr-36 xl:pr-20">
+                        <div class="relative before:content-[''] before:absolute before:top-0 before:-left-6 before:w-0.5 before:h-full before:bg-[#76b3f8] before:bg-no-repeat">
+                            <h6>Austin Morales, PhD</h6>
+                            <p class="text-sm mt-1.5">Research Scientist</p>
+                        </div>
+                        <p class=" text-sm">Ph.D. In Chemical Engineering from the University of Houston. Expert in advanced catalytic processes for hydrogen production.</p>
+                    </div>
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-[72px] rounded-full size-32 sm:size-36 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-[-1] after:rounded-full after:shadow-[-20px_0_30px_rgb(0_188_2_/_50%)]">
+                        <img src="./assets/images/austin-for-web.png" alt="team-member" class="rounded-full w-full h-full overflow-hidden">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+</section>

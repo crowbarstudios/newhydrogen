@@ -3,4 +3,6 @@
 $isComingSoonRed = true;
 $isComingSoonRedSteve = true;
 $isComingSoonRedSteveOver = true;
-include __DIR__ . '/home.php';
+$bighAnnouncementCardDay = '19';
+$bighAnnouncementTimeCopy = '4:01 PM EST';
+include __DIR__ . '/home-oct-8.php';
