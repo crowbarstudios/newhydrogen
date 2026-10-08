@@ -20,13 +20,13 @@
                             <span class="asia-country-name">Japan</span>
                             <span class="asia-country-type">Import Dependent</span>
                             <span class="asia-country-volume">~2 Mt</span>
-                            <span class="asia-country-unit">hydrogen used per year<sup><a href="#asia-source-1" aria-label="Source 1">1</a></sup></span>
+                            <span class="asia-country-unit">hydrogen used per year</span>
                         </th>
                         <td data-label="Hydrogen Profile">
-                            <p>Plans to grow hydrogen supply roughly tenfold, to 20 million tonnes a year by 2050.<sup><a href="#asia-source-1" aria-label="Source 1">1</a></sup> Iwatani, Japan’s top hydrogen supplier, leads merchant and liquefied hydrogen distribution.<sup><a href="#asia-source-2" aria-label="Source 2">2</a></sup> Refiner ENEOS intends to import hydrogen to supply power generation at its refineries and to local companies.<sup><a href="#asia-source-3" aria-label="Source 3">3</a></sup></p>
+                            <p>Plans to grow hydrogen supply roughly tenfold, to 20 million tonnes a year by 2050. Iwatani, Japan’s top hydrogen supplier, leads merchant and liquefied hydrogen distribution. Refiner ENEOS intends to import hydrogen to supply power generation at its refineries and to local companies.</p>
                         </td>
                         <td data-label="Ammonia Profile">
-                            <p>Japan uses about 1 million tonnes of ammonia a year. Mitsui Chemicals is the largest domestic producer at 314,000 tonnes a year, and imports are expected to rise from 2027.<sup><a href="#asia-source-4" aria-label="Source 4">4</a></sup> JERA aims to import around 2 million tonnes of fuel ammonia a year by 2030 for power plant co-firing.<sup><a href="#asia-source-5" aria-label="Source 5">5</a></sup> Trading houses Mitsubishi Corporation and Marubeni plan to bring about 1 million and 250,000 tonnes a year of low-carbon ammonia to Japan from Texas.<sup><a href="#asia-source-6" aria-label="Source 6">6</a></sup></p>
+                            <p>Japan uses about 1 million tonnes of ammonia a year. Mitsui Chemicals is the largest domestic producer at 314,000 tonnes a year, and imports are expected to rise from 2027. JERA aims to import around 2 million tonnes of fuel ammonia a year by 2030 for power plant co-firing. Trading houses Mitsubishi Corporation and Marubeni plan to bring about 1 million and 250,000 tonnes a year of low-carbon ammonia to Japan from Texas.</p>
                         </td>
                     </tr>
                     <tr>
@@ -34,13 +34,13 @@
                             <span class="asia-country-name">South Korea</span>
                             <span class="asia-country-type">Import Driven</span>
                             <span class="asia-country-volume">~2.4 Mt</span>
-                            <span class="asia-country-unit">hydrogen used per year (2023)<sup><a href="#asia-source-7" aria-label="Source 7">7</a></sup></span>
+                            <span class="asia-country-unit">hydrogen used per year (2023)</span>
                         </th>
                         <td data-label="Hydrogen Profile">
-                            <p>Plans to supply 3.9 million tonnes of clean hydrogen a year by 2030 and 27.9 million tonnes by 2050, about 82% of it imported.<sup><a href="#asia-source-8" aria-label="Source 8">8</a></sup> POSCO plans to replace its blast furnaces with HyREX hydrogen-based ironmaking, starting at Pohang in 2033.<sup><a href="#asia-source-9" aria-label="Source 9">9</a></sup> KOGAS aims to supply 830,000 tonnes of hydrogen a year by 2030, including imported green hydrogen.<sup><a href="#asia-source-10" aria-label="Source 10">10</a></sup> SK Innovation E&amp;S has proposed Korea’s largest blue hydrogen plant at Boryeong.<sup><a href="#asia-source-11" aria-label="Source 11">11</a></sup></p>
+                            <p>Plans to supply 3.9 million tonnes of clean hydrogen a year by 2030 and 27.9 million tonnes by 2050, about 82% of it imported. POSCO plans to replace its blast furnaces with HyREX hydrogen-based ironmaking, starting at Pohang in 2033. KOGAS aims to supply 830,000 tonnes of hydrogen a year by 2030, including imported green hydrogen. SK Innovation E&amp;S has proposed Korea’s largest blue hydrogen plant at Boryeong.</p>
                         </td>
                         <td data-label="Ammonia Profile">
-                            <p>LOTTE Fine Chemical operates Asia’s largest ammonia terminal at Ulsan and completed its first commercial-scale green ammonia import in 2026, for power generation, marine fuel and hydrogen supply.<sup><a href="#asia-source-12" aria-label="Source 12">12</a></sup> State generator Korea Southern Power (KOSPO), a KEPCO subsidiary, won Korea’s first clean hydrogen power auction and plans ammonia co-firing at its Samcheok coal plant from 2028.<sup><a href="#asia-source-11" aria-label="Source 11">11</a></sup></p>
+                            <p>LOTTE Fine Chemical operates Asia’s largest ammonia terminal at Ulsan and completed its first commercial-scale green ammonia import in 2026, for power generation, marine fuel and hydrogen supply. State generator Korea Southern Power (KOSPO), a KEPCO subsidiary, won Korea’s first clean hydrogen power auction and plans ammonia co-firing at its Samcheok coal plant from 2028.</p>
                         </td>
                     </tr>
                     <tr>
@@ -48,13 +48,13 @@
                             <span class="asia-country-name">India</span>
                             <span class="asia-country-type">Refineries and Fertilizer</span>
                             <span class="asia-country-volume">~10 Mt</span>
-                            <span class="asia-country-unit">hydrogen used per year (10% of global demand)<sup><a href="#asia-source-13" aria-label="Source 13">13</a></sup></span>
+                            <span class="asia-country-unit">hydrogen used per year (10% of global demand)</span>
                         </th>
                         <td data-label="Hydrogen Profile">
-                            <p>Mostly captive production inside refineries. Indian Oil Corporation produces hydrogen mainly from natural gas and targets 10% low-carbon hydrogen by 2029-30.<sup><a href="#asia-source-14" aria-label="Source 14">14</a></sup> Reliance Industries targets 3 million tonnes a year of hydrogen production capacity at Jamnagar by 2032.<sup><a href="#asia-source-15" aria-label="Source 15">15</a></sup></p>
+                            <p>Mostly captive production inside refineries. Indian Oil Corporation produces hydrogen mainly from natural gas and targets 10% low-carbon hydrogen by 2029-30. Reliance Industries targets 3 million tonnes a year of hydrogen production capacity at Jamnagar by 2032.</p>
                         </td>
                         <td data-label="Ammonia Profile">
-                            <p>Fertilizer majors IFFCO, with ammonia and urea complexes at Kalol, Phulpur and Aonla,<sup><a href="#asia-source-16" aria-label="Source 16">16</a></sup> and GNFC, with about 815,000 tonnes a year of ammonia capacity at Bharuch,<sup><a href="#asia-source-17" aria-label="Source 17">17</a></sup> anchor domestic supply. India still imported about 2.5 million tonnes of ammonia in 2024, led by Saudi Arabia at 33%.<sup><a href="#asia-source-18" aria-label="Source 18">18</a></sup></p>
+                            <p>Fertilizer majors IFFCO, with ammonia and urea complexes at Kalol, Phulpur and Aonla, and GNFC, with about 815,000 tonnes a year of ammonia capacity at Bharuch, anchor domestic supply. India still imported about 2.5 million tonnes of ammonia in 2024, led by Saudi Arabia at 33%.</p>
                         </td>
                     </tr>
                     <tr>
@@ -62,13 +62,13 @@
                             <span class="asia-country-name">China</span>
                             <span class="asia-country-type">World’s Largest Hydrogen Consumer</span>
                             <span class="asia-country-volume">~29 Mt</span>
-                            <span class="asia-country-unit">hydrogen used per year (29% of global demand)<sup><a href="#asia-source-13" aria-label="Source 13">13</a></sup></span>
+                            <span class="asia-country-unit">hydrogen used per year (29% of global demand)</span>
                         </th>
                         <td data-label="Hydrogen Profile">
-                            <p>Dominated by state energy majors. Sinopec is China’s largest hydrogen producer,<sup><a href="#asia-source-19" aria-label="Source 19">19</a></sup> and CHN Energy has the largest coal-to-hydrogen production capacity in the world.<sup><a href="#asia-source-20" aria-label="Source 20">20</a></sup></p>
+                            <p>Dominated by state energy majors. Sinopec is China’s largest hydrogen producer, and CHN Energy has the largest coal-to-hydrogen production capacity in the world.</p>
                         </td>
                         <td data-label="Ammonia Profile">
-                            <p>Large coal-based chemical production supplies urea and industrial chemicals, including Hubei Yihua’s coal-fed ammonia plant in Yichang.<sup><a href="#asia-source-21" aria-label="Source 21">21</a></sup></p>
+                            <p>Large coal-based chemical production supplies urea and industrial chemicals, including Hubei Yihua’s coal-fed ammonia plant in Yichang.</p>
                         </td>
                     </tr>
                 </tbody>
@@ -213,30 +213,5 @@
             <h2 id="asia-common-problem-title">Every one of these companies needs hydrogen or ammonia that today is tied to fossil fuels or foreign supply. <span>Massive quantities of clean hydrogen</span>, made from water and heat close to where it is used, could meet that need.</h2>
         </aside>
 
-        <footer class="asia-sources" id="asia-sources" aria-label="Sources">
-            <ol>
-                <li id="asia-source-1">New Zealand Ministry of Foreign Affairs and Trade, “Japan: Hydrogen Strategy” (Nov 2023), summarizing Japan’s Hydrogen Basic Strategy</li>
-                <li id="asia-source-2">Hydrogen Central, “Japan’s Iwatani shares hit all-time high on hydrogen strategy”</li>
-                <li id="asia-source-3">S&amp;P Global, “Japan’s ENEOS signs MOU with Aramco to develop hydrogen, ammonia supply chain” (2021)</li>
-                <li id="asia-source-4">Argus Media, “Japan to import more ammonia from 2027”</li>
-                <li id="asia-source-5">Argus Media, “Japan’s JERA eyes 2mn t/yr ammonia imports in 2030”</li>
-                <li id="asia-source-6">Rigzone, “Marubeni to invest in ExxonMobil ammonia project in Texas” (2025)</li>
-                <li id="asia-source-7">Korea Petroleum Quality &amp; Distribution Authority (K-Petro), Hydrogen Distribution Center, “Domestic and overseas hydrogen supply and demand status and outlook” (2025)</li>
-                <li id="asia-source-8">S&amp;P Global, “S. Korea to provide 27.9 mil mt/year of clean hydrogen by 2050” (2021)</li>
-                <li id="asia-source-9">GMK Center, “POSCO plans to produce all steel using hydrogen by 2050”</li>
-                <li id="asia-source-10">LNG Prime, “South Korea’s Kogas reveals big hydrogen plans”</li>
-                <li id="asia-source-11">Asia Economy, Korea’s first clean hydrogen power auction results (Dec 2024)</li>
-                <li id="asia-source-12">Hydrocarbon Processing, “LOTTE Fine Chemical completes world’s first commercial-scale green ammonia import” (Apr 2026)</li>
-                <li id="asia-source-13">IEA, Global Hydrogen Review 2025, Demand chapter</li>
-                <li id="asia-source-14">Outlook Business, “Indian Oil targets green hydrogen meeting 10% of requirements by 2030”</li>
-                <li id="asia-source-15">Renewables Now, “Reliance advances Jamnagar complex, aims for 3m tonnes hydrogen by 2032”</li>
-                <li id="asia-source-16">IFFCO, About IFFCO: production units</li>
-                <li id="asia-source-17">HDFC Securities, GNFC stock note (Aug 2022)</li>
-                <li id="asia-source-18">IndexBox, India anhydrous ammonia imports, 2024</li>
-                <li id="asia-source-19">Hydrogen Insight, “Sinopec to produce more than two million tonnes of green hydrogen annually by 2025”</li>
-                <li id="asia-source-20">China Daily, China Energy to promote hydrogen energy development (Apr 2019)</li>
-                <li id="asia-source-21">Global Energy Monitor, Hubei Yihua Ammonia Plant</li>
-            </ol>
-        </footer>
     </div>
 </section>
