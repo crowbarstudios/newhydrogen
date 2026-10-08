@@ -925,7 +925,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
         <div class="max-w-[910px] mx-auto relative z-10">
             <?php if (!empty($bighMissionIndustrialScalePhrase)) : ?>
                 <h3 class="text-center md:text-[42px] text-4xl" style="text-wrap: balance;">
-                    Our mission is to help produce <span style="white-space: nowrap;">industrial-scale</span> <span class="bigh-brand-green">clean hydrogen</span>, and <?php if (!empty($bighMissionHelpUsherCopy)) : ?>help <?php endif; ?>usher in the <span class="text-black">clean hydrogen</span> economy that Goldman Sachs estimated to be worth <span class="text-black">$12 trillion</span>.
+                    Our mission is to <?= !empty($bighMissionUseHeatAndWaterCopy) ? 'use heat and water to produce' : 'help produce' ?> <span style="white-space: nowrap;">industrial-scale</span> <span class="bigh-brand-green">clean hydrogen</span>, and <?php if (!empty($bighMissionHelpUsherCopy)) : ?>help <?php endif; ?>usher in the <span class="text-black">clean hydrogen</span> economy that Goldman Sachs estimated to be worth <span class="text-black">$12 trillion</span>.
                 </h3>
             <?php else : ?>
             <h3 class="text-left md:text-[42px] text-4xl">Our mission is to help produce unlimited <br class="hidden md:inline-block" /> amounts of the world’s cheapest <span class="bigh-brand-green">clean <br class="hidden md:inline-block" /> hydrogen</span>, and usher in the <span class="bigh-brand-green">clean hydrogen</span> <br class="hidden md:inline-block" /> economy that Goldman Sachs estimated to be <br class="hidden md:inline-block" /> worth <span class="text-black">$12 trillion</span> in the near future.</h3>

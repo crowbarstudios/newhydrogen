@@ -11,4 +11,5 @@ $bighHydrogenDemandDescriptor = 'High volume';
 $bighAnyHeatSourceCopy = true;
 $bighMissionIndustrialScalePhrase = true;
 $bighMissionHelpUsherCopy = true;
+$bighMissionUseHeatAndWaterCopy = ($page ?? '') === 'home';
 include __DIR__ . '/bigh-aug-27-a.php';
