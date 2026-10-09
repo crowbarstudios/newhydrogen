@@ -141,7 +141,7 @@
             <p class="xl:text-[26px] lg:text-2xl text-xl mt-2 font-normal xl:mb-8 mb-4 xl:mt-[29px] lg:mt-4	 leading-[1.3]">We combine all these innovations to create ThermoLoop, a highly scalable thermochemical water-splitting system that we believe will produce the world’s cheapest clean hydrogen!</p>
             <ul class="theme-list space-y-5">
                 <li>ThermoLoop is agnostic to the source of heat or water.</li>
-                <li>Couple ThermoLoop with any available source of heat, and we will have a low-cost clean and clean hydrogen production machine – anywhere, anytime!</li>
+                <li>Couple ThermoLoop with any available source of heat, and we will have a low-cost <?= ($page ?? '') === 'technology' ? 'clean' : 'clean and clean' ?> hydrogen production machine – anywhere, anytime!</li>
             </ul>
         </div>
         <div>

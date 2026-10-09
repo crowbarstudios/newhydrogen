@@ -1,22 +1,14 @@
 <section class="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-gardiant-top before:bg-no-repeat sm:before:w-[566px] before:w-[400px] sm:before:h-[566px] before:h-[400px]">
     <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl md:pt-[100px] pt-[50px] md:pb-[212px] pb-24">
         <img class="rounded-[32px]" src="./assets/images/about.png" alt="About NewHydrogen">
-        <section class="mt-16">
-            <img class="hidden md:block" src="./assets/images/development-plan-updated.jpg" alt="development-plan">
-            <div class="block md:hidden max-w-96 mx-auto">
-                <img src="./assets/images/mobile-development-plan-updated.jpg" alt="development-plan">
-            </div>
-            
-        </section>
         <div class="md:grid grid-cols-2 block md:pt-[114px] pt-12 gap-6">
             <div class="md:max-w-[600px] mr-auto">
-                <h1 class="text-[36px] lg:text-5xl xl:text-[64px] font-extralight leading-snug lg:leading-[1.1] mb-4 xl:mb-20">
-                Breakthrough Technology to Produce
-                    <span class="font-semibold">the World’s Cheapest Clean Hydrogen
-                    </span>
+                <h1 class="text-[36px] lg:text-5xl xl:text-[64px] font-semibold leading-snug lg:leading-[1.1] mb-4 xl:mb-20">
+                    Using Heat and Water to Produce<br>
+                    <span style="white-space: nowrap;">Industrial-scale</span> <span style="color: #12b34f;">Clean Hydrogen</span>
                 </h1>
                 <p class="text-xl lg:text-[26px] font-normal">
-                    <span class="font-bold">NewHydrogen is developing ThermoLoop<sup>TM</sup></span> -- a breakthrough technology that uses water and heat instead of electricity to produce the world’s cheapest clean hydrogen.
+                    <span class="font-bold">NewHydrogen is developing ThermoLoop®</span> – a breakthrough technology that uses water and heat to produce industrial-scale clean hydrogen.
                 </p>
             </div>
             <div class="md:max-w-[600px] md:ml-auto mt-6 md:mt-0">
@@ -24,17 +16,17 @@
                 Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more.
                 </p>
                 <p class="text-lg lg:text-xl mb-5">
-                Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an infinite and renewable worldwide resource. 
+                Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an abundant and renewable worldwide resource.
                 </p>
                 <p class="text-lg lg:text-xl mb-5">
-                Currently, the most common way of making clean hydrogen is to split water into oxygen and hydrogen with electricity using an electrolyzer, a very expensive process. 
+                Currently, the most common method of making clean hydrogen is to split water into oxygen and hydrogen with an electrolyzer, a very expensive process.
                 </p>
                 <p class="text-lg lg:text-xl mb-5">
-                By using heat directly, we can dramatically reduce the use of expensive electricity. A massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. 
+                By using heat directly, we can dramatically reduce the use of expensive electricity, and a massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors.
                 </p>
-                <!-- <p class="text-lg lg:text-xl mb-5">
+                <p class="text-lg lg:text-xl mb-5">
                 Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.
-                </p> -->
+                </p>
             </div>
         </div>
     </div>
