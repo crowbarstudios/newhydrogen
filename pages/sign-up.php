@@ -7,7 +7,7 @@
             a Special Announcement
         </div>
         <p class="text-2xl text-center text-black font-medium pt-3 pb-5">
-            Register now to watch this Special Report when it premieres on <br class="hidden md:inline-block"> Tuesday, April 28, 2026, at 4 PM EDT
+            Register now to watch this Special Report when it premieres
         </p>
 
         <form id="jotformForm" action="https://submit.jotform.com/submit/250137276726055/" method="POST" method="POST" autocomplete="off" class="max-w-[400px] mx-auto relative mt-4">
