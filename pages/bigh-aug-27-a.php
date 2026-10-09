@@ -1708,7 +1708,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                     <span>Over 98% of the world's dedicated hydrogen is produced using dirty fossil fuel feedstocks. These large-scale hydrogen plants are critical infrastructure designed to meet massive industrial demand across refining, chemical manufacturing, and power generation.</span>
                 </li>
                 <li>
-                    <span><strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> is designed to produce continuous <span class="bigh-brand-green">clean hydrogen</span> at a scale matching the largest of the world's existing hydrogen plants.</span>
+                    <span><strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> is designed to <?= in_array($page ?? '', ['home', 'coming-soon-red-steve-over', 'completes-etu'], true) ? 'continuously produce' : 'produce continuous' ?> <span class="bigh-brand-green">clean hydrogen</span> at a scale matching the largest of the world's existing hydrogen plants.</span>
                 </li>
             </ul>
         <?php else : ?>
