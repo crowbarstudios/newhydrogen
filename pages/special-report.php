@@ -1,7 +1,11 @@
 <?php
 
-// Reuse the ETU page presentation while retaining the /special-report URL.
+// Preserve the standalone ETU presentation without a separate /newh-etu page.
 $isSpecialReport = true;
+$isCompletesEtu = true;
+$isComingSoonTexture = true;
+$isComingSoonRed = true;
+$isNewhEtu = true;
 ?>
 <style>
     .bigh-completes-etu-banner .bigh-completes-etu-video-placeholder {
@@ -9,4 +13,4 @@ $isSpecialReport = true;
     }
 </style>
 <?php
-include __DIR__ . '/newh-etu.php';
+include __DIR__ . '/home.php';
