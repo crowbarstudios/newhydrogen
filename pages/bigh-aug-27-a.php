@@ -1582,7 +1582,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
     <div class="bigh-coming-soon-red-content w-full text-center">
         <h1 class="max-w-[1120px] mx-auto text-center text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
             <?php if (!empty($isCompletesEtu)) : ?>
-                NewHydrogen Completes Construction of Its ThermoLoop® Engineering Test Unit
+                <?= !empty($isSpecialReport) ? 'NewHydrogen Special Report' : 'NewHydrogen Completes Construction of Its ThermoLoop® Engineering Test Unit' ?>
             <?php else : ?>
                 <span class="bigh-coming-soon-red-title">Coming Soon</span>
                 <br>
@@ -1595,7 +1595,9 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             <p class="bigh-coming-soon-red-date">Date: WWWWWWWW</p>
         <?php endif; ?>
         <?php if (!empty($isCompletesEtu)) : ?>
+            <?php if (empty($isSpecialReport)) : ?>
             <h2 class="bigh-completes-etu-video-heading">Watch Special Report Webinar Now!</h2>
+            <?php endif; ?>
             <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
                 <div class="bigh-completes-etu-video-center" aria-hidden="true">
                     <div class="bigh-completes-etu-video-play">
