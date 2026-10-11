@@ -53,5 +53,8 @@ elseif (in_array($page, $validPages)) {
 
 // Serve 404 page for invalid routes
 else {
+    if ($page === 'newh-etu') {
+        http_response_code(404);
+    }
     include __DIR__ . '/../pages/404.php';
 }
