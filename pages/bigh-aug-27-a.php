@@ -1,3 +1,212 @@
+<?php
+// This branch renders only the approved report; all other routes keep the
+// existing production template below, unchanged.
+if (!empty($isSpecialReport) && ($page ?? '') === 'special-report') :
+?>
+<style>
+    /* Emitted only for /special-report; no shared stylesheet is replaced. */
+    body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    body footer.bg-custom-gray-dark-100 {
+        background-color: #514B4F !important;
+    }
+
+    body footer.bg-custom-gray-dark-100 input.bg-custom-gray-dark-200 {
+        background-color: #514B4F !important;
+        border: 1px solid #ffffff !important;
+    }
+
+    .header-top > .bg-black {
+        display: none;
+    }
+
+    #special-report-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 32px;
+        background-image: url('<?php echo $full_url; ?>/assets/images/completes-etu-background.png');
+        background-position: center;
+        background-size: cover;
+        font-family: inherit;
+    }
+
+    #special-report-page .bigh-coming-soon-red-content {
+        width: 100%;
+        transform: translateY(8px);
+        text-align: center;
+    }
+
+    #special-report-page h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        color: #000000;
+        font-size: clamp(1.7rem, 3.655vw, 3.825rem);
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    #special-report-page .bigh-completes-etu-video-placeholder {
+        position: relative;
+        isolation: isolate;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: min(100%, 760px);
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        margin: clamp(28px, 3vw, 40px) auto 0;
+        padding: clamp(18px, 4vw, 30px);
+        border: 1px solid rgba(155, 255, 196, 0.34);
+        border-radius: 20px;
+        background:
+            radial-gradient(circle at 15% 82%, rgba(0, 188, 87, 0.24), transparent 34%),
+            radial-gradient(circle at 82% 18%, rgba(80, 255, 170, 0.16), transparent 29%),
+            linear-gradient(135deg, #071613 0%, #102a25 52%, #06110f 100%);
+        box-shadow:
+            0 24px 64px rgba(3, 22, 17, 0.34),
+            inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        color: #f4fff8;
+        font-family: "Manrope", sans-serif;
+    }
+
+    #special-report-page .bigh-completes-etu-video-placeholder::before {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(184, 255, 216, 0.055) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(184, 255, 216, 0.055) 1px, transparent 1px);
+        background-size: 38px 38px;
+        content: "";
+        mask-image: linear-gradient(115deg, rgba(0, 0, 0, 0.72), transparent 78%);
+        pointer-events: none;
+    }
+
+    #special-report-page .bigh-completes-etu-video-placeholder::after {
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        right: -5%;
+        width: 55%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(104, 255, 168, 0.5), transparent);
+        content: "";
+        transform: rotate(-24deg);
+        pointer-events: none;
+    }
+
+    #special-report-page .bigh-completes-etu-video-center {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #special-report-page .bigh-completes-etu-video-play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(48px, 8vw, 66px);
+        height: clamp(48px, 8vw, 66px);
+        margin-bottom: clamp(9px, 1.7vw, 14px);
+        border: 1px solid rgba(129, 255, 179, 0.8);
+        border-radius: 50%;
+        background: linear-gradient(145deg, rgba(39, 205, 108, 0.96), rgba(9, 121, 65, 0.96));
+        box-shadow:
+            0 0 0 8px rgba(35, 210, 112, 0.11),
+            0 0 34px rgba(34, 230, 122, 0.42);
+        animation: special-report-play-pulse 3s ease-in-out infinite;
+    }
+
+    #special-report-page .bigh-completes-etu-video-play svg {
+        width: 23px;
+        height: 23px;
+        margin-left: 3px;
+        fill: #ffffff;
+    }
+
+    #special-report-page .bigh-completes-etu-video-center h2 {
+        margin: 0;
+        color: #ffffff;
+        font-size: clamp(1.15rem, 2.8vw, 1.8rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1.08;
+        text-shadow: 0 2px 22px rgba(83, 255, 157, 0.22);
+    }
+
+    @keyframes special-report-play-pulse {
+        0%, 100% {
+            box-shadow:
+                0 0 0 8px rgba(35, 210, 112, 0.11),
+                0 0 34px rgba(34, 230, 122, 0.36);
+        }
+        50% {
+            box-shadow:
+                0 0 0 12px rgba(35, 210, 112, 0.05),
+                0 0 44px rgba(34, 230, 122, 0.56);
+        }
+    }
+
+    @media (min-width: 768px) {
+        #special-report-page {
+            padding: 54px 32px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #special-report-page {
+            padding: 26px 20px;
+        }
+
+        #special-report-page h1 {
+            font-size: clamp(1.53rem, 6.12vw, 2.04rem);
+            line-height: 1.2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #special-report-page .bigh-completes-etu-video-placeholder {
+            border-radius: 14px;
+            padding: 14px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #special-report-page .bigh-completes-etu-video-play {
+            animation: none;
+        }
+    }
+</style>
+
+<section id="special-report-page" class="bigh-completes-etu-banner">
+    <div class="bigh-coming-soon-red-content">
+        <h1>NewHydrogen Special Report</h1>
+        <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
+            <div class="bigh-completes-etu-video-center" aria-hidden="true">
+                <div class="bigh-completes-etu-video-play">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M8 5.8c0-.75.82-1.2 1.45-.8l10.1 6.2a.94.94 0 0 1 0 1.6l-10.1 6.2A.94.94 0 0 1 8 18.2V5.8Z" />
+                    </svg>
+                </div>
+                <h2>Video Coming Soon</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<?php
+return;
+endif;
+?>
 <style>
     body {
         font-family: "Manrope", sans-serif;
