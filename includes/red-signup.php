@@ -25,6 +25,16 @@ function newhSignupSession(): void
     }
 }
 
+function newhSignupFailure(string $reason): RuntimeException
+{
+    // Only internal codes and numeric status codes: never provider messages,
+    // email addresses, request bodies, exception traces or credentials.
+    $safeReason = preg_match('/^[a-z_]+(?::[0-9]{1,3})?$/D', $reason)
+        ? $reason : 'unknown_failure';
+    error_log('[NewHydrogen signup] ' . $safeReason);
+    return new RuntimeException('Registration storage could not confirm this request.');
+}
+
 function newhJotformRequest(string $path, string $method = 'GET', array $fields = []): array
 {
     // Prefer the server environment; the fallback belongs outside the web root
@@ -32,23 +42,23 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
     $environmentKey = getenv('JOTFORM_API_KEY');
     $key = is_string($environmentKey) ? trim($environmentKey) : '';
     $privateFile = '/home3/biosolar/.newh-staging-secrets.php';
-    if ($key === '' && is_readable($privateFile)) {
-        $resolvedFile = realpath($privateFile);
-        $publicRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? __DIR__ . '/..');
+    if ($key === '' && @is_readable($privateFile)) {
+        $resolvedFile = @realpath($privateFile);
+        $publicRoot = @realpath($_SERVER['DOCUMENT_ROOT'] ?? __DIR__ . '/..');
         if ($resolvedFile === false
             || ($publicRoot !== false && ($resolvedFile === $publicRoot
                 || strpos($resolvedFile, rtrim($publicRoot, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR) === 0))) {
-            throw new RuntimeException('Registration configuration must be outside the public directory.');
+            throw newhSignupFailure('private_config_inside_public_root');
         }
         $bufferLevel = ob_get_level();
         ob_start();
         try {
             $config = (static function (string $file) {
-                return require $file;
+                return @require $file;
             })($resolvedFile);
         } catch (Throwable $error) {
             // Do not forward parse errors, file contents, or other diagnostics.
-            throw new RuntimeException('Private registration configuration could not be loaded.');
+            throw newhSignupFailure('private_config_load_failed');
         } finally {
             while (ob_get_level() > $bufferLevel) {
                 ob_end_clean();
@@ -57,18 +67,71 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
         $key = is_array($config) && is_string($config['JOTFORM_API_KEY'] ?? null)
             ? trim($config['JOTFORM_API_KEY']) : '';
         unset($config);
+        if ($key === '') {
+            throw newhSignupFailure('private_config_key_missing');
+        }
     }
     if ($key !== '') {
         if (preg_match('/[\r\n]/', $key)) {
-            throw new RuntimeException('Registration configuration is invalid.');
+            throw newhSignupFailure('credential_format_invalid');
         }
-        $headers = "Accept: application/json\r\nAPIKEY: " . $key . "\r\n";
-        $options = ['method' => $method, 'header' => $headers, 'timeout' => 18, 'ignore_errors' => true];
+        $url = 'https://api.jotform.com' . $path;
+        $headers = ['Accept: application/json', 'APIKEY: ' . $key];
         if ($method === 'POST') {
-            $options['header'] .= "Content-Type: application/x-www-form-urlencoded\r\n";
-            $options['content'] = http_build_query($fields);
+            $headers[] = 'Content-Type: application/x-www-form-urlencoded';
         }
-        $raw = @file_get_contents('https://api.jotform.com' . $path, false, stream_context_create(['http' => $options]));
+        $httpStatus = 0;
+        if (function_exists('curl_init')) {
+            $curl = curl_init($url);
+            if ($curl === false) {
+                throw newhSignupFailure('https_transport_unavailable');
+            }
+            curl_setopt_array($curl, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_HTTPHEADER => $headers,
+                CURLOPT_CONNECTTIMEOUT => 8,
+                CURLOPT_TIMEOUT => 18,
+                CURLOPT_FOLLOWLOCATION => false,
+                CURLOPT_SSL_VERIFYPEER => true,
+                CURLOPT_SSL_VERIFYHOST => 2,
+            ]);
+            if ($method === 'POST') {
+                curl_setopt($curl, CURLOPT_POST, true);
+                // A string is intentional: an array would send multipart data.
+                curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($fields));
+            }
+            $raw = curl_exec($curl);
+            $httpStatus = (int) curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            $transportError = curl_errno($curl);
+            curl_close($curl);
+            if ($raw === false) {
+                // Never retry a POST after an ambiguous transport failure.
+                throw newhSignupFailure('curl_transport_failed:' . $transportError);
+            }
+        } else {
+            if (!filter_var(ini_get('allow_url_fopen'), FILTER_VALIDATE_BOOLEAN)) {
+                throw newhSignupFailure('https_transport_unavailable');
+            }
+            $options = [
+                'method' => $method, 'header' => implode("\r\n", $headers) . "\r\n",
+                'timeout' => 18, 'ignore_errors' => true, 'follow_location' => 0,
+            ];
+            if ($method === 'POST') {
+                $options['content'] = http_build_query($fields);
+            }
+            $raw = @file_get_contents($url, false, stream_context_create(['http' => $options]));
+            foreach ($http_response_header ?? [] as $header) {
+                if (preg_match('~^HTTP/\S+\s+(\d{3})~', $header, $match)) {
+                    $httpStatus = (int) $match[1];
+                }
+            }
+            if ($raw === false) {
+                throw newhSignupFailure('stream_transport_failed');
+            }
+        }
+        if ($httpStatus < 200 || $httpStatus >= 300) {
+            throw newhSignupFailure('jotform_http_rejected:' . $httpStatus);
+        }
         $response = is_string($raw) ? json_decode($raw, true) : null;
     } elseif (getenv('REPL_ID')) {
         // Replit's managed connector keeps the provider credential out of PHP.
@@ -79,7 +142,7 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
             $pipes
         );
         if (!is_resource($process)) {
-            throw new RuntimeException('Registration storage unavailable.');
+            throw newhSignupFailure('connector_unavailable');
         }
         fwrite($pipes[0], json_encode(['path' => $path, 'method' => $method, 'fields' => $fields]));
         fclose($pipes[0]);
@@ -90,11 +153,18 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
         $exit = proc_close($process);
         $response = $exit === 0 ? json_decode($raw, true) : null;
     } else {
-        throw new RuntimeException('Registration storage is not configured.');
+        // CLI readability does not prove that the web PHP worker can read it.
+        throw newhSignupFailure('web_credentials_missing_or_unreadable');
     }
-    if (!is_array($response) || (int) ($response['responseCode'] ?? 0) !== 200
-        || !isset($response['content']) || !is_array($response['content'])) {
-        throw new RuntimeException('Jotform could not confirm this request.');
+    if (!is_array($response)) {
+        throw newhSignupFailure('jotform_response_not_json');
+    }
+    $responseCode = (int) ($response['responseCode'] ?? 0);
+    if ($responseCode < 200 || $responseCode >= 300) {
+        throw newhSignupFailure('jotform_api_rejected:' . $responseCode);
+    }
+    if (!isset($response['content']) || !is_array($response['content'])) {
+        throw newhSignupFailure('jotform_content_invalid');
     }
     return $response['content'];
 }

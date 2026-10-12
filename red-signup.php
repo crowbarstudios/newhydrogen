@@ -70,7 +70,7 @@ try {
         );
         $id = (string) ($created['submissionID'] ?? $created['id'] ?? '');
         if (!ctype_digit($id)) {
-            throw new RuntimeException('No saved submission ID was returned.');
+            throw newhSignupFailure('submission_id_missing');
         }
         $state['submission_id'] = $id;
         $state['marketing_consent'] = $marketingConsent;
@@ -86,13 +86,19 @@ try {
         $_SESSION['signup_requests'][$requestId] = $state;
     }
     $saved = newhJotformRequest('/submission/' . $state['submission_id']);
-    if ((string) ($saved['form_id'] ?? '') !== NEWH_STAGING_FORM_ID
-        || ($saved['status'] ?? '') !== 'ACTIVE'
-        || strcasecmp((string) ($saved['answers'][NEWH_STAGING_EMAIL_QID]['answer'] ?? ''), $email) !== 0
-        || ($saved['answers'][NEWH_MARKETING_CONSENT_QID]['answer'] ?? '') !== $marketingConsent
+    if ((string) ($saved['form_id'] ?? '') !== NEWH_STAGING_FORM_ID) {
+        throw newhSignupFailure('saved_form_mismatch');
+    }
+    if (($saved['status'] ?? '') !== 'ACTIVE') {
+        throw newhSignupFailure('saved_status_not_active');
+    }
+    if (strcasecmp(trim((string) ($saved['answers'][NEWH_STAGING_EMAIL_QID]['answer'] ?? '')), $email) !== 0) {
+        throw newhSignupFailure('saved_email_mismatch');
+    }
+    if (($saved['answers'][NEWH_MARKETING_CONSENT_QID]['answer'] ?? '') !== $marketingConsent
         || ($saved['answers'][NEWH_CONSENT_TIMESTAMP_QID]['answer'] ?? '') !== $recordedAt
         || ($saved['answers'][NEWH_CONSENT_WORDING_QID]['answer'] ?? '') !== NEWH_MARKETING_CONSENT_WORDING) {
-        throw new RuntimeException('Saved registration and consent could not be verified.');
+        throw newhSignupFailure('saved_metadata_mismatch');
     }
     $state['verified'] = true;
     $_SESSION['signup_requests'][$requestId] = $state;
