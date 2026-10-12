@@ -1,6 +1,27 @@
 <?php
 $videos = [
     [
+        'title' => "October 12, 2026 - NewHydrogen News Commentary",
+        'videoID' => "hJFCsNuBMu4",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "october-12-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>Every hydrogen car you’ve heard of runs on a fuel cell. Toyota just built one that runs on an engine instead, and they’re about to race it for 24 hours straight. We’ll get to that and more in just a minute.</p>
+<p>Hi, I’m Steve Hill, CEO of NewHydrogen. At NewHydrogen, our mission is simple: to produce the world’s cheapest clean hydrogen. If you’d like to follow our progress, please visit us at newhydrogen.com and subscribe to this channel.</p>
+<p>For our first story, Norway’s Azane Fuel Solutions just locked in an ammonia supply deal with Yara, one of the world’s largest ammonia producers, to fuel ships at port. It’s part of a plan to build the world’s first carbon-free ammonia bunkering network in the shipping industry. Ammonia is really just hydrogen packaged for transport, and shipping is under real pressure, with international rules pushing the industry toward zero-emission fuel by 2050. A supply deal like this only works if there’s enough affordable clean hydrogen to go around. That comes right back to how much the world can actually produce.</p>
+<p>Next up, in Germany, China’s CRRC unveiled a hydrogen-and-battery hybrid freight locomotive at the InnoTrans rail show. It puts out 2,000 kW, hits highway speeds, and refuels in under 20 minutes. Freight rail is a great fit for hydrogen: fixed routes, heavy loads, and distances batteries struggle to cover. But fueling hundreds of these trains daily takes clean hydrogen that’s cheap enough to compete. Right now, that hydrogen doesn’t exist—not at the volume or price this would require.</p>
+<p>Now to our headline story. Toyota Racing just agreed to supply a hydrogen combustion engine for the racetrack. It’s a 3.5-liter V6—not a fuel cell, but an actual engine that burns hydrogen—built for a Le Mans-style endurance prototype called the H24 Evo. Paired with a hybrid system, it’s expected to put out 650 kW with zero CO2 out of the tailpipe.</p>
+<p>Endurance racing exists to break things before customers do. Toyota isn’t alone on this path. Industry giants like JCB, Cummins, MAN, and Volvo, alongside performance brands like Alpine and Porsche, are already building direct-burn hydrogen engines for heavy transport and motorsport. The H24 Evo adds a proper 24-hour torture test to that list, exposing hydrogen combustion technology to extreme heat, vibration, and nonstop punishment. If an engine can survive that, it tells you a lot about whether the technology is ready for the real world.</p>
+<p>But racing still burns through a lot of hydrogen fast, and that only works with a steady, affordable supply behind it. That brings us back to the same question running through every single story.</p>
+<p>Racing, rail, and shipping: three different bets on hydrogen, all hitting the same wall. There isn’t enough cheap, clean hydrogen to go around. Today’s clean hydrogen production is at novelty-gas scale and is expensive. It’s a real roadblock holding back entire industries.</p>
+<p>That’s the problem NewHydrogen exists to solve. Our ThermoLoop technology is designed to produce cheap, clean hydrogen using water and scalable heat. That’s why we’re exploring synergies with nuclear power and test sites like NuCube Energy and the Utah San Rafael Energy Lab. If we can bring the cost of heat-based hydrogen down, all three of today’s stories get a lot closer to reality.</p>
+<p>To follow our progress and see how ThermoLoop works, head over to newhydrogen.com, where you can also watch our short explainer video and sign up for our newsletter. NewHydrogen is a publicly traded company, and we trade under the symbol NEWH.</p>
+<p>Thank you so much for watching, and I’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "October 5, 2026 - NewHydrogen News Commentary",
         'videoID' => "bPZsxfyLEKk",
         'date' => "",
