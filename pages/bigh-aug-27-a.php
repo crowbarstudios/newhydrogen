@@ -1348,6 +1348,32 @@
         }
     }
 
+    @media (min-width: 900px) {
+        .bigh-signup-column {
+            display: contents;
+        }
+
+        .bigh-signup-consent {
+            grid-column: 2 / -1;
+            grid-row: 3;
+            justify-self: center;
+            margin: 1px 0 0;
+            font-size: 11px;
+        }
+
+        .bigh-signup-privacy {
+            grid-column: 2 / -1;
+            grid-row: 4;
+            margin: 0;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .bigh-steve-announcement-stage.bigh-signup-stage {
+            height: 68px;
+        }
+    }
+
     .bigh-replacement-banner.bigh-steve-black-hero {
         padding: 84px 20px 120px;
         background: #000000;
