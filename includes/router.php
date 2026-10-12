@@ -24,9 +24,9 @@ $validPages[] = 'heat-source-oct-8';
 $validPages[] = 'about-oct-8';
 $validPages[] = 'heat-sources';
 
-// Serve the approved October pages at their primary URLs without redirecting.
+// Serve the approved pages at their primary URLs without redirecting.
 $primaryPageTemplates = [
-    'home' => 'home-oct-8',
+    'home' => $path === '' ? 'coming-soon-red-steve-over' : 'home-oct-8',
     'technology' => 'technology-oct-8',
     'heat-sources' => 'heat-source-oct-8',
 ];

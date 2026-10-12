@@ -1591,6 +1591,9 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                 a Special Announcement
             <?php endif; ?>
         </h1>
+        <?php if (!empty($isSpecialReport)) : ?>
+            <p class="bigh-special-report-premiere">Monday, October 19 at 4:01 pm EST</p>
+        <?php endif; ?>
         <?php if (!empty($isComingSoonRedWithDate)) : ?>
             <p class="bigh-coming-soon-red-date">Date: WWWWWWWW</p>
         <?php endif; ?>
@@ -1598,6 +1601,24 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             <?php if (empty($isSpecialReport)) : ?>
             <h2 class="bigh-completes-etu-video-heading">Watch Special Report Webinar Now!</h2>
             <?php endif; ?>
+            <?php if (!empty($isSpecialReport)) : ?>
+            <div class="bigh-completes-etu-video-placeholder bigh-special-report-video">
+                <iframe
+                    src="https://www.youtube.com/embed/20OU2TYub-U?rel=0"
+                    title="NewHydrogen Special Report"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <button type="button" class="bigh-special-report-video-poster" aria-label="Play NewHydrogen Special Report" onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'; this.remove();">
+                    <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261012-updated" alt="" />
+                    <svg viewBox="0 0 68 48" aria-hidden="true" focusable="false">
+                        <rect width="68" height="48" rx="12" fill="#ff0000" />
+                        <path d="M27 14L45 24L27 34Z" fill="#ffffff" />
+                    </svg>
+                </button>
+            </div>
+            <?php else : ?>
             <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
                 <div class="bigh-completes-etu-video-center" aria-hidden="true">
                     <div class="bigh-completes-etu-video-play">
@@ -1608,6 +1629,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                     <h2>Video Coming Soon</h2>
                 </div>
             </div>
+            <?php endif; ?>
         <?php else : ?>
             <p class="max-w-[760px] mx-auto mt-8 px-4 text-center text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed text-white">
                 Sign up now to reserve your spot in our live event
