@@ -8,8 +8,8 @@ try {
     if (raw.length > 8192) throw new Error("Request too large");
   }
   const { path, method, fields } = JSON.parse(raw);
-  const allowed = (method === "POST" && path === "/form/262847331355056/submissions")
-    || (["GET", "POST"].includes(method) && /^\/submission\/[0-9]+$/.test(path));
+  const allowed = (method === "POST" && path === "/form/242986385047065/submissions")
+    || (method === "GET" && /^\/submission\/[0-9]+$/.test(path));
   if (!allowed) throw new Error("Unsupported request");
   const connectors = new ReplitConnectors();
   const response = await connectors.proxy("jotform", path, {

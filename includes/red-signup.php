@@ -1,11 +1,8 @@
 <?php
-// Staging-only form. Never change the live newsletter form's settings.
-const NEWH_STAGING_FORM_ID = '262847331355056';
-const NEWH_STAGING_EMAIL_QID = '3';
-const NEWH_MARKETING_CONSENT_QID = '5';
-const NEWH_CONSENT_TIMESTAMP_QID = '6';
-const NEWH_CONSENT_WORDING_QID = '7';
-const NEWH_MARKETING_CONSENT_WORDING = 'I agree to receive NewHydrogen news and marketing emails. Unsubscribe anytime.';
+// Staging-only handler, using the owner-approved shared production destination.
+// Do not change the live form's questions, CAPTCHA or account settings.
+const NEWH_SIGNUP_FORM_ID = '242986385047065';
+const NEWH_SIGNUP_EMAIL_QID = '3';
 
 function newhSignupSession(): void
 {

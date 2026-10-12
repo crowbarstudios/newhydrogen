@@ -35,27 +35,19 @@ try {
         signupReply(422, ['ok' => false, 'message' => 'This registration could not be accepted. Please reload and try again.']);
     }
     $hash = hash('sha256', strtolower($email));
-    $choice = $_POST['marketing_consent'] ?? null;
-    if ($choice !== null && $choice !== 'yes') {
-        signupReply(422, ['ok' => false, 'message' => 'Please reload the form and select your marketing preference again.']);
-    }
-    $marketingConsent = $choice === 'yes' ? 'Yes' : 'No';
     $state = $_SESSION['signup_requests'][$requestId] ?? ['email_hash' => $hash];
     if ($state['email_hash'] !== $hash) {
         signupReply(409, ['ok' => false, 'message' => 'Please reload the page before registering a different email.']);
     }
-    if (!empty($state['verified']) && ($state['marketing_consent'] ?? '') === $marketingConsent) {
+    // A confirmed registration in the former clone is not confirmation that
+    // the email was saved to the newly selected destination.
+    if (($state['form_id'] ?? '') !== NEWH_SIGNUP_FORM_ID) {
+        $state = ['email_hash' => $hash, 'form_id' => NEWH_SIGNUP_FORM_ID];
+        $_SESSION['signup_requests'][$requestId] = $state;
+    }
+    if (!empty($state['verified'])) {
         signupReply(200, ['ok' => true, 'redirect' => '/thank-you']);
     }
-    $recordedAt = $state['consent_recorded_at'] ?? gmdate('Y-m-d\TH:i:s\Z');
-    if (($state['marketing_consent'] ?? $marketingConsent) !== $marketingConsent) {
-        $recordedAt = gmdate('Y-m-d\TH:i:s\Z');
-    }
-    $consentFields = [
-        'submission[' . NEWH_MARKETING_CONSENT_QID . ']' => $marketingConsent,
-        'submission[' . NEWH_CONSENT_TIMESTAMP_QID . ']' => $recordedAt,
-        'submission[' . NEWH_CONSENT_WORDING_QID . ']' => NEWH_MARKETING_CONSENT_WORDING,
-    ];
     if (empty($state['submission_id'])) {
         $attempts = array_filter($_SESSION['signup_attempts'] ?? [], fn($time) => $time > time() - 600);
         if (count($attempts) >= 5) {
@@ -64,41 +56,27 @@ try {
         $attempts[] = time();
         $_SESSION['signup_attempts'] = $attempts;
         $created = newhJotformRequest(
-            '/form/' . NEWH_STAGING_FORM_ID . '/submissions',
+            '/form/' . NEWH_SIGNUP_FORM_ID . '/submissions',
             'POST',
-            ['submission[' . NEWH_STAGING_EMAIL_QID . ']' => $email] + $consentFields
+            ['submission[' . NEWH_SIGNUP_EMAIL_QID . ']' => $email]
         );
         $id = (string) ($created['submissionID'] ?? $created['id'] ?? '');
         if (!ctype_digit($id)) {
             throw newhSignupFailure('submission_id_missing');
         }
         $state['submission_id'] = $id;
-        $state['marketing_consent'] = $marketingConsent;
-        $state['consent_recorded_at'] = $recordedAt;
         // Retain a saved ID before read-back so verification retries do not re-create it.
-        $_SESSION['signup_requests'][$requestId] = $state;
-    } elseif (($state['marketing_consent'] ?? '') !== $marketingConsent) {
-        // A preference changed after a failed confirmation must not retain an old opt-in.
-        newhJotformRequest('/submission/' . $state['submission_id'], 'POST', $consentFields);
-        $state['marketing_consent'] = $marketingConsent;
-        $state['consent_recorded_at'] = $recordedAt;
-        $state['verified'] = false;
         $_SESSION['signup_requests'][$requestId] = $state;
     }
     $saved = newhJotformRequest('/submission/' . $state['submission_id']);
-    if ((string) ($saved['form_id'] ?? '') !== NEWH_STAGING_FORM_ID) {
+    if ((string) ($saved['form_id'] ?? '') !== NEWH_SIGNUP_FORM_ID) {
         throw newhSignupFailure('saved_form_mismatch');
     }
     if (($saved['status'] ?? '') !== 'ACTIVE') {
         throw newhSignupFailure('saved_status_not_active');
     }
-    if (strcasecmp(trim((string) ($saved['answers'][NEWH_STAGING_EMAIL_QID]['answer'] ?? '')), $email) !== 0) {
+    if (strcasecmp(trim((string) ($saved['answers'][NEWH_SIGNUP_EMAIL_QID]['answer'] ?? '')), $email) !== 0) {
         throw newhSignupFailure('saved_email_mismatch');
-    }
-    if (($saved['answers'][NEWH_MARKETING_CONSENT_QID]['answer'] ?? '') !== $marketingConsent
-        || ($saved['answers'][NEWH_CONSENT_TIMESTAMP_QID]['answer'] ?? '') !== $recordedAt
-        || ($saved['answers'][NEWH_CONSENT_WORDING_QID]['answer'] ?? '') !== NEWH_MARKETING_CONSENT_WORDING) {
-        throw newhSignupFailure('saved_metadata_mismatch');
     }
     $state['verified'] = true;
     $_SESSION['signup_requests'][$requestId] = $state;

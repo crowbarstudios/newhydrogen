@@ -20,11 +20,14 @@ nofollow`. Nothing in this review certifies legal compliance.
   registration uses `250137276726055`; contact uses `241317693348058`.
   Existing newsletter/contact hCaptcha scripts can send browser information
   to hCaptcha. These unrelated forms/security scripts are unchanged.
-- The primary homepage red signup uses isolated staging Jotform
-  `262847331355056`. Its own flow has no CAPTCHA. Replit uses the managed
+- By owner request, the staging homepage red signup now saves to the same
+  Jotform as the production homepage, `242986385047065` (email question 3).
+  Its authenticated API flow has no visible CAPTCHA. Replit uses the managed
   connector; an external PHP deployment uses an authenticated server-side
-  Jotform API request. Jotform receives the email and consent metadata, not
-  an intentionally forwarded visitor IP from this new handler.
+  Jotform API request. This handler sends only the email, not an intentionally
+  forwarded visitor IP or the former clone's consent metadata.
+  The original form's questions, browser CAPTCHA and email settings remain
+  unchanged. The former staging clone is retained but no longer targeted.
 - A first-party HttpOnly, SameSite=Lax PHP session cookie supports the red
   signup's CSRF protection, retries and verified Thank You state. Session
   records include a hash of the submitted email and saved submission ID.
@@ -38,24 +41,20 @@ nofollow`. Nothing in this review certifies legal compliance.
   This does **not** establish that account automations or off-site mailing
   systems do not exist.
 
-## Consent record and enforcement
+## Registration verification and consent limitations
 
-The checkbox is optional and initially unchecked. Jotform stores:
+The owner removed the marketing checkbox and requested the production
+homepage's existing Jotform destination. That form has email question 3,
+but not the former clone's custom consent questions 5–7. The handler sends
+only the email and verifies the saved record's destination, active status
+and matching email before acknowledging success. Failure preserves the email
+in the browser and does not redirect. Cached success from the former clone
+cannot substitute for saving to the current destination.
 
-- Question 3: email.
-- Question 5: explicit marketing choice, `Yes` or `No` (absent checkbox = `No`).
-- Question 6: server-recorded UTC timestamp.
-- Question 7: exact consent wording:
-  `I agree to receive NewHydrogen news and marketing emails. Unsubscribe anytime.`
-
-The handler reads the stored submission back and verifies the email, choice,
-timestamp and wording before acknowledging success. Failure preserves the
-email in the browser and does not redirect. A preference changed during a
-retry updates the existing record and is reverified before success.
-
-This code does not enroll either choice in an external marketing list or
-send ongoing marketing. Future exports/automations must select only explicit
-`Yes` records and honor later withdrawals. Blank legacy consent is not opt-in.
+This signup does not record affirmative marketing consent. Do not treat
+registration or a blank consent value as explicit marketing opt-in.
+Existing Jotform account settings and off-site automations are unchanged;
+their behavior must be reviewed by the owner separately.
 
 ## Required owner/legal confirmations
 
