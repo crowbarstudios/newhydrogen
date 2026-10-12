@@ -3,6 +3,50 @@
 
 $news = [
     [
+        'id' => "107",
+        'title' => "NewHydrogen to Release a Special Report on October 19, 2026",
+        'date' => "October 12, 2026",
+        'excerpt' => "The Company will reveal a major engineering achievement",
+        'description' => [
+            [
+                "<p><strong>The Company will reveal a major engineering achievement</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (October 12, 2026) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop®, a breakthrough technology that uses water and heat to produce industrial-scale clean hydrogen, today announced it will release a Special Report on Monday, October 19, 2026.</p>"
+            ],
+            [
+                "<p>The Special Report will reveal a major engineering achievement.</p>"
+            ],
+            [
+                "<p>Register now to watch this Special Report when it premieres on Monday, October 19, 2026, at 4:01 pm EDT: <a href=\"https://newhydrogen.com/sign-up\">https://newhydrogen.com/sign-up</a></p>"
+            ],
+            [
+                "<p>For more information about NewHydrogen, please visit <a href=\"http://www.newhydrogen.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.newhydrogen.com</a>.</p>"
+            ],
+            [
+                "<h3>About NewHydrogen, Inc.</h3>"
+            ],
+            [
+                "<p>NewHydrogen is developing ThermoLoop® – a breakthrough technology that uses water and heat to produce industrial-scale clean hydrogen. Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an abundant and renewable worldwide resource. Currently, the most common method of making clean hydrogen is to split water into oxygen and hydrogen with an electrolyzer, a very expensive process. By using heat directly, we can dramatically reduce the use of expensive electricity, and a massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.</p>"
+            ],
+            [
+                "<h3>Safe Harbor Statement</h3>"
+            ],
+            [
+                "<p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words “anticipate,” “believe,” “estimate,” “may,” “intend,” “expect” and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of the Company and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting the Company and its operations, markets, the impact on the national and local economies resulting from terrorist actions, the impact of public health epidemics on the global economy and other factors detailed in reports filed by the Company with the United States Securities and Exchange Commission.</p>"
+            ],
+            [
+                "<p>Any forward-looking statement made by us in this press release is based only on information currently available to us and speaks only as of the date on which it is made. We undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong> NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false,
+        'hasCompletePressRelease' => true
+    ],
+    [
         'id' => "105",
         'title' => "NewHydrogen Announces Strategic Collaboration with Utah San Rafael Energy Lab",
         'date' => "September 15, 2026",

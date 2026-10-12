@@ -21,7 +21,7 @@ $validPages = ['home', 'home-orange-1', 'home-orange-2', 'home-lava', 'lava', 'd
 
 $validPages[] = 'heat-sources';
 $primaryPageFiles = [
-    'home' => 'home-oct-8',
+    'home' => $path === '' ? 'production-home-announcement' : 'home-oct-8',
     'technology' => 'technology-oct-8',
     'heat-sources' => 'heat-source-oct-8',
 ];
@@ -30,6 +30,37 @@ $primaryPageFiles = [
 $videoCategories = ['news-commentary', 'ceo-podcast', 'short-videos'];
 
 if (strpos($requestUri, 'single-news.php') !== false && isset($_GET['id'])) {
+    // Only the approved complete release bypasses legacy boilerplate.
+    if ($requestUri === '/single-news.php' && $_GET['id'] === '107') {
+        $newsEntries = include __DIR__ . '/../data/news-data.php';
+        $approvedArticle = null;
+        foreach ($newsEntries as $newsEntry) {
+            if ((string) $newsEntry['id'] === '107') {
+                $approvedArticle = $newsEntry;
+                break;
+            }
+        }
+        if (!$approvedArticle) {
+            http_response_code(404);
+            include __DIR__ . '/../pages/404.php';
+            exit;
+        }
+        ?>
+        <section class="news-detail mt-[100px] mb-[133px] mx-auto px-4 lg:px-8">
+            <div class="container max-w-screen-xl mx-auto">
+                <h1 class="text-center text-4xl font-semibold mb-[114px]"><?= htmlspecialchars($approvedArticle['title']); ?></h1>
+                <div class="news-detail-info space-y-6">
+                    <?php foreach ($approvedArticle['description'] as $paragraph) : ?>
+                        <div class="[&>h3]:text-xl [&>h3]:font-bold [&>p]:text-base [&_a]:text-xl sm:[&_a]:text-base [&_a]:mb-4 [&_a]:tracking-[0.78px] [&_a]:underline [&_li]:text-xl sm:[&_li]:text-base">
+                            <?= $paragraph[0] ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+        <?php
+        exit;
+    }
     include __DIR__ . '/../pages/single-news.php';
     exit;
 }

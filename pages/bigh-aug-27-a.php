@@ -191,15 +191,22 @@ if (!empty($isSpecialReport) && ($page ?? '') === 'special-report') :
 <section id="special-report-page" class="bigh-completes-etu-banner">
     <div class="bigh-coming-soon-red-content">
         <h1>NewHydrogen Special Report</h1>
-        <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
-            <div class="bigh-completes-etu-video-center" aria-hidden="true">
-                <div class="bigh-completes-etu-video-play">
-                    <svg viewBox="0 0 24 24" focusable="false">
-                        <path d="M8 5.8c0-.75.82-1.2 1.45-.8l10.1 6.2a.94.94 0 0 1 0 1.6l-10.1 6.2A.94.94 0 0 1 8 18.2V5.8Z" />
-                    </svg>
-                </div>
-                <h2>Video Coming Soon</h2>
-            </div>
+        <p class="bigh-special-report-premiere">Monday, October 19 at 4:01 pm EST</p>
+        <div class="bigh-completes-etu-video-placeholder bigh-special-report-video">
+            <iframe
+                src="https://www.youtube.com/embed/20OU2TYub-U?rel=0"
+                title="NewHydrogen Special Report"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+            <button type="button" class="bigh-special-report-video-poster" aria-label="Play NewHydrogen Special Report" onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'; this.remove();">
+                <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261012-updated" alt="" />
+                <svg viewBox="0 0 68 48" aria-hidden="true" focusable="false">
+                    <rect width="68" height="48" rx="12" fill="#ff0000" />
+                    <path d="M27 14L45 24L27 34Z" fill="#ffffff" />
+                </svg>
+            </button>
         </div>
     </div>
 </section>
