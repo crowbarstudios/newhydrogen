@@ -37,10 +37,15 @@ function newhSignupFailure(string $reason): RuntimeException
 
 function newhJotformRequest(string $path, string $method = 'GET', array $fields = []): array
 {
+    // Request-local only: after an explicit 401, do not reuse the rejected
+    // environment key for the subsequent saved-record confirmation.
+    static $environmentRejected = false;
     // Prefer the server environment; the fallback belongs outside the web root
     // and Git repository. Never print configuration contents or exception data.
-    $environmentKey = getenv('JOTFORM_API_KEY');
-    $key = is_string($environmentKey) ? trim($environmentKey) : '';
+    $configuredEnvironmentKey = getenv('JOTFORM_API_KEY');
+    $environmentKey = is_string($configuredEnvironmentKey) ? trim($configuredEnvironmentKey) : '';
+    $usingEnvironmentKey = $environmentKey !== '' && !$environmentRejected;
+    $key = $usingEnvironmentKey ? $environmentKey : '';
     $privateFile = '/home3/biosolar/.newh-staging-secrets.php';
     if ($key === '' && @is_readable($privateFile)) {
         $resolvedFile = @realpath($privateFile);
@@ -69,6 +74,10 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
         unset($config);
         if ($key === '') {
             throw newhSignupFailure('private_config_key_missing');
+        }
+        if ($environmentRejected && hash_equals($environmentKey, $key)) {
+            // Retrying the identical rejected credential cannot fix a 401.
+            throw newhSignupFailure('environment_and_private_key_identical_rejected:401');
         }
     }
     if ($key !== '') {
@@ -129,10 +138,27 @@ function newhJotformRequest(string $path, string $method = 'GET', array $fields 
                 throw newhSignupFailure('stream_transport_failed');
             }
         }
+        $response = is_string($raw) ? json_decode($raw, true) : null;
+        $authenticationRejected = $httpStatus === 401
+            || ($httpStatus >= 200 && $httpStatus < 300
+                && is_array($response) && (int) ($response['responseCode'] ?? 0) === 401);
+        if ($authenticationRejected) {
+            if ($usingEnvironmentKey) {
+                error_log('[NewHydrogen signup] environment_key_rejected:401');
+                if (@is_readable($privateFile)) {
+                    // A 401 rejected authentication; unlike a timeout, it is
+                    // safe to retry once with a different private credential.
+                    $environmentRejected = true;
+                    return newhJotformRequest($path, $method, $fields);
+                }
+                error_log('[NewHydrogen signup] private_config_unreadable_for_auth_retry');
+            } else {
+                error_log('[NewHydrogen signup] private_file_key_rejected:401');
+            }
+        }
         if ($httpStatus < 200 || $httpStatus >= 300) {
             throw newhSignupFailure('jotform_http_rejected:' . $httpStatus);
         }
-        $response = is_string($raw) ? json_decode($raw, true) : null;
     } elseif (getenv('REPL_ID')) {
         // Replit's managed connector keeps the provider credential out of PHP.
         $pipes = [];
