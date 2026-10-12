@@ -23,6 +23,7 @@ $validPages[] = 'technology-oct-8';
 $validPages[] = 'heat-source-oct-8';
 $validPages[] = 'about-oct-8';
 $validPages[] = 'heat-sources';
+$validPages[] = 'privacy-policy';
 
 // Serve the approved pages at their primary URLs without redirecting.
 $primaryPageTemplates = [

@@ -49,6 +49,17 @@ $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $path = trim(str_replace($basePath, '', $requestUri), '/');
 $page = $path === '' ? 'home' : $path;
 
+// Only the staging primary homepage uses the new confirmed-save registration.
+$captchaFreeHomepage = $path === '';
+if ($captchaFreeHomepage || $page === 'thank-you') {
+    require_once __DIR__ . '/includes/red-signup.php';
+    newhSignupSession();
+    if ($captchaFreeHomepage) {
+        $_SESSION['signup_csrf'] = $_SESSION['signup_csrf'] ?? bin2hex(random_bytes(32));
+        $signupRequestId = bin2hex(random_bytes(16));
+    }
+}
+
 if ($page === 'report') {
     header('Location: /special-report-October-2025', true, 301);
     exit;
