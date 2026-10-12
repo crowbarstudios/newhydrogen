@@ -1285,93 +1285,8 @@
         background: #1b292e;
     }
 
-    .bigh-signup-column {
-        grid-area: form;
-        grid-row: 1 / 3;
-        align-self: center;
-        min-width: 0;
-    }
-
-    .bigh-signup-consent {
-        display: flex;
-        align-items: flex-start;
-        gap: 5px;
-        margin: 5px 0 0;
-        color: #ffffff;
-        font: inherit;
-        font-size: 10px;
-        line-height: 1.3;
-        text-align: left;
-        cursor: pointer;
-    }
-
-    .bigh-signup-consent input[type="checkbox"] {
-        flex: 0 0 12px;
-        width: 12px;
-        height: 12px;
-        margin: 1px 0 0;
-        accent-color: #ffffff;
-    }
-
-    .bigh-signup-consent input:focus-visible,
-    .bigh-signup-privacy a:focus-visible {
-        outline: 2px solid #ffffff;
-        outline-offset: 2px;
-    }
-
-    .bigh-signup-privacy {
-        margin: 4px 0 0;
-        color: #ffffff;
-        font: inherit;
-        font-size: 10px;
-        line-height: 1.3;
-        text-align: left;
-    }
-
-    .bigh-signup-privacy a {
-        color: inherit;
-        font: inherit;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-    }
-
-    @media (max-width: 899px) {
-        .bigh-signup-column {
-            grid-row: 3;
-            grid-column: 1 / -1;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .bigh-steve-announcement-stage.bigh-signup-stage {
-            height: calc(clamp(240px, 41.7vw, 267px) + 42px);
-        }
-    }
-
-    @media (min-width: 900px) {
-        .bigh-signup-column {
-            display: contents;
-        }
-
-        .bigh-signup-consent {
-            grid-column: 2 / -1;
-            grid-row: 3;
-            justify-self: center;
-            margin: 1px 0 0;
-            font-size: 11px;
-        }
-
-        .bigh-signup-privacy {
-            grid-column: 2 / -1;
-            grid-row: 4;
-            margin: 0;
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .bigh-steve-announcement-stage.bigh-signup-stage {
-            height: 68px;
-        }
+    .bigh-steve-announcement-card #redSignupStatus:empty {
+        display: none;
     }
 
     .bigh-replacement-banner.bigh-steve-black-hero {
@@ -1644,7 +1559,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
 ?>
 
 <?php if (!empty($isComingSoonRedSteve) && empty($isComingSoonRedSteveUnder)) : ?>
-<div class="bigh-steve-announcement-stage<?= !empty($captchaFreeHomepage) ? ' bigh-signup-stage' : '' ?>">
+<div class="bigh-steve-announcement-stage">
     <section class="bigh-steve-announcement-card" aria-label="Special report announcement">
         <time class="bigh-steve-announcement-date" datetime="2026-10-<?= htmlspecialchars($bighAnnouncementCardDay ?? '20', ENT_QUOTES, 'UTF-8') ?>">
             <span class="bigh-steve-announcement-date-month">OCT</span>
@@ -1659,7 +1574,6 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             <h2 class="bigh-steve-announcement-title">Major Milestone Announcement</h2>
         </div>
         <p class="bigh-steve-announcement-description">Join our broadcast October <?= htmlspecialchars($bighAnnouncementCardDay ?? '20', ENT_QUOTES, 'UTF-8') ?>, 2026 at <?php if (isset($bighAnnouncementTimeCopy)) : ?><?= htmlspecialchars($bighAnnouncementTimeCopy, ENT_QUOTES, 'UTF-8') ?><?php else : ?>(time <span class="bigh-steve-announcement-time-note">TBD)</span><?php endif; ?></p>
-        <?php if (!empty($captchaFreeHomepage)) : ?><div class="bigh-signup-column"><?php endif; ?>
         <form id="jotformComingSoonRedSteve" action="<?= !empty($captchaFreeHomepage) ? '/red-signup.php' : 'https://submit.jotform.com/submit/242986385047065/' ?>" method="POST" autocomplete="off" class="bigh-steve-announcement-form" <?= !empty($captchaFreeHomepage) ? 'data-confirmed-signup' : '' ?>>
             <?php if (!empty($captchaFreeHomepage)) : ?>
                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['signup_csrf'], ENT_QUOTES, 'UTF-8') ?>">
@@ -1672,16 +1586,10 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             <button type="submit" id="submitButtonComingSoonRedSteve">Get the Link</button>
         </form>
         <?php if (!empty($captchaFreeHomepage)) : ?>
-            <label class="bigh-signup-consent" for="redSignupMarketingConsent">
-                <input type="checkbox" id="redSignupMarketingConsent" name="marketing_consent" value="yes" form="jotformComingSoonRedSteve">
-                <span>I agree to receive NewHydrogen news and marketing emails. Unsubscribe anytime.</span>
-            </label>
-            <p class="bigh-signup-privacy">By submitting, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
-        </div>
+            <p id="redSignupStatus" role="alert" aria-live="polite" style="position:absolute;top:calc(100% + 8px);left:0;right:0;margin:0;padding:8px 16px;background:#fff;border-radius:8px;color:#b91c1c;font-size:13px;text-align:center;"></p>
         <?php endif; ?>
     </section>
     <?php if (!empty($captchaFreeHomepage)) : ?>
-        <p id="redSignupStatus" role="alert" aria-live="polite" style="margin:8px auto;max-width:1200px;padding:0 20px;color:#b91c1c;text-align:center;"></p>
         <script src="/assets/js/red-signup.js" defer></script>
     <?php endif; ?>
 </div>
