@@ -27,9 +27,41 @@ function newhSignupSession(): void
 
 function newhJotformRequest(string $path, string $method = 'GET', array $fields = []): array
 {
-    // cPanel: supply this key in the server environment, never in public HTML.
-    $key = getenv('JOTFORM_API_KEY');
-    if (is_string($key) && $key !== '') {
+    // Prefer the server environment; the fallback belongs outside the web root
+    // and Git repository. Never print configuration contents or exception data.
+    $environmentKey = getenv('JOTFORM_API_KEY');
+    $key = is_string($environmentKey) ? trim($environmentKey) : '';
+    $privateFile = '/home3/biosolar/.newh-staging-secrets.php';
+    if ($key === '' && is_readable($privateFile)) {
+        $resolvedFile = realpath($privateFile);
+        $publicRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? __DIR__ . '/..');
+        if ($resolvedFile === false
+            || ($publicRoot !== false && ($resolvedFile === $publicRoot
+                || strpos($resolvedFile, rtrim($publicRoot, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR) === 0))) {
+            throw new RuntimeException('Registration configuration must be outside the public directory.');
+        }
+        $bufferLevel = ob_get_level();
+        ob_start();
+        try {
+            $config = (static function (string $file) {
+                return require $file;
+            })($resolvedFile);
+        } catch (Throwable $error) {
+            // Do not forward parse errors, file contents, or other diagnostics.
+            throw new RuntimeException('Private registration configuration could not be loaded.');
+        } finally {
+            while (ob_get_level() > $bufferLevel) {
+                ob_end_clean();
+            }
+        }
+        $key = is_array($config) && is_string($config['JOTFORM_API_KEY'] ?? null)
+            ? trim($config['JOTFORM_API_KEY']) : '';
+        unset($config);
+    }
+    if ($key !== '') {
+        if (preg_match('/[\r\n]/', $key)) {
+            throw new RuntimeException('Registration configuration is invalid.');
+        }
         $headers = "Accept: application/json\r\nAPIKEY: " . $key . "\r\n";
         $options = ['method' => $method, 'header' => $headers, 'timeout' => 18, 'ignore_errors' => true];
         if ($method === 'POST') {

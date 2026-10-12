@@ -81,11 +81,16 @@ send ongoing marketing. Future exports/automations must select only explicit
 
 ## External staging deployment prerequisite
 
-Before cPanel staging deployment, configure a Full Access Jotform API key as
-the private server environment variable `JOTFORM_API_KEY`. Do not commit the
-key or expose it to browser code. Replit's connected account does not
-automatically authenticate an external cPanel server. Missing credentials
-produce a visible failure, never a fake success.
+Before cPanel staging deployment, provide a Full Access Jotform API key
+using the private server environment variable `JOTFORM_API_KEY`, or the
+fallback file `/home3/biosolar/.newh-staging-secrets.php` outside the public
+website and Git repository. The environment variable takes priority.
+The private file must return a PHP array with the string key
+`JOTFORM_API_KEY`. Keep it owned by the cPanel account, with permissions
+`0600` and readable by the site's PHP worker. Never commit or publicly
+expose the file or key. Replit's connected account does not automatically
+authenticate cPanel. Missing credentials or an unverified save produce a
+visible failure, never a fake success.
 
 The branch update is staging-only. No main promotion or cPanel deployment
 is part of this work.
