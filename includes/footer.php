@@ -19,7 +19,7 @@
 
 <footer class="bg-custom-gray-dark-100 <?php echo ($page === 'fasttrack') ? 'pt-10' : 'pt-20'; ?> pb-14">
     <div class="mx-auto max-w-screen-xl px-2 sm:px-4">
-        <?php if ($page !== 'fasttrack') { ?>
+        <?php if ($page !== 'fasttrack' && $page !== 'thank-you') { ?>
         <div class="space-y-6">
             <p class="text-center text-white text-2xl">Be the first to know when we reach new milestones in our tech development</p>
             <form id="jotformForm" action="https://submit.jotform.com/submit/242986385047065/" method="POST" method="POST" autocomplete="off" class="<?php echo ($page === 'bigh-aug-27-a') ? 'bigh-newsletter-form ' : ''; ?>max-w-[475px] mx-auto relative">

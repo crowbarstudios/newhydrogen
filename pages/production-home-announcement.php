@@ -1354,12 +1354,16 @@
             <h2 class="bigh-steve-announcement-title">Major Milestone Announcement</h2>
         </div>
         <p class="bigh-steve-announcement-description">Join our broadcast October 19, 2026 at 4:01 PM EST</p>
-        <form id="jotformComingSoonRedSteve" action="https://submit.jotform.com/submit/242986385047065/" method="POST" autocomplete="off" class="bigh-steve-announcement-form">
-            <input type="hidden" name="formID" value="242986385047065">
+        <form id="jotformComingSoonRedSteve" action="/red-signup.php" method="POST" autocomplete="off" class="bigh-steve-announcement-form" data-confirmed-signup>
+            <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['signup_csrf'], ENT_QUOTES, 'UTF-8') ?>">
+            <input type="hidden" name="request_id" value="<?= htmlspecialchars($signupRequestId, ENT_QUOTES, 'UTF-8') ?>">
+            <div hidden aria-hidden="true"><label>Leave blank<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
             <input type="email" name="q3_email" id="comingSoonRedSteveEmail" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
             <button type="submit" id="submitButtonComingSoonRedSteve">Get the Link</button>
         </form>
+        <p id="redSignupStatus" role="alert" aria-live="polite" style="position:absolute;top:calc(100% + 8px);left:0;right:0;margin:0;padding:8px 16px;background:#fff;border-radius:8px;color:#b91c1c;font-size:13px;text-align:center;"></p>
     </section>
+    <script src="/assets/js/red-signup.js" defer></script>
 </div>
 
 <section class="bigh-replacement-banner bg-black flex items-center justify-center px-5 sm:px-8 bigh-steve-black-hero">
