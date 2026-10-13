@@ -1064,6 +1064,10 @@
         line-height: 1.2;
     }
 
+    #redSignupStatus:empty {
+        display: none;
+    }
+
     .bigh-steve-announcement-form {
         grid-area: form;
         grid-row: 1 / 3;
