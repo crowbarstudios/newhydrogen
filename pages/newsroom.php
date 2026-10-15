@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php
 
 $videos = include "./data/news-data.php";

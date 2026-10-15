@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class=" xl:pt-[100px] pt-20 pb-[135px]">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 ">
         <h1 class='max-w-[950px] mx-auto w-full text-[50px] text-center'>

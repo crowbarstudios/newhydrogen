@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-gardiant-top before:bg-no-repeat sm:before:w-[566px] before:w-[400px] sm:before:h-[566px] before:h-[400px]">
     <div class="mx-auto px-2 sm:px-4 lg:max-w-screen-lg xl:max-w-screen-xl md:pt-[100px] pt-[50px] md:pb-[212px] pb-24">
         <img class="rounded-[32px]" src="./assets/images/about.png" alt="About NewHydrogen">

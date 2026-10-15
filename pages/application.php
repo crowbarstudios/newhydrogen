@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="mb-20 mt-24 mx-auto lg:max-w-screen-lg text-center xl:max-w-screen-xl">
     <h1 class="lg:text-[64px] text-[40px] mb-4 font-normal leading-[1.1]">
     Clean Hydrogen <br> is the <span class="font-bold text-custom-green-100">Ultimate Clean Resource</span>

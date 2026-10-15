@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../../includes/staging-gate.php'; ?>
 <?php
 $basePath = __DIR__ . '/../../../data/';
 // Get the video slug from URL

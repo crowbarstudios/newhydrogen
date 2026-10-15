@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section style="padding:80px 24px;background:#f4f9f6;min-height:55vh;text-align:center;">
     <div style="max-width:680px;margin:0 auto;padding:48px 24px;background:#fff;border:1px solid #dce9e1;border-radius:24px;">
         <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="margin:0 auto 24px;">

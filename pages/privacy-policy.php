@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php
 // This staging draft must not be promoted until its open disclosures are resolved.
 header('X-Robots-Tag: noindex, nofollow');

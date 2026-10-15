@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="pt-5 pb-10">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
         <h1 class="w-full text-4xl sm:text-[50px] leading-tight text-center font-semibold">Developing the World's Cheapest Clean Hydrogen <br> Why New Hydrogen is on a Fast Track</h1>

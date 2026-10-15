@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php
 
 // Use the approved Sep 19 homepage layout and content at the root route.

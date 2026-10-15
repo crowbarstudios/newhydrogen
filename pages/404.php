@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <div class="text-center py-28">
     <h1 class="text-8xl font-bold text-black">404</h1>
     <p class="text-xl text-black mt-4">Oops! Page not found.</p>

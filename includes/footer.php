@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/staging-gate.php'; ?>
 <style>
     body .newsletter-captcha-field {
         text-align: center;

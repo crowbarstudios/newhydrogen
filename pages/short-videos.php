@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php $videos = include "./data/podcast-data.php"; ?>
 <section class=" xl:pt-[100px] sm:pt-20 pt-14 pb-[125px] mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
     <div class="text-center mb-[138px]">

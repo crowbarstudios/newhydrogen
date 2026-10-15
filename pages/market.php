@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class=" relative">
     <div class="mt-[100px] mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 ">
         <div class="md:grid flex flex-col-reverse grid-cols-2">

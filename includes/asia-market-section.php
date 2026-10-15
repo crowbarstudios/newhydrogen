@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/staging-gate.php'; ?>
 <section class="asia-market-section" id="asia-market" aria-labelledby="asia-market-title">
     <div class="asia-market-wrap">
         <header class="asia-market-intro">

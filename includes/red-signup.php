@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/staging-gate.php'; ?>
 <?php
 // Staging-only handler, using the owner-approved shared production destination.
 // Do not change the live form's questions, CAPTCHA or account settings.

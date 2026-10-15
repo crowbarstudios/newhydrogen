@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="mb-[115px] xl:mt-[100px] mt-16">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
         <img class="mx-auto xl:max-w-[420px] max-w-[370px]" src="./assets/images/thermoloop-logo-registered.png" width="420" alt="thermoloop-logo">

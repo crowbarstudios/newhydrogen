@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php
 
 // Preserve the standalone ETU presentation without a separate /newh-etu page.

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="relative py-12 sm:py-32">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">
         <div class="text-4xl sm:text-6xl text-black text-center font-bold">Coming Soon</div>

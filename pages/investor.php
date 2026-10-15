@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class=" before:content-[''] sm:before:w-[566px] before:w-[400px] before:h-[566px] before:left-0 before:-bottom-[74px] before:bg-gardiant-top before:absolute relative before:bg-no-repeat">
     <div class="mb-[71px] xl:mt-[100px] mt-16 mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
         <div class="relative text-center ">

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 
 
 <!-- <section class="bg-coming-soon bg-cover bg-center bg-no-repeat bg-black relative py-32">

@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <section class="xl:mt-[100px] mt-12">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
         <h1 class="font-normal pt-[13px] xl:text-[64px] text-5xl text-center"><span style="font-size: 90%;">ThermoLoop® Can Use<br>Any Source of Heat</span></h1>

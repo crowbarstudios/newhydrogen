@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php $videos = include "./data/carousel-videos.php"; ?>
 <!-- <section class="bg-coming-soon bg-cover bg-center bg-no-repeat bg-black relative py-8">
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4 z-10 relative">

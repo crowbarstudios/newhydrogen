@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <?php
 $GLOBALS['title'] = "videos |  newhydrogen-newdesign";
 $GLOBALS['desc'] = "";
