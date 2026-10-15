@@ -1634,6 +1634,17 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                     </svg>
                 </button>
             </div>
+            <?php elseif (!empty($isCompletesEtuVideo)) : ?>
+            <div class="bigh-completes-etu-video-placeholder">
+                <iframe
+                    src="https://www.youtube.com/embed/20OU2TYub-U?rel=0"
+                    title="NewHydrogen Special Report"
+                    style="position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;border:0;background:#000;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
             <?php else : ?>
             <div class="bigh-completes-etu-video-placeholder" role="img" aria-label="Video Coming Soon">
                 <div class="bigh-completes-etu-video-center" aria-hidden="true">

@@ -3,6 +3,77 @@
 
 $news = [
     [
+        'id' => "108",
+        'title' => "NewHydrogen Completes Construction and Commissioning of Its ThermoLoop® Engineering Test Unit",
+        'date' => "October 19, 2026",
+        'excerpt' => "The ETU allows continuous cycling of the ThermoLoop® process, enabling the Company to demonstrate long duration stability and generate the data needed to design its first commercial pilot plant",
+        'description' => [
+            [
+                "<p><strong>The ETU allows continuous cycling of the ThermoLoop® process, enabling the Company to demonstrate long duration stability and generate the data needed to design its first commercial pilot plant</strong></p>"
+            ],
+            [
+                "<p>SANTA CLARITA, CA, (October 19, 2026) — NewHydrogen, Inc. (OTCQB: NEWH), the developer of ThermoLoop®, a breakthrough technology that uses water and heat to produce industrial-scale clean hydrogen, today announced that it has completed construction and commissioning of its engineering test unit (ETU) and is now capable of demonstrating long duration stability of its ThermoLoop process.</p>"
+            ],
+            [
+                "<p>The primary purpose of the ETU is to generate the engineering data needed to design the Company’s first commercial pilot plant.</p>"
+            ],
+            [
+                "<p>The ETU allows continuous cycling between the hydrogen producing oxidation reaction and, without interruption, the reduction reaction resulting ultimately in oxygen production.</p>"
+            ],
+            [
+                "<p>“Continuous operation is where an engineering team learns how a process actually behaves over time,” said Ryan Patrick, NewHydrogen’s Senior Chemical Engineer, who led the ETU construction effort and is overseeing its operation. “The data we collect from the ETU will be used to design and determine the specifications for our first commercial pilot plant.”</p>"
+            ],
+            [
+                "<p>Using results from an ETU is the standard, industry-accepted pathway for designing a commercial pilot plant. The Company’s ETU serves as the bridge between its bench-scale laboratory experiments and its first commercial pilot plant, purpose-built to characterize the process performance and kinetics of ThermoLoop under continuous, repeatable operating conditions.</p>"
+            ],
+            [
+                "<p>This milestone builds on the Company’s previous announcement that it would automate the ETU’s controls, a step designed to give NewHydrogen’s engineering team continuous testing capability with greater precision and repeatability from run to run. With construction and commissioning now complete, the Company will use the resulting data from long duration operation of the ETU to define the specifications for its first commercial pilot plant. A successful pilot plant will provide the basis for the ultimate commercial application: an industrial scale ThermoLoop facility built to meet the needs of the clean hydrogen market.</p>"
+            ],
+            [
+                "<h3>Demand for Massive Amounts of Clean Hydrogen</h3>"
+            ],
+            [
+                "<p>Clean hydrogen demand is now measured in gigawatts, not megawatts. These industrial scale systems are defined as 1 gigawatt or greater, the level at which hydrogen can meaningfully displace fossil fuels in the industrial marketplace.</p>"
+            ],
+            [
+                "<p>Present production methods have not been built for that scale. Worldwide installed electrolysis capacity totaled only about 4 gigawatts in 2025, spread across many small and mid-sized projects rather than integrated, single gigawatt-scale plants, even as announced project pipelines have reached into the hundreds of gigawatts. ThermoLoop is designed from the outset to close that gap.</p>"
+            ],
+            [
+                "<p>The NewHydrogen industrial scale base case system assumes production capacity of 200 ktpa (kilotonnes per annum) which equals 200,000 tonnes of hydrogen per year. This scale represents a major industrial plant, roughly equivalent to a 1.5 to 2 gigawatt (GW) dedicated electrolysis plant or a large commercial steam methane reforming (SMR) facility.</p>"
+            ],
+            [
+                "<p>The market ThermoLoop is built to serve already exists at enormous scale, but currently relies on fossil fuel feedstock, usually natural gas. Instead, ThermoLoop uses heat to split water to produce clean hydrogen.</p>"
+            ],
+            [
+                "<p>“Our ETU is the foundation for everything that comes next. With the unit built and commissioned, we can now cycle ThermoLoop continuously and demonstrate the long duration stability of the process, which will generate the engineering data that will define our first pilot plant. From there, a pilot plant can scale to major industrial plants needed to meet the demands of an eager market,” said Steve Hill, CEO of NewHydrogen.</p>"
+            ],
+            [
+                "<p>For more information about NewHydrogen, please visit <a href=\"https://www.newhydrogen.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.newhydrogen.com</a>.</p>"
+            ],
+            [
+                "<h3>About NewHydrogen, Inc.</h3>"
+            ],
+            [
+                "<p>NewHydrogen is developing ThermoLoop® – a breakthrough technology that uses water and heat to produce industrial-scale clean hydrogen. Hydrogen is important to modern life, and we can't live without it. Hydrogen is the key ingredient in making fertilizers needed to grow food for the world. It is also used for transportation, refining oil and making steel, glass, pharmaceuticals and more. Nearly all the hydrogen today is made from hydrocarbons like coal, oil, and natural gas, which are dirty and limited resources. Water, on the other hand, is an abundant and renewable worldwide resource. Currently, the most common method of making clean hydrogen is to split water into oxygen and hydrogen with an electrolyzer, a very expensive process. By using heat directly, we can dramatically reduce the use of expensive electricity, and a massive source of inexpensive heat can be obtained from current and future power plants, especially small modular nuclear reactors. Working with a world class research team at UC Santa Barbara, our goal is to help usher in the clean hydrogen economy that Goldman Sachs estimated to have a future market value of $12 trillion.</p>"
+            ],
+            [
+                "<h3>Safe Harbor Statement</h3>"
+            ],
+            [
+                "<p>Matters discussed in this press release contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. When used in this press release, the words “anticipate,” “believe,” “estimate,” “may,” “intend,” “expect” and similar expressions identify such forward-looking statements. Actual results, performance or achievements could differ materially from those contemplated, expressed or implied by the forward-looking statements contained herein. These forward-looking statements are based largely on the expectations of the Company and are subject to a number of risks and uncertainties. These include, but are not limited to, risks and uncertainties associated with: the impact of economic, competitive and other factors affecting the Company and its operations, markets, the impact on the national and local economies resulting from terrorist actions, the impact of public health epidemics on the global economy and other factors detailed in reports filed by the Company with the United States Securities and Exchange Commission.</p>"
+            ],
+            [
+                "<p>Any forward-looking statement made by us in this press release is based only on information currently available to us and speaks only as of the date on which it is made. We undertake no obligation to publicly update any forward-looking statement, whether written or oral, that may be made from time to time, whether as a result of new information, future developments or otherwise.</p>"
+            ],
+            [
+                "<p><strong>Investor Relations Contact:</strong> NewHydrogen, Inc. <a href=\"mailto:ir@newhydrogen.com\">ir@newhydrogen.com</a></p>"
+            ]
+        ],
+        'category' => "pressrelease",
+        'biosolar' => false,
+        'hasCompletePressRelease' => true
+    ],
+    [
         'id' => "107",
         'title' => "NewHydrogen to Release a Special Report on October 19, 2026",
         'date' => "October 12, 2026",

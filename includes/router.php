@@ -27,7 +27,7 @@ $validPages[] = 'privacy-policy';
 
 // Serve the approved pages at their primary URLs without redirecting.
 $primaryPageTemplates = [
-    'home' => $path === '' ? 'coming-soon-red-steve-over' : 'home-oct-8',
+    'home' => $path === '' ? 'completes-etu' : 'home-oct-8',
     'technology' => 'technology-oct-8',
     'heat-sources' => 'heat-source-oct-8',
 ];
