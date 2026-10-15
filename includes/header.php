@@ -55,13 +55,6 @@
                 overflow-x: clip;
             }
         }
-<?php if ($page === 'home' && $path === '') : ?>
-        @media (max-width: 899px) {
-            .header-top.bigh-steve-header:has(#mobile-menu.show) {
-                z-index: 32;
-            }
-        }
-<?php endif; ?>
     </style>
 
     <!-- Meta Pixel Code -->
@@ -94,7 +87,7 @@
 
 <body class="">
 
-    <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top<?= $page === 'home' && $path === '' ? ' bigh-steve-header' : '' ?>">
+    <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top">
         <nav class="sm:py-4 bg-white ">
             <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
                 <div class="relative flex h-16 justify-between">

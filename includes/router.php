@@ -20,8 +20,10 @@ if ($requestedPage !== '') {
 $validPages = ['home', 'home-orange-1', 'home-orange-2', 'home-lava', 'lava', 'dark', 'bigh-aug-27-a', 'sep-2-home-bullets', 'about', 'technology', 'application', 'team', 'market', 'news-archive', 'newsroom', 'news-commentary', 'investor', 'contact', 'short-videos', 'videos', 'thermoloop-video', 'ceo-podcast', 'webinar', 'thank-you', 'explainer', '3reasons', 'electrolyzer-tech', 'why-thermoloop', 'fasttrack', 'home1', 'home2', 'home3', 'special-report', 'special-report-nucube', 'special-report-October-2025', 'sign-up', 'signup-042826', 'heat-source', 'nuqube1', 'nuqube2', 'nuqube3', 'stagegateone1', 'stagegateone2', 'stagegateone3', 'both'];
 
 $validPages[] = 'heat-sources';
+$validPages[] = 'completes-etu';
 $primaryPageFiles = [
-    'home' => $path === '' ? 'production-home-announcement' : 'home-oct-8',
+    'home' => $path === '' ? 'production-home-etu' : 'home-oct-8',
+    'completes-etu' => 'production-home-etu',
     'technology' => 'technology-oct-8',
     'heat-sources' => 'heat-source-oct-8',
 ];
@@ -30,12 +32,12 @@ $primaryPageFiles = [
 $videoCategories = ['news-commentary', 'ceo-podcast', 'short-videos'];
 
 if (strpos($requestUri, 'single-news.php') !== false && isset($_GET['id'])) {
-    // Only the approved complete release bypasses legacy boilerplate.
-    if ($requestUri === '/single-news.php' && $_GET['id'] === '107') {
+    // Only the approved complete releases bypass legacy boilerplate.
+    if ($requestUri === '/single-news.php' && in_array($_GET['id'], ['107', '108'], true)) {
         $newsEntries = include __DIR__ . '/../data/news-data.php';
         $approvedArticle = null;
         foreach ($newsEntries as $newsEntry) {
-            if ((string) $newsEntry['id'] === '107') {
+            if ((string) $newsEntry['id'] === (string) $_GET['id']) {
                 $approvedArticle = $newsEntry;
                 break;
             }
