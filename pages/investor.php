@@ -23,9 +23,9 @@
             </div>
 
             <div class="mt-16">
-                <img class="hidden md:block w-full" src="./assets/images/development-plan-updated.jpg" alt="development-plan">
+                <img class="hidden md:block w-full" src="./assets/images/go-to-market-plan-2026.png" alt="development-plan">
                 <div class="block md:hidden max-w-96 mx-auto">
-                    <img class="w-full" src="./assets/images/mobile-development-plan-updated.jpg" alt="development-plan">
+                    <img class="w-full" src="./assets/images/go-to-market-plan-2026-mobile.png" alt="development-plan">
                 </div>
             </div>
 

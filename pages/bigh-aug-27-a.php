@@ -201,7 +201,7 @@ if (!empty($isSpecialReport) && ($page ?? '') === 'special-report') :
                 allowfullscreen>
             </iframe>
             <button type="button" class="bigh-special-report-video-poster" aria-label="Play NewHydrogen Special Report" onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'; this.remove();">
-                <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261012-updated" alt="" />
+                <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261019-201245" alt="" />
                 <svg viewBox="0 0 68 48" aria-hidden="true" focusable="false">
                     <rect width="68" height="48" rx="12" fill="#ff0000" />
                     <path d="M27 14L45 24L27 34Z" fill="#ffffff" />
