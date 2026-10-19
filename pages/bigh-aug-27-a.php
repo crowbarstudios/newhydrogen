@@ -1,5 +1,34 @@
 <?php require_once __DIR__ . '/../includes/staging-gate.php'; ?>
 <style>
+    .bigh-fresh-video-poster {
+        position: absolute;
+        z-index: 2;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: 0;
+        background: #000;
+        cursor: pointer;
+    }
+    .bigh-fresh-video-poster img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bigh-fresh-video-poster svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 68px;
+        height: 48px;
+        transform: translate(-50%, -50%);
+    }
+    .bigh-fresh-video-poster:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: -5px;
+    }
     body {
         font-family: "Manrope", sans-serif;
     }
@@ -1618,17 +1647,18 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             <?php if (empty($isSpecialReport)) : ?>
             <h2 class="bigh-completes-etu-video-heading">Watch Special Report Webinar Now!</h2>
             <?php endif; ?>
-            <?php if (!empty($isSpecialReport)) : ?>
-            <div class="bigh-completes-etu-video-placeholder bigh-special-report-video">
+            <?php if (!empty($isSpecialReport) || (!empty($isCompletesEtuVideo) && isset($path) && $path === '')) : ?>
+            <div class="bigh-completes-etu-video-placeholder<?= !empty($isSpecialReport) ? ' bigh-special-report-video' : '' ?>">
                 <iframe
                     src="https://www.youtube.com/embed/20OU2TYub-U?rel=0"
                     title="NewHydrogen Special Report"
+                    style="position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;border:0;background:#000;"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
                 </iframe>
-                <button type="button" class="bigh-special-report-video-poster" aria-label="Play NewHydrogen Special Report" onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'; this.remove();">
-                    <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261012-updated" alt="" />
+                <button type="button" class="bigh-special-report-video-poster bigh-fresh-video-poster" aria-label="Play NewHydrogen Special Report" onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'; this.remove();">
+                    <img src="https://i.ytimg.com/vi/20OU2TYub-U/maxresdefault.jpg?v=20261019-201245" alt="" />
                     <svg viewBox="0 0 68 48" aria-hidden="true" focusable="false">
                         <rect width="68" height="48" rx="12" fill="#ff0000" />
                         <path d="M27 14L45 24L27 34Z" fill="#ffffff" />
