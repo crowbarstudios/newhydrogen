@@ -164,7 +164,7 @@
     </div>
 </section>
 
-<section class="bg-white sm:w-[90%] w-[97%] transform -translate-x-[50%] z-10 left-1/2 mx-auto rounded-[40px] xl:pt-[136px] pt-24 pb-24 xl:px-28 px-8 -mt-[30rem] -mb-[27rem] absolute">
+<section class="bg-white sm:w-[90%] w-[97%] relative z-10 mx-auto rounded-[40px] xl:pt-[136px] pt-24 pb-24 xl:px-28 px-8 -mt-[30rem] -mb-[27rem]">
     <div class="lg:grid flex flex-col-reverse grid-cols-12 gap-6">
         <div class="col-span-5 lg:pt-0 pt-7">
             <div class="flex items-center gap-[14px]">
@@ -173,7 +173,7 @@
                 </div>
                 <h4 class="lg:text-[42px] text-4xl font-semibold">SEC Filings</h4>
             </div>
-            <p class="text-xl font-normal mt-6 mb-[60px] text-custom-dark-100">See our filings at SEC.gov</p>
+            <p class="text-xl font-normal mt-6 mb-[60px] text-custom-dark-100"><a href="https://www.sec.gov/edgar/browse/?CIK=1371128&amp;owner=exclude" target="_blank" rel="noopener noreferrer" class="text-inherit text-xl" style="text-decoration: underline;">filings</a></p>
             <div class="flex items-center gap-[14px]">
                 <div class="lg:p-[14px] p-2.5  bg-custom-blue-light-100 rounded-[50%]">
                     <img src="./assets/images/briefcase.svg" alt="">
@@ -309,7 +309,7 @@
     </div>
 </section>
 
-<section class="bg-custom-gray-dark-100 lg:pt-[39rem] sm:pt-[57rem] pt-[70rem] relative  pb-24">
+<section class="bg-custom-gray-dark-100 relative pb-24" style="padding-top: calc(27rem + 6rem);">
     <div class="max-w-[724px] mx-auto">
         <h6 class="text-[42px] font-normal text-white text-center mb-16">Investor Relations</h6>
         <form action="">
