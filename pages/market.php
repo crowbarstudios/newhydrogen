@@ -47,7 +47,7 @@
                 <img class="md:max-w-[624px] max-w-full m-auto w-full md:mb-0 mb-10" src="./assets/images/market-2.png" alt="market">
             </div>
             <div>
-                <p class=" text-xl font-normal">According to Grandview Research, <span class="font-bold"> hydrogen is a $155 billion market today </span> and nearly all of it is made from natural gas. Goldman Sachs projected that hydrogen will be a $12 trillion market in the future if it can be made clean by using renewable resources such as sun, wind and water.
+                <p class=" text-xl font-normal">According to Grand View Research, <span class="font-bold"> hydrogen is a $155 billion market today </span> and nearly all of it is made from natural gas. Goldman Sachs projected that hydrogen will be a $12 trillion market in the future if it can be made clean by using renewable resources such as sun, wind and water.
                 </p>
                 <p class=" text-xl font-normal mt-6">Clean hydrogen is crucial in meeting the greenhouse gas emission goals described in United Nation’s Paris Agreement. Solar, wind and batteries alone simply cannot be relied upon to decarbonize industries, such as aviation, maritime, steel, cement, fertilizers, oil refining and pharmaceuticals. The expected global drive towards “net-zero emission” by 2050 will create tremendous demand for clean hydrogen for decades to come.</p>
                 <div class="flex xl:gap-6 gap-4 relative mt-[38px] ">
@@ -78,7 +78,7 @@
                 <h2 class=" xl:mb-28 mb-8 xl:text-[42px] text-3xl font-bold leading-[1.2] text-white">By 2050 <span class=" text-custom-green-200"> 660 million tons</span> per year of hydrogen needed for net-zero </h2>
                 <div class="flex gap-6">
                     <div class="bg-[#3B4E60] rounded-[20px] text-center pt-[35px]  pb-[31px] ">
-                        <h6 class=" xl:text-[42px] text-3xl font-normal text-white">220%</h6>
+                        <h6 class=" xl:text-[42px] text-3xl font-normal text-white">22%</h6>
                         <p class="text-[#CDC3DD] xl:text-xl text-lg leading-6">of global energy demand will be
                             hydrogen</p>
                     </div>

@@ -1095,7 +1095,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
             </article>
             <article class="bigh-sep19-feature-card">
                 <h3>Heat + Water = Industrial Scale Production</h3>
-                <p>ThermoLoop<sup class="bigh-trademark">®</sup> converts water directly into hydrogen using heat. Covering 71% of the planet, water provides a vast, reliable feedstock alternative to scarce natural gas in Europe, Asia and many of other parts of the world. Using abundantly available local water eliminates costly fuel imports and secures energy independence.</p>
+                <p>ThermoLoop<sup class="bigh-trademark">®</sup> converts water directly into hydrogen using heat. Covering 71% of the planet, water provides a vast, reliable feedstock alternative to scarce natural gas in Europe, Asia and many other parts of the world. Using abundantly available local water eliminates costly fuel imports and secures energy independence.</p>
             </article>
             <article class="bigh-sep19-feature-card">
                 <h3>Future-Proof Heat Source</h3>
