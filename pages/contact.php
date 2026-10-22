@@ -51,7 +51,7 @@
             <p class="text-xl text-custom-purple-light-100 font-normal">27936 Vista Canyon Blvd, Suite 202, </p>
             <p class="text-xl text-custom-purple-light-100 font-normal">Santa Clarita CA 91387</p>
             <a class="text-xl text-custom-purple-light-100 block font-normal" href="tel:(661) 251-0001">T: (661) 251-0001 </a>
-            <a class="text-xl text-custom-purple-light-100 block font-normal" href="mailto:info@newhydrogen.com">E: info@newhydrogen.com</a>
+            <a class="text-xl text-custom-purple-light-100 block font-normal" href="mailto:ir@newhydrogen.com">E: ir@newhydrogen.com</a>
         </div>
     </div>
 </section>

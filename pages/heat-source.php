@@ -66,7 +66,7 @@
 
                 </p>
                 <p>
-                To meet the power demands of the United States, Energy Secretary Chris Wright stated that the U.S. will add 300 gigawatts of nuclear capacity by 2050. He noted that the primary way to achieving this goal is through the deployment of Small Modular Reactors (SMRs). SMRs are a new class of compact nuclear reactors, ranging from 30 to 1,000 megawatts of thermal energy, designed for distributed power generation to serve datacenters, cities and regions.
+                The United States has set a goal of 400 gigawatts of nuclear capacity by 2050 (executive orders, May 2025). Small Modular Reactors (SMRs) are a new class of compact nuclear reactors, ranging from 30 to 1,000 megawatts of thermal energy, designed for distributed power generation to serve datacenters, cities and regions.
                 </p>
             </div>
             <div class="md:col-span-6 order-1 md:order-2 flex items-center justify-center">
@@ -134,7 +134,7 @@
     <div class="mx-auto lg:max-w-screen-lg xl:max-w-screen-xl px-2 sm:px-4">
     <h3 class="font-normal lg:text-5xl text-4xl xl:mb-[45px] mb-5">Massive Scale</h3>
         <p class="col-span-10 text-xl font-normal lg:mb-8 mb-4 lg:mt-[47px] mt-4 text-black leading-[1.3]">
-        In 2024, the global hydrogen market is $176 billion, representing 100 million metric tons of hydrogen production. This is projected to surge to $1.66 trillion and 600 million metric tons by 2050 (Deloitte, 2023).
+        In 2024, the global hydrogen market is $176 billion, representing 100 million metric tons of hydrogen production. This is projected to surge to $1.4 trillion and 600 million metric tons by 2050 (Deloitte, 2023).
         </p>
         <div class="grid grid-col-1 md:grid-cols-2 gap-6">
             <div class=" [&_p]:text-xl [&_p]:font-normal [&_p]:lg:mb-8 mb-4 [&_p]:lg:mt-6 [&_p]:mt-4 [&_p]:text-black [&_p]:leading-[1.3]">

@@ -173,7 +173,7 @@
                 </div>
                 <h4 class="lg:text-[42px] text-4xl font-semibold">SEC Filings</h4>
             </div>
-            <p class="text-xl font-normal mt-6 mb-[60px] text-custom-dark-100">See our fillings at SEC.gov</p>
+            <p class="text-xl font-normal mt-6 mb-[60px] text-custom-dark-100">See our filings at SEC.gov</p>
             <div class="flex items-center gap-[14px]">
                 <div class="lg:p-[14px] p-2.5  bg-custom-blue-light-100 rounded-[50%]">
                     <img src="./assets/images/briefcase.svg" alt="">
