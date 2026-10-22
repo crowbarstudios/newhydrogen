@@ -70,9 +70,14 @@
                 </p>
             </div>
             <div class="md:col-span-6 order-1 md:order-2 flex items-center justify-center">
-                <div class="max-w-sm">
-                    <img src="./assets/images/darker-greenArtboard-3.png" class="w-full" alt="Huge Number of New Power Plants">
-                </div>
+                <figure class="max-w-sm w-full text-center">
+                    <div class="w-full overflow-hidden" style="aspect-ratio: 672 / 618;">
+                        <img src="./assets/images/darker-greenArtboard-3.png" class="w-full" alt="Portrait of the U.S. Secretary of Energy">
+                    </div>
+                    <figcaption class="pt-5 text-black font-semibold leading-[1.3]" style="font-size: clamp(1.2rem, 2vw, 1.9rem);">
+                        The United States has set a goal of <span style="color: #009338;">400 gigawatts of nuclear capacity by 2050</span> (executive orders, May 2025).
+                    </figcaption>
+                </figure>
             </div>
         </div>
         <div class="grid grid-col-1 md:grid-cols-2 sm:my-20 my-12 gap-10">
