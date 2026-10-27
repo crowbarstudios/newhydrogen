@@ -2,6 +2,27 @@
 <?php
 $videos = [
     [
+        'title' => "October 26, 2026 - NewHydrogen News Commentary",
+        'videoID' => "nRdYaYDUNZs",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "october-26-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>Imagine an aircraft inspecting a power line, except it has no pilot, no tailpipe, and it’s flying on hydrogen. Hi, I’m Steve Hill, CEO of NewHydrogen. We’ll get to that in just a minute.</p>
+<p>At NewHydrogen, our mission is simple: to produce industrial-scale clean hydrogen. If you’d like to follow our progress, please visit us at newhydrogen.com.</p>
+<p>Now for the news. First up, PowerCell Group, a Swedish fuel cell maker, just received an order from GMI Group, a shipping company, for fuel cell systems for two more hydrogen-powered cargo ships. That brings the project to four vessels, with about 5.4 megawatts of fuel cells across the fleet and deliveries planned for 2027 and 2028. GMI’s CEO said the added vessels reflect “confidence in the solution.” When a customer comes back and doubles its order, that tells you something.</p>
+<p>Next, Ballard Power Systems received an order from Siemens Mobility for 24 fuel cell modules to power 12 hydrogen passenger trains in Romania. It’s the largest deployment of Siemens’ hydrogen train so far, and it would give Romania its first hydrogen train fleet. Passenger service is expected to start in 2029. These trains are meant to displace diesel on lines that don’t have overhead electrical wires, and that’s a big part of the rail map.</p>
+<p>And now for our headline story. A French company called HyLight just raised 13 million euros to grow its fleet of autonomous hydrogen-powered airships. They’re about 12 meters long, can fly for up to 10 hours, and are built to inspect power lines, gas pipelines, and rail networks, including looking for methane leaks. Over four years, they’ve flown thousands of kilometers and have started replacing helicopter missions for major infrastructure operators.</p>
+<p>French and European aviation regulators have approved them to fly beyond visual line of sight. The company plans to go from four airships today to as many as 15 flying in 2027.</p>
+<p>Think about what that means: a hydrogen-electric aircraft that’s quiet, produces no direct emissions, and can cover long stretches of infrastructure, doing a job that used to need a helicopter. Hydrogen isn’t just powering heavy machines anymore. It’s opening up new ways of doing the work.</p>
+<p>Every one of these customers will eventually ask the same questions: Will there be enough clean hydrogen to supply us? And will it be cheap enough to sustain our business? The technology is ready. The next piece is making clean hydrogen abundant and affordable.</p>
+<p>At NewHydrogen, our patent-pending ThermoLoop technology is designed to use water alongside high-temperature heat from nuclear, concentrated solar, and industrial waste heat to produce industrial-scale quantities of the world’s cheapest clean hydrogen.</p>
+<p>If you’re curious to learn more, head over to newhydrogen.com, watch our short explainer video, and sign up for our newsletter. NewHydrogen is a publicly traded company trading under the symbol NEWH.</p>
+<p>Thanks for watching, and I’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "October 12, 2026 - NewHydrogen News Commentary",
         'videoID' => "hJFCsNuBMu4",
         'date' => "",
