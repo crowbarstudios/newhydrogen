@@ -152,7 +152,7 @@
         <?php if ($page !== 'home'): ?>
         <div class="newh-stock-banner" aria-label="NewHydrogen stock information">
             <div class="newh-stock-banner-inner">
-                <p>Watch Our New Special Report Webinar Now!</p>
+                <p>Watch Our New Special Report Now!</p>
                 <a href="/" class="newh-stock-investor-link">Click Here</a>
                 <div class="newh-stock-social">
                     <a href="https://www.facebook.com/NewHydrogen/" target="_blank" rel="noopener noreferrer" aria-label="NewHydrogen on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
