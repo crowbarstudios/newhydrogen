@@ -1116,7 +1116,7 @@
     .bigh-steve-announcement-stage {
         position: sticky;
         z-index: 31;
-        top: 64px;
+        top: 124px;
         height: 50px;
         margin-top: -50px;
         background: #ffffff;
@@ -1377,7 +1377,7 @@
 
     @media (min-width: 640px) and (max-width: 767px) {
         .bigh-steve-announcement-stage {
-            top: 96px;
+            top: 156px;
         }
     }
 

@@ -15,6 +15,66 @@
     <script src="https://player.vimeo.com/api/player.js"></script>
     <title>Newhydrogen</title>
     <style>
+        .newh-stock-banner {
+            height: 60px;
+            background: #000;
+            color: #fff;
+        }
+
+        .newh-stock-banner-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            height: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .newh-stock-banner p {
+            margin: 0;
+            color: #fff;
+            font-size: 30px;
+            line-height: 1.25;
+            font-weight: 400;
+        }
+
+        .newh-stock-banner .newh-stock-investor-link {
+            flex-shrink: 0;
+            padding: 10px;
+            border-radius: 8px;
+            background: #ed1c24;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .newh-stock-social {
+            position: absolute;
+            right: 16px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .newh-stock-social a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        @media (max-width: 1199px) {
+            .newh-stock-social { display: none; }
+            .newh-stock-banner p { font-size: 20px; }
+        }
+
+        @media (max-width: 639px) {
+            .newh-stock-banner-inner { gap: 8px; padding: 0 10px; }
+            .newh-stock-banner p { font-size: 14px; }
+            .newh-stock-banner .newh-stock-investor-link { font-size: 12px; padding: 10px 8px; }
+        }
+
         .header-top nav,
         .header-top nav a,
         .header-top #mobile-menu,
@@ -89,6 +149,19 @@
 <body class="">
 
     <div class="sticky top-0 z-30 bg-white transition-all duration-300 ease-in-out header-top<?= in_array($page, ['coming-soon-red-steve', 'coming-soon-red-steve-over'], true) ? ' bigh-steve-header' : '' ?>">
+        <?php if ($page !== 'home'): ?>
+        <div class="newh-stock-banner" aria-label="NewHydrogen stock information">
+            <div class="newh-stock-banner-inner">
+                <p>Watch Our New Special Report Webinar Now!</p>
+                <a href="/" class="newh-stock-investor-link">Click Here</a>
+                <div class="newh-stock-social">
+                    <a href="https://www.facebook.com/NewHydrogen/" target="_blank" rel="noopener noreferrer" aria-label="NewHydrogen on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/newhydrogen/" target="_blank" rel="noopener noreferrer" aria-label="NewHydrogen on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/@NewHydrogenEnergy" target="_blank" rel="noopener noreferrer" aria-label="NewHydrogen on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
         <nav class="sm:py-4 bg-white ">
             <div class="mx-auto max-w-[1320px] 3xl:max-w-screen-2xl px-2 sm:px-4">
                 <div class="relative flex h-16 justify-between">
