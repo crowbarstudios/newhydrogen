@@ -1,6 +1,28 @@
 <?php
 $videos = [
     [
+        'title' => "November 2, 2026 - NewHydrogen News Commentary",
+        'videoID' => "iiqZdK2wvjc",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "november-2-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>A quarter of a million miles from home, there’s no power grid to plug into and no air to breathe. So, how will the first lunar bases power themselves and sustain the people living on them?</p>
+<p>Hi, I’m Steve Hill, CEO of NewHydrogen. We’ll get to that in just a minute. At NewHydrogen, our mission is simple: to produce industrial-scale quantities of cheap, clean hydrogen. If you’d like to follow our progress or see our latest milestone achievement, please visit us at newhydrogen.com.</p>
+<p>Now to the news. First up, steel has been a leading candidate for cleaner production using hydrogen, and now aluminum may be joining it. As part of a government-backed research project, a German aluminum producer converted one of its existing melting furnaces to run on hydrogen. The burners ran steadily on blends ranging from about 45% hydrogen to nearly 100%.</p>
+<p>The engineering firm that handled the work says the conversion takes only a short shutdown. After that, the furnace can switch between natural gas and hydrogen, or mix the two, without stopping again. Melting aluminum takes a lot of heat, and most of it comes from natural gas today. If producers can convert the furnaces they already own, one of the biggest barriers to switching gets much smaller.</p>
+<p>Next, BMW has started building a two-kilometer hydrogen pipeline to its car plant in Leipzig, Germany. When it’s finished in 2028, BMW says it will be the first vehicle plant in the world connected directly to a hydrogen grid. The site already runs more than 230 hydrogen fuel-cell forklifts and tug trains, and its paint shop has 11 furnaces that can run on natural gas or hydrogen.</p>
+<p>BMW put the equipment in first, and now it’s laying pipe to feed it. You can truck hydrogen in for a pilot, but you’ll need to build a pipeline if you plan to use a lot of it for a long time.</p>
+<p>And now to our headline story. Teledyne Energy Systems, an American company that builds power systems for space and defense, is working with NASA to get a hydrogen fuel cell ready for the moon. Most fuel cells pull oxygen from the air around them. On the moon, there isn’t any, and this system doesn’t need it.</p>
+<p>It’s designed to power lunar habitats, surface equipment and, down the road, deep-space missions. The company will test the fuel cell at NASA facilities in conditions that mimic space. The goal is a working prototype that performs in a space-like environment—an important step on the road to a real mission.</p>
+<p>So, why should you care here on Earth? NASA picks power systems for places where failure isn’t an option. When it puts its facilities and engineers behind a hydrogen fuel cell for the moon, that says a lot about how vital and dependable hydrogen has become.</p>
+<p>Whether it’s on the moon or on a factory floor, the big question is where all that clean hydrogen will come from and at what price. At NewHydrogen, our patent-pending ThermoLoop technology is designed to use water alongside high-temperature heat from nuclear, concentrated solar or industrial waste heat to produce the world’s cheapest clean hydrogen at industrial scale.</p>
+<p>If you’re curious to learn more, head over to newhydrogen.com to watch our short explainer video and sign up for our newsletter. NewHydrogen is a publicly traded company trading under the symbol NEWH.</p>
+<p>Thank you so much for watching, and we’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "October 26, 2026 - NewHydrogen News Commentary",
         'videoID' => "nRdYaYDUNZs",
         'date' => "",
