@@ -1,6 +1,30 @@
 <?php
 $videos = [
     [
+        'title' => "November 9, 2026 - NewHydrogen News Commentary",
+        'videoID' => "UAvoqZmVDbk",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "november-9-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>A hydrogen-powered truck is about to take on the Dakar Rally, one of the most punishing races on Earth.</p>
+<p>Hi, I’m Steve Hill, CEO of NewHydrogen. We’ll get to that in just a minute. At NewHydrogen, our mission is simple: to produce cheap, clean hydrogen at an industrial scale. If you’d like to follow our progress, please visit us at newhydrogen.com.</p>
+<p>Now, to the news. First up: steel. Making it takes huge amounts of heat and coal, and the industry is responsible for as much as 11% of the world’s CO2 emissions. This month, Chemistry World took a close look at how steelmakers are tackling that, and hydrogen is a big part of the story.</p>
+<p>In a process called hydrogen direct reduction, hydrogen replaces coal as the ingredient that strips oxygen out of iron ore. What comes out is water instead of CO2. In northern Sweden, a company called Stegra is putting this into practice. It’s targeting enough hydrogen to produce 5 million tons of steel annually by 2030. One of the experts interviewed said that with clean hydrogen, you can eliminate pretty much all of the carbon. The world makes almost 2 billion tons of steel a year, so you can see how much hydrogen this industry could use.</p>
+<p>Next, a transit story from Slovenia. Ljubljana’s bus operator, LPP, has put 10 Mercedes-Benz hydrogen fuel cell buses into service. They’re the long, articulated kind. They’re part of 35 new Mercedes-Benz buses added within a year, and they’ll cover the routes that need extra range.</p>
+<p>The city also opened Slovenia’s first public hydrogen refueling station in February, and it’s built to serve buses, trucks, and passenger cars. LPP’s CEO put it well, pointing out that the new fleet creates a foundation for a reliable and future-proof public transport system. A city of this size choosing hydrogen for daily service further solidifies hydrogen’s role in net-zero logistics.</p>
+<p>And now, our headline story. Toyota’s Gazoo Racing has revealed new details about its hydrogen fuel cell entry for the 2027 Dakar Rally. It’s called the DKR GR FC Hilux, and the build is complete and undergoing testing. Saudi driver Dania Akeel will be behind the wheel.</p>
+<p>Here’s what’s under the skin: the truck combines two fuel cell stacks in one system that puts out 400 kilowatts. It carries 8.4 kilograms of compressed hydrogen in four tanks—the same kind of high-pressure tanks used in the Toyota Mirai. It’s built on the same frame, suspension, and brakes as Toyota’s regular Dakar Hilux.</p>
+<p>Dakar means desert heat, sand, and days of punishment. The truck will race in the Future Mission 1000 category, which is for experimental vehicles, and is Toyota’s first full motorsport entry with a hydrogen fuel cell.</p>
+<p>Motorsport has always been a proving ground for technology that ends up in the cars we drive. Toyota says the truck produces no tailpipe CO2, and when the hydrogen behind it is clean, the whole picture gets even better.</p>
+<p>Steel mills, city buses, and desert racers all have the same need: clean hydrogen in large quantities at a price that makes sense.</p>
+<p>At NewHydrogen, our patent-pending ThermoLoop technology is designed to use water alongside high-temperature heat from sources like nuclear energy, concentrated solar energy, and industrial waste heat to produce clean hydrogen at an industrial scale.</p>
+<p>If you’re curious to learn more, head over to newhydrogen.com to watch our short explainer video and sign up for our newsletter. NewHydrogen is a publicly traded company trading under the symbol NEWH.</p>
+<p>Thank you so much for watching, and we’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "November 2, 2026 - NewHydrogen News Commentary",
         'videoID' => "iiqZdK2wvjc",
         'date' => "",
