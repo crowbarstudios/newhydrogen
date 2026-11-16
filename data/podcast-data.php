@@ -1,6 +1,28 @@
 <?php
 $videos = [
     [
+        'title' => "November 16, 2026 - NewHydrogen News Commentary",
+        'videoID' => "grTyNx99npE",
+        'date' => "",
+        'category' => "news-commentary",
+        'slug' => "november-16-2026-newhydrogen-news-commentary",
+        "display" => true,
+        'transcript' => <<<'TRANSCRIPT'
+<p>A power plant that arrives by sea, plugs into the grid, and starts delivering electricity within just 30 days.</p>
+<p>Hi, I’m Steve Hill, CEO of NewHydrogen. We’ll get to that in just a minute. At NewHydrogen, our mission is simple. We want to produce affordable, clean hydrogen at industrial scale. If you’d like to follow our progress, visit us at newhydrogen.com.</p>
+<p>First up, a milestone from South Korea. Hyundai’s hydrogen vehicle sales in the country have passed 50,000, reaching 50,262 as of September 2026. According to market tracker SNE Research, Hyundai accounted for about 70% of global fuel cell vehicle sales in the first half of the year.</p>
+<p>The latest NEXO can travel up to 720 kilometers, or about 447 miles, on a single tank. Hyundai says 86% of NEXO buyers live within about 7.5 kilometers of a fueling station, and about 250 stations are now open in South Korea. That’s what a growing hydrogen network looks like from the driver’s seat.</p>
+<p>From the road, let’s move to the air. One of the biggest hurdles for hydrogen in aviation comes down to a practical question. How do you refuel planes fast enough? Airlines rely on tight turnarounds, with some short-haul flights spending as little as 35 minutes on the ground.</p>
+<p>A simulation by Delft University of Technology showed that refueling a hydrogen-powered turboprop could take under 20 minutes. Other teams are looking at the full turnaround. In September, the UK Civil Aviation Authority partnered with Beyond Aero, London City Airport, and the University of East London to model everything that happens between landing and takeoff. With each advance on the ground, hydrogen-powered flight moves closer to reality.</p>
+<p>And now, our headline story. A Turkish floating power plant operator has hired Singapore’s Seatrium to convert five ship hulls into Whale Class vessels. These would be the company’s largest power ships yet. Each could supply up to 600 megawatts and begin delivering electricity within 30 days of connecting to a coastal substation. The first hull is scheduled to berth in December 2027.</p>
+<p>The ships’ engines can run on multiple fuels, including hydrogen blends, and can switch fuels without a structural rebuild. That makes them hydrogen-ready. When customers invest in equipment that can use hydrogen from day one, they’re showing where they think clean energy is headed. These ships will be ready to use clean hydrogen when it becomes widely available at the right price.</p>
+<p>That’s the common thread this week. From cars to airports to power ships, the equipment is taking shape. The next step is making clean hydrogen plentiful and affordable.</p>
+<p>At NewHydrogen, that’s our goal. We’re developing our patent-pending ThermoLoop® technology to produce affordable, clean hydrogen at industrial scale using water and high-temperature heat from sources such as nuclear energy, concentrated solar power, and industrial waste heat.</p>
+<p>To learn more, visit newhydrogen.com, watch our short explainer video, and sign up for our newsletter. NewHydrogen is a publicly traded company under the ticker symbol NEWH.</p>
+<p>Thanks for watching. I’ll see you again next week.</p>
+TRANSCRIPT,
+    ],
+    [
         'title' => "November 9, 2026 - NewHydrogen News Commentary",
         'videoID' => "UAvoqZmVDbk",
         'date' => "",
