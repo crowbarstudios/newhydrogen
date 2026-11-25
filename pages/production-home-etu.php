@@ -1,4 +1,5 @@
 <?php
+$isPrimaryHomepage = ($page ?? '') === 'home' && ($path ?? '') === '';
 // Isolate the approved ETU homepage from production's shared page templates.
 $isCompletesEtu = true;
 $isCompletesEtuVideo = true;
@@ -1640,7 +1641,7 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
         <script src="/assets/js/red-signup.js" defer></script>
     <?php endif; ?>
 </div>
-<?php elseif (!empty($isComingSoonRed) && empty($isComingSoonRedSteveUnder)) : ?>
+<?php elseif (!empty($isComingSoonRed) && empty($isComingSoonRedSteveUnder) && !(($page ?? '') === 'home' && ($path ?? '') === '')) : ?>
 <section class="bigh-replacement-banner bigh-coming-soon-red-banner<?= !empty($isComingSoonTexture) ? ' bigh-coming-soon-texture-banner' : '' ?><?= !empty($isComingSoonRedWithDate) ? ' bigh-coming-soon-red-date-banner' : '' ?><?= !empty($isCompletesEtu) ? ' bigh-completes-etu-banner' : '' ?> flex items-center justify-center" <?php if (!empty($isComingSoonWhite)) : ?>style="background-color: #ffffff;"<?php elseif (!empty($isCompletesEtu)) : ?>style="background-image: url('<?php echo $full_url; ?>/assets/images/completes-etu-background.png');"<?php elseif (!empty($isComingSoonTexture)) : ?>style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('<?php echo $full_url; ?>/assets/images/coming-soon-texture-light.png');"<?php else : ?>style="background-color: #d71920;"<?php endif; ?>>
     <div class="bigh-coming-soon-red-content w-full text-center">
         <h1 class="max-w-[1120px] mx-auto text-center text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
@@ -1796,7 +1797,62 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
 </section>
 <?php endif; ?>
 
-<section class="bigh-news-section<?= !empty($isSep2HomeBullets) ? ' bigh-news-section--centered' : '' ?>">
+<?php if ($isPrimaryHomepage) : ?>
+<style>
+    .bigh-news-section--homepage {
+        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+        gap: 40px;
+        padding: 30px 42px;
+    }
+    .bigh-news-section--homepage .bigh-video-column { gap: 16px; }
+    .bigh-news-section--homepage .bigh-explainer-play { width: 72px; height: 72px; }
+    .bigh-home-news-card {
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        padding: 22px;
+        border-radius: 22px;
+        background: radial-gradient(ellipse at bottom right, #eaf8ef, transparent 65%), #fff;
+        color: #091113;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .bigh-home-news-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto;
+        height: 5px;
+        background: #12B34F;
+    }
+    .bigh-home-news-card .bigh-home-news-badge {
+        margin: 0 0 12px;
+        color: #e4002b;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+    }
+    .bigh-home-news-card h3 { margin: 0 0 20px; font-size: 22px; font-weight: 800; line-height: 1.2; }
+    .bigh-home-news-card a {
+        display: inline-block;
+        padding: 10px 22px;
+        border-radius: 999px;
+        background: #e4002b;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .bigh-home-news-card a:hover { background: #bd0024; }
+    @media (max-width: 767px) {
+        .bigh-news-section--homepage { grid-template-columns: 1fr; padding: 30px 18px; gap: 28px; }
+        .bigh-news-section--homepage .bigh-news-panel { order: 0; padding: 0; }
+        .bigh-news-section--homepage .bigh-video-column { order: 1; padding: 0; }
+        .bigh-news-section--homepage .bigh-explainer-video,
+        .bigh-news-section--homepage .bigh-home-news-card { width: 100%; max-width: 420px; }
+    }
+</style>
+<?php endif; ?>
+<section class="bigh-news-section<?= !empty($isSep2HomeBullets) ? ' bigh-news-section--centered' : '' ?><?= $isPrimaryHomepage ? ' bigh-news-section--homepage' : '' ?>">
     <div class="bigh-news-panel<?= !empty($isSep19Home) ? ' bigh-news-panel--copy' : '' ?>">
         <?php if (!empty($isSep19Home)) : ?>
             <ul class="bigh-home-copy">
@@ -1804,11 +1860,16 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                     <span>NewHydrogen is developing <strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> - a breakthrough thermochemical technology that uses heat to split water into the world's cheapest <span class="bigh-brand-green">clean hydrogen</span> at industrial scale.</span>
                 </li>
                 <li>
-                    <span>Over 98% of the world's dedicated hydrogen is produced using dirty fossil fuel feedstocks. These large-scale hydrogen plants are critical infrastructure designed to meet massive industrial demand across refining, chemical manufacturing, and power generation.</span>
+                    <span>Over 98% of the world's dedicated hydrogen is produced using dirty fossil fuel feedstocks<?= $isPrimaryHomepage ? ', such as natural gas' : '' ?>. These large-scale hydrogen plants are critical infrastructure designed to meet massive industrial demand across refining, chemical manufacturing, and power generation.</span>
                 </li>
                 <li>
                     <span><strong>ThermoLoop<sup class="bigh-trademark">®</sup></strong> is designed to <?= in_array($page ?? '', ['home', 'coming-soon-red-steve-over', 'completes-etu'], true) ? 'continuously produce' : 'produce continuous' ?> <span class="bigh-brand-green">clean hydrogen</span> at a scale matching the largest of the world's existing hydrogen plants.</span>
                 </li>
+                <?php if ($isPrimaryHomepage) : ?>
+                <li>
+                    <span>Our market opportunity is substantial. Industrialized nations without natural gas must rely on water as a feedstock. Industrialized nations with natural gas, but choosing not to use it for policy reasons, must also rely on water as a feedstock.</span>
+                </li>
+                <?php endif; ?>
             </ul>
         <?php else : ?>
             <h2>Recent News</h2>
@@ -1841,6 +1902,13 @@ $recentNewsItems = array_slice($news, !empty($isSep2HomeBullets) ? 1 : 0, 4);
                 </svg>
             </span>
         </a>
+        <?php if ($isPrimaryHomepage) : ?>
+        <article class="bigh-home-news-card">
+            <p class="bigh-home-news-badge">BREAKING NEWS</p>
+            <h3>NewHydrogen Completes Construction of Its ThermoLoop® Engineering Test Unit</h3>
+            <a href="/single-news.php?id=108">Read More</a>
+        </article>
+        <?php endif; ?>
     </div>
     <?php endif; ?>
 
